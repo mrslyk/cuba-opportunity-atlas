@@ -1,0 +1,18 @@
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+# Daily agentic refresh/re-screen worker (DRY-RUN by default; nothing
+# auto-publishes to Layer-1 — human approval required in the admin screen).
+[functions."worker"]
+  schedule = "@daily"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"

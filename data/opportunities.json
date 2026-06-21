@@ -1,0 +1,1282 @@
+[
+  {
+    "id": "tc-mariel",
+    "name": "TC Mariel + ZED Mariel",
+    "sector": "ports",
+    "type": "Container terminal + special economic zone",
+    "lat": 23.0,
+    "lng": -82.75,
+    "province": "Artemisa",
+    "scale": "702m berth, 17.5m depth (Neopanamax); ~822k TEU (design up to 3M); zone 465 km², 100% foreign ownership allowed",
+    "status": "Underused vs capacity; deepwater berth + logistics/warehousing expansion",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "sources": [
+      "Seatrade",
+      "BNamericas"
+    ],
+    "notes": "Terminal operated by PSA (Singapore); zone owned by Almacenes Universales (GAESA — Restricted List)."
+  },
+  {
+    "id": "port-havana",
+    "name": "Port of Havana",
+    "sector": "ports",
+    "type": "Historic harbor + cruise terminal",
+    "lat": 23.14,
+    "lng": -82.35,
+    "province": "La Habana",
+    "scale": "~2.2M tons/yr; cruise terminal expanding 2→6 berths; shallow ~11m channel",
+    "status": "Best positioned for cruise/tourism/ferries + waterfront redevelopment",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "sources": [
+      "Seatrade"
+    ],
+    "notes": "Cruise terminal under concession to Global Ports Holding (Turkey) + Cuban partner Aries S.A."
+  },
+  {
+    "id": "port-santiago",
+    "name": "Port of Santiago de Cuba (Guillermón Moncada)",
+    "sector": "ports",
+    "type": "Multipurpose cargo port, eastern Cuba",
+    "lat": 19.97,
+    "lng": -75.86,
+    "province": "Santiago de Cuba",
+    "scale": "231m dock, 3 cranes; upgraded to ~55,000-ton ships; target ~565k tons/yr",
+    "status": "China-financed modernization; further capacity/connectivity upgrades needed",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "sources": [
+      "BNamericas"
+    ],
+    "notes": "$120M China Eximbank financing, built by CCCC; Cuban-operated.",
+    "confiscated": true,
+    "claim": {
+      "owner": "Javier García-Bengochea (Santiago port interest)",
+      "certified": false,
+      "value_1972": "196th-ranked uncertified",
+      "current_holder": "García-Bengochea family",
+      "title_iii": "v. Carnival/Royal Caribbean/Norwegian/MSC + Airbnb; subject to Havana Docks SCOTUS reasoning"
+    }
+  },
+  {
+    "id": "port-cienfuegos",
+    "name": "Port of Cienfuegos",
+    "sector": "ports",
+    "type": "Deep-bay multipurpose + petroleum/liquid bulk",
+    "lat": 22.14,
+    "lng": -80.45,
+    "province": "Cienfuegos",
+    "scale": "~11-12m channel; 5 piers + 3 tanker buoys",
+    "status": "One of Cuba's best natural deep harbors; petrochemical/bulk + refinery revival",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "sources": [
+      "BNamericas"
+    ],
+    "notes": "Refinery historically Cuvenpetrol (Cuba-Venezuela JV)."
+  },
+  {
+    "id": "port-moa",
+    "name": "Port of Moa",
+    "sector": "ports",
+    "type": "Nickel/cobalt mineral-export port",
+    "lat": 20.66,
+    "lng": -74.94,
+    "province": "Holguín",
+    "scale": "~7-9m pier; serves Moa Nickel (~32,000 t Ni/yr)",
+    "status": "Sherritt suspended Moa ops in 2026 (fuel crisis) — distressed restructuring; needs deeper berth",
+    "ownership": "jv",
+    "layer": "atlas",
+    "investable_us": false,
+    "sources": [
+      "Splash247",
+      "USGS"
+    ],
+    "notes": "Moa Nickel S.A. = Cuban Govt 50% + Sherritt (Canada) 50%.",
+    "confiscated": true,
+    "claim": {
+      "owner": "Moa Bay Mining Co. (Freeport Sulphur)",
+      "certified": true,
+      "value_1972": "$88.3M",
+      "current_holder": "Freeport lineage",
+      "title_iii": "none active"
+    }
+  },
+  {
+    "id": "matanzas-tanker-base",
+    "name": "Matanzas Supertanker Base",
+    "sector": "ports",
+    "type": "Oil import/storage terminal (largest in Cuba)",
+    "lat": 23.05,
+    "lng": -81.51,
+    "province": "Matanzas",
+    "scale": "2.4M-barrel storage; 4 of 8 tanks destroyed in 2022 fire",
+    "status": "Slow reconstruction; national energy-resilience rebuild + storage diversification",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "sources": [
+      "Reuters"
+    ],
+    "notes": "CUPET; reconstruction backed by Venezuela/China."
+  },
+  {
+    "id": "port-antilla",
+    "name": "Port of Antilla / Nipe Bay",
+    "sector": "ports",
+    "type": "Sugar export today; deepwater greenfield thesis",
+    "lat": 20.84,
+    "lng": -75.74,
+    "province": "Holguín",
+    "scale": "Cuba's largest bay; ~14m natural draft; ~80km from Moa nickel belt on Windward Passage",
+    "status": "Speculative deepwater critical-minerals hub concept; genuine natural-deepwater geography",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "sources": [
+      "Cuba Strategic Partners"
+    ],
+    "notes": "AntillaPort hub is a marketing concept, not a funded project."
+  },
+  {
+    "id": "rail-national",
+    "name": "National Railway Network (UFC)",
+    "sector": "rail",
+    "type": "Only railroad in the Caribbean",
+    "lat": 23.13,
+    "lng": -82.36,
+    "province": "Nationwide",
+    "scale": "~4,556 km public track (up to ~8,000 km w/ sugar lines); deteriorated",
+    "status": "Russia (RZD/TMH) modernization plan ~€1.0-1.8B; near-total recapitalization needed",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "sources": [
+      "TASS",
+      "Wikipedia"
+    ],
+    "notes": "UFC/MITRANS."
+  },
+  {
+    "id": "rail-central-line",
+    "name": "Central Line (Havana–Santiago)",
+    "sector": "rail",
+    "type": "Main trunk rail corridor",
+    "lat": 22.0,
+    "lng": -79.5,
+    "province": "Multi-province",
+    "scale": "~835 km; flagship long-distance service, severely degraded",
+    "status": "Priority of Russian modernization contract — highest-value rail upgrade target",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "sources": [
+      "TASS"
+    ],
+    "notes": "Havana → Santa Clara → Camagüey → Santiago."
+  },
+  {
+    "id": "airport-hav",
+    "name": "José Martí International Airport (HAV)",
+    "sector": "transport",
+    "type": "Primary international airport",
+    "lat": 22.989,
+    "lng": -82.409,
+    "province": "La Habana",
+    "scale": ">4M pax/yr; Terminal 3 expanded Feb 2025; runways/systems deteriorated",
+    "status": "Govt wants 'most competitive Caribbean hub' — major redevelopment/concession opportunity",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "sources": [
+      "ECASA",
+      "Cuban press"
+    ],
+    "notes": "ECASA."
+  },
+  {
+    "id": "airport-cayo-coco",
+    "name": "Jardines del Rey Airport (CCC)",
+    "sector": "transport",
+    "type": "Tourism airport — foreign-managed (proof of concept)",
+    "lat": 22.461,
+    "lng": -78.328,
+    "province": "Ciego de Ávila",
+    "scale": ">200,000 pax/yr; runway upgraded 2022",
+    "status": "Only Cuban airport partly run by a foreign operator (Spain's AENA) — JV template",
+    "ownership": "jv",
+    "layer": "atlas",
+    "investable_us": false,
+    "sources": [
+      "AENA"
+    ],
+    "notes": "ECASA + AENA."
+  },
+  {
+    "id": "autopista-a1",
+    "name": "Autopista Nacional (A1, 'Ocho Vías')",
+    "sector": "transport",
+    "type": "Incomplete national expressway",
+    "lat": 22.07,
+    "lng": -79.51,
+    "province": "Multi-province",
+    "scale": "1970s megaproject never finished; only ~354 km open",
+    "status": "Eastward completion = flagship greenfield highway opportunity",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "sources": [
+      "Wikipedia"
+    ],
+    "notes": "Havana → Santa Clara → Taguasco (eastern terminus)."
+  },
+  {
+    "id": "cte-guiteras",
+    "name": "Antonio Guiteras Thermoelectric Plant",
+    "sector": "energy",
+    "type": "Thermoelectric power plant (most critical block)",
+    "lat": 23.045,
+    "lng": -81.555,
+    "province": "Matanzas",
+    "scale": "330 MW; ran at ~25-34% capacity; 9th breakdown of 2026 by May",
+    "status": "Distressed; 6-month overhaul; highest-impact modernization target",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "sources": [
+      "Microgrid Media",
+      "Cuban press"
+    ],
+    "notes": "Unión Eléctrica (UNE)."
+  },
+  {
+    "id": "cte-felton",
+    "name": "Lidio Ramón Pérez 'Felton' Power Plant",
+    "sector": "energy",
+    "type": "Largest thermoelectric plant in Cuba",
+    "lat": 20.71,
+    "lng": -75.62,
+    "province": "Holguín",
+    "scale": "2 × 250 MW; chronic boiler leaks",
+    "status": "Major repowering candidate",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "sources": [
+      "GEM Wiki"
+    ],
+    "notes": "UNE."
+  },
+  {
+    "id": "solar-national-program",
+    "name": "China-Backed National Solar Program",
+    "sector": "energy",
+    "type": "Utility-scale solar buildout (the growth story)",
+    "lat": 21.85,
+    "lng": -78.76,
+    "province": "Nationwide",
+    "scale": "92 parks × ~21.87 MW → ~2,000 MW target; ~49 connected (~900-1,000 MW) by Mar 2026",
+    "status": "Battery storage is the bottleneck — open to financing/EPC/O&M/BESS",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "sources": [
+      "Microgrid Media",
+      "Power Technology"
+    ],
+    "notes": "UNE + Chinese supply. Solar tripled to >20% of generation in one year."
+  },
+  {
+    "id": "biomass-ciro-redondo",
+    "name": "Ciro Redondo Bioelectric Plant",
+    "sector": "energy",
+    "type": "Biomass (sugar bagasse) cogeneration — clearest JV success model",
+    "lat": 22.0,
+    "lng": -78.7,
+    "province": "Ciego de Ávila",
+    "scale": "60 MW; replicable across dozens of sugar mills",
+    "status": "Best foreign-JV precedent in energy",
+    "ownership": "jv",
+    "layer": "atlas",
+    "investable_us": false,
+    "sources": [
+      "Havana Energy"
+    ],
+    "notes": "Havana Energy (UK) 51% / Zerus (Cuba) 49%; EPC Shanghai Electric."
+  },
+  {
+    "id": "oil-varadero-boca-jaruco",
+    "name": "Boca de Jaruco / Varadero Oil Fields",
+    "sector": "energy",
+    "type": "Onshore oil — Enhanced Oil Recovery play",
+    "lat": 23.13,
+    "lng": -81.28,
+    "province": "Matanzas/Mayabeque",
+    "scale": "~40,000 bbl/day vs 90-110k demand; Varadero only ~6-7% extracted",
+    "status": "EOR is the opportunity",
+    "ownership": "jv",
+    "layer": "atlas",
+    "investable_us": false,
+    "sources": [
+      "Reuters"
+    ],
+    "notes": "CUPET + Russia's Zarubezhneft JV."
+  },
+  {
+    "id": "wind-la-herradura",
+    "name": "La Herradura Wind Farms",
+    "sector": "energy",
+    "type": "Onshore wind",
+    "lat": 21.3,
+    "lng": -76.95,
+    "province": "Las Tunas",
+    "scale": "~51 MW design; under construction >10 yrs; turbines erecting Apr 2026",
+    "status": "Cuba has 21 idle high-potential wind zones",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "sources": [
+      "GEM Wiki"
+    ],
+    "notes": "UNE."
+  },
+  {
+    "id": "water-albear-vento",
+    "name": "Albear Aqueduct / Cuenca Vento (Havana supply)",
+    "sector": "water",
+    "type": "Municipal water supply network",
+    "lat": 23.0,
+    "lng": -82.37,
+    "province": "La Habana",
+    "scale": "1861 gravity aqueduct still ~15% of Havana supply; network loses ~58%",
+    "status": "Needs full main replacement, metering, SCADA for ~2.1M metro",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "sources": [
+      "INRH",
+      "OPEC Fund"
+    ],
+    "notes": "Operated by Aguas de La Habana."
+  },
+  {
+    "id": "water-aguas-habana",
+    "name": "Aguas de La Habana (operator) + Almendares wastewater",
+    "sector": "water",
+    "type": "Water/sewage utility — standout PPP precedent",
+    "lat": 23.1,
+    "lng": -82.42,
+    "province": "La Habana",
+    "scale": "Serves ~2.1M; untreated wastewater contaminates Vento aquifer",
+    "status": "Sewerage expansion; 25-yr concession reaching nominal expiry ~2025",
+    "ownership": "jv",
+    "layer": "atlas",
+    "investable_us": false,
+    "sources": [
+      "OPEC Fund"
+    ],
+    "notes": "Historically INRH 50% + Agbar (Spain) ~45% + Grupo Martinón ~5%."
+  },
+  {
+    "id": "desal-cayo-coco",
+    "name": "Cayo Coco / Jardines del Rey Desalination",
+    "sector": "water",
+    "type": "Desalination for dollarized tourism market",
+    "lat": 22.51,
+    "lng": -78.5,
+    "province": "Ciego de Ávila",
+    "scale": "Failing desal in hard-currency tourism zone",
+    "status": "Clearest path to private/JV (build-operate tied to hotel demand)",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "sources": [
+      "INRH"
+    ],
+    "notes": "Tourism entities."
+  },
+  {
+    "id": "mining-moa-nickel",
+    "name": "Moa Nickel + Cobalt Belt",
+    "sector": "mining",
+    "type": "Nickel/cobalt mining & processing",
+    "lat": 20.65,
+    "lng": -74.92,
+    "province": "Holguín",
+    "scale": "Holguín holds ~34% of world Ni reserves; Moa ~32,000 t Ni/yr",
+    "status": "Sherritt suspended 2026; recapitalization/restructuring opportunity",
+    "ownership": "jv",
+    "layer": "atlas",
+    "investable_us": false,
+    "sources": [
+      "USGS",
+      "Splash247"
+    ],
+    "notes": "Strategic critical minerals (Ni, Co).",
+    "confiscated": true,
+    "claim": {
+      "owner": "Moa Bay Mining Co. (Freeport Sulphur)",
+      "certified": true,
+      "value_1972": "$88.3M",
+      "current_holder": "Freeport lineage",
+      "title_iii": "none active"
+    }
+  },
+  {
+    "id": "mining-las-camariocas",
+    "name": "Las Camariocas Nickel Project",
+    "sector": "mining",
+    "type": "Stalled nickel processing greenfield",
+    "lat": 20.62,
+    "lng": -74.88,
+    "province": "Holguín",
+    "scale": "Long-stalled Soviet-era nickel plant",
+    "status": "Revival/greenfield thesis adjacent to Moa belt",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "sources": [
+      "USGS"
+    ],
+    "notes": "Approximate coordinates."
+  },
+  {
+    "id": "tobacco-vuelta-abajo",
+    "name": "Vuelta Abajo Tobacco Region",
+    "sector": "agriculture",
+    "type": "Premium cigar tobacco — world's best terroir",
+    "lat": 22.3,
+    "lng": -83.7,
+    "province": "Pinar del Río",
+    "scale": "Source of Habanos premium cigars (global luxury brand)",
+    "status": "Private farms (vegueros) exist; Habanos S.A. distribution is a JV",
+    "ownership": "jv",
+    "layer": "atlas",
+    "investable_us": false,
+    "sources": [
+      "Habanos S.A."
+    ],
+    "notes": "Habanos S.A. = Cuban state + (historically) Imperial/Allied. Private growers = potential Layer-1."
+  },
+  {
+    "id": "sugar-azcuba",
+    "name": "AZCUBA Sugar Mills Network",
+    "sector": "agriculture",
+    "type": "Sugar/ethanol/biomass complex",
+    "lat": 22.0,
+    "lng": -79.5,
+    "province": "Multi-province",
+    "scale": "Dozens of mills; output collapsed to historic lows",
+    "status": "Cogeneration (biomass) + ethanol modernization across mills",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "sources": [
+      "AZCUBA"
+    ],
+    "notes": "Ciro Redondo biomass JV is the template."
+  },
+  {
+    "id": "coffee-sierra-maestra",
+    "name": "Sierra Maestra Coffee Highlands",
+    "sector": "agriculture",
+    "type": "Specialty arabica coffee",
+    "lat": 20.05,
+    "lng": -76.8,
+    "province": "Granma/Santiago",
+    "scale": "Historic export crop; production well below potential",
+    "status": "Smallholder/private revival; specialty-export thesis",
+    "ownership": "private",
+    "layer": "invest",
+    "investable_us": true,
+    "sources": [
+      "Cuban ag press"
+    ],
+    "notes": "Smallholder coops/private farms can be Layer-1 with proper structuring."
+  },
+  {
+    "id": "biotech-cigb",
+    "name": "CIGB / BioCubaFarma Biotech Complex",
+    "sector": "biotech",
+    "type": "Genetic engineering & biotech / pharma",
+    "lat": 23.1,
+    "lng": -82.42,
+    "province": "La Habana",
+    "scale": "Cuba's globally-respected biotech sector (vaccines, monoclonals, Heberprot-P)",
+    "status": "World-class IP; export & licensing potential",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "sources": [
+      "BioCubaFarma"
+    ],
+    "notes": "State (BioCubaFarma). Heavy sanctions sensitivity."
+  },
+  {
+    "id": "tourism-old-havana",
+    "name": "Old Havana (Habana Vieja) Restoration",
+    "sector": "tourism",
+    "type": "UNESCO heritage + hospitality redevelopment",
+    "lat": 23.14,
+    "lng": -82.35,
+    "province": "La Habana",
+    "scale": "UNESCO World Heritage core; private paladares & casas particulares thriving",
+    "status": "Private hospitality (restaurants, B&Bs, boutique) = Layer-1 deal flow",
+    "ownership": "private",
+    "layer": "invest",
+    "investable_us": true,
+    "sources": [
+      "UNESCO"
+    ],
+    "notes": "State hotels = atlas; private paladares/casas = investable Layer-1."
+  },
+  {
+    "id": "tourism-trinidad",
+    "name": "Trinidad (Heritage Tourism Town)",
+    "sector": "tourism",
+    "type": "Private hospitality cluster",
+    "lat": 21.8,
+    "lng": -79.98,
+    "province": "Sancti Spíritus",
+    "scale": "UNESCO colonial town; dense private B&B / restaurant economy",
+    "status": "Strong private-sector hospitality deal flow",
+    "ownership": "private",
+    "layer": "invest",
+    "investable_us": true,
+    "sources": [
+      "UNESCO"
+    ],
+    "notes": "Layer-1: vetted private hospitality MIPYMEs."
+  },
+  {
+    "id": "private-havana-mipymes",
+    "name": "Havana MIPYME Cluster",
+    "sector": "private-sector",
+    "type": "Licensed private SMEs (paladares, retail, services, light manufacturing)",
+    "lat": 23.12,
+    "lng": -82.38,
+    "province": "La Habana",
+    "scale": "Largest concentration of Cuba's 11,000+ legalized MIPYMEs",
+    "status": "INVESTABLE NOW — diaspora/foreign equity allowed since Mar 18 2026; deploy via QvaPay wallets",
+    "ownership": "private",
+    "layer": "invest",
+    "investable_us": true,
+    "sources": [
+      "Cuba Study Group",
+      "MINCEX"
+    ],
+    "notes": "Layer-1 core. Each deal: KYC + OFAC SDN screen + ≤100-employee private-entity check + OFAC counsel."
+  },
+  {
+    "id": "private-pinar-farms",
+    "name": "Pinar del Río Private Farms",
+    "sector": "private-sector",
+    "type": "Private agricultural producers (tobacco, food)",
+    "lat": 22.42,
+    "lng": -83.7,
+    "province": "Pinar del Río",
+    "scale": "Private vegueros + food producers",
+    "status": "INVESTABLE NOW — private agricultural MIPYMEs",
+    "ownership": "private",
+    "layer": "invest",
+    "investable_us": true,
+    "sources": [
+      "Cuban ag press"
+    ],
+    "notes": "Layer-1 with structuring."
+  },
+  {
+    "id": "private-emprende-graduates",
+    "name": "Cuba Emprende Graduate Network",
+    "sector": "private-sector",
+    "type": "Trained private entrepreneurs (Slyk + QvaPay bundle pipeline)",
+    "lat": 23.13,
+    "lng": -82.36,
+    "province": "Havana / Camagüey / Cienfuegos",
+    "scale": "~5,800+ graduates / ~4,070 businesses (Proyecto Cuba Emprende)",
+    "status": "INVESTABLE NOW — pre-trained, high-intent MIPYMEs; activation via Slyk store + QvaPay wallet",
+    "ownership": "private",
+    "layer": "invest",
+    "investable_us": true,
+    "sources": [
+      "Cuba Emprende Foundation"
+    ],
+    "notes": "Layer-1 distribution channel + deal flow."
+  },
+  {
+    "id": "claim-cuban-electric",
+    "name": "Cuban Electric Company (national grid)",
+    "sector": "energy",
+    "type": "Confiscated electric utility + power plants",
+    "lat": 23.13,
+    "lng": -82.36,
+    "province": "La Habana + national",
+    "scale": "Largest single certified claim",
+    "status": "Confiscated 1960; #1 certified claim",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "confiscated": true,
+    "claim": {
+      "owner": "Cuban Electric Company",
+      "certified": true,
+      "value_1972": "$267.6M",
+      "current_holder": "Office Depot, Inc.",
+      "title_iii": "none active"
+    },
+    "sources": [
+      "Brookings/WaPo",
+      "FCSC"
+    ],
+    "notes": "Tallapiedra & Regla thermo plants + grid."
+  },
+  {
+    "id": "claim-itt-telephone",
+    "name": "Cuban Telephone Co. (ITT)",
+    "sector": "telecom",
+    "type": "Confiscated national phone system",
+    "lat": 23.14,
+    "lng": -82.36,
+    "province": "La Habana",
+    "scale": "$181.8M combined ITT/Starwood-linked",
+    "status": "Seized Mar 1959; certified claim",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "confiscated": true,
+    "claim": {
+      "owner": "ITT (as trustee)",
+      "certified": true,
+      "value_1972": "$130.7M+",
+      "current_holder": "Marriott International (via Starwood)",
+      "title_iii": "none active"
+    },
+    "sources": [
+      "Brookings/WaPo",
+      "FCSC"
+    ],
+    "notes": "Marriott controls the claim."
+  },
+  {
+    "id": "claim-exxon-belot",
+    "name": "Belot Oil Refinery (Esso/Exxon)",
+    "sector": "energy",
+    "type": "Confiscated refinery + 300+ stations",
+    "lat": 23.13,
+    "lng": -82.31,
+    "province": "La Habana",
+    "scale": "$71.6M certified; Exxon now claims >$1B",
+    "status": "ACTIVE Title III suit",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "confiscated": true,
+    "claim": {
+      "owner": "ExxonMobil (Standard Oil/Esso)",
+      "certified": true,
+      "value_1972": "$71.6M",
+      "current_holder": "ExxonMobil",
+      "title_iii": "Exxon v. CIMEX & CUPET (D.D.C.) — ongoing, D.C. Cir. remanded 2025"
+    },
+    "sources": [
+      "FCSC",
+      "Andersen",
+      "ABA"
+    ],
+    "notes": "9th-largest certified claim."
+  },
+  {
+    "id": "claim-texaco-santiago",
+    "name": "Texaco Refinery (Santiago)",
+    "sector": "energy",
+    "type": "Confiscated refinery — first expropriated (1960)",
+    "lat": 19.98,
+    "lng": -75.86,
+    "province": "Santiago de Cuba",
+    "scale": "$50.1M certified",
+    "status": "Confiscated 1960",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "confiscated": true,
+    "claim": {
+      "owner": "Texaco Inc.",
+      "certified": true,
+      "value_1972": "$50.1M",
+      "current_holder": "Chevron",
+      "title_iii": "none active"
+    },
+    "sources": [
+      "FCSC"
+    ],
+    "notes": "Now Hermanos Díaz refinery site."
+  },
+  {
+    "id": "claim-united-fruit",
+    "name": "United Fruit Sugar (Boston & Preston mills)",
+    "sector": "agriculture",
+    "type": "Confiscated sugar mills/plantations",
+    "lat": 20.96,
+    "lng": -75.71,
+    "province": "Holguín",
+    "scale": "$85.1M certified",
+    "status": "Confiscated 1960",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "confiscated": true,
+    "claim": {
+      "owner": "United Fruit Sugar Co.",
+      "certified": true,
+      "value_1972": "$85.1M",
+      "current_holder": "Chiquita lineage",
+      "title_iii": "none active"
+    },
+    "sources": [
+      "FCSC"
+    ],
+    "notes": "4th-largest certified claim."
+  },
+  {
+    "id": "claim-coca-cola",
+    "name": "Coca-Cola Bottling (Havana)",
+    "sector": "manufacturing",
+    "type": "Confiscated bottling plants",
+    "lat": 23.11,
+    "lng": -82.37,
+    "province": "La Habana",
+    "scale": "$27.5M certified",
+    "status": "Confiscated 1960",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "confiscated": true,
+    "claim": {
+      "owner": "The Coca-Cola Company",
+      "certified": true,
+      "value_1972": "$27.5M",
+      "current_holder": "The Coca-Cola Company",
+      "title_iii": "none active"
+    },
+    "sources": [
+      "FCSC"
+    ],
+    "notes": "Plants in Havana, Santiago + 4 cities."
+  },
+  {
+    "id": "claim-colgate",
+    "name": "Colgate-Palmolive Factory (Havana)",
+    "sector": "manufacturing",
+    "type": "Confiscated soap/consumer-goods factory",
+    "lat": 23.1,
+    "lng": -82.4,
+    "province": "La Habana",
+    "scale": "$14.5M certified",
+    "status": "Confiscated 1960",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "confiscated": true,
+    "claim": {
+      "owner": "Colgate-Palmolive",
+      "certified": true,
+      "value_1972": "$14.5M",
+      "current_holder": "Colgate-Palmolive",
+      "title_iii": "none active"
+    },
+    "sources": [
+      "FCSC"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "claim-havana-docks",
+    "name": "Havana Docks Cruise Terminal",
+    "sector": "ports",
+    "type": "Confiscated cruise/cargo piers — landmark Title III case",
+    "lat": 23.14,
+    "lng": -82.35,
+    "province": "La Habana",
+    "scale": "~$400M+ judgment (trebled)",
+    "status": "SCOTUS WIN May 21 2026 (8-1)",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "confiscated": true,
+    "claim": {
+      "owner": "Havana Docks Corp. (Mickael Behn)",
+      "certified": true,
+      "value_1972": "32nd-ranked",
+      "current_holder": "Behn family",
+      "title_iii": "v. Royal Caribbean/Carnival/Norwegian/MSC — affirmed by SCOTUS 2026"
+    },
+    "sources": [
+      "SCOTUS",
+      "Skadden"
+    ],
+    "notes": "The case that broadened Title III."
+  },
+  {
+    "id": "claim-el-encanto",
+    "name": "El Encanto Department Store",
+    "sector": "retail",
+    "type": "Confiscated flagship department store",
+    "lat": 23.1378,
+    "lng": -82.3618,
+    "province": "La Habana",
+    "scale": "Cuba's largest store",
+    "status": "Nationalized 1959; destroyed by arson 1961",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "confiscated": true,
+    "claim": {
+      "owner": "Solís/Entrialgo families",
+      "certified": false,
+      "value_1972": "uncertified",
+      "current_holder": "site (Parque Fe del Valle)",
+      "title_iii": "none"
+    },
+    "sources": [
+      "Wikipedia"
+    ],
+    "notes": "Galiano & San Rafael."
+  },
+  {
+    "id": "claim-hotel-nacional",
+    "name": "Hotel Nacional / Habana Riviera",
+    "sector": "tourism",
+    "type": "Confiscated landmark hotels/casinos",
+    "lat": 23.143,
+    "lng": -82.384,
+    "province": "La Habana",
+    "scale": "Iconic Vedado hotels",
+    "status": "Nationalized 1960; Lansky-linked Riviera heirs sought compensation",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "confiscated": true,
+    "claim": {
+      "owner": "various (incl. Lansky estate, Riviera)",
+      "certified": false,
+      "value_1972": "uncertified",
+      "current_holder": "heirs",
+      "title_iii": "none active"
+    },
+    "sources": [
+      "Wikipedia"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "brand-bacardi-santiago",
+    "name": "Bacardí Original Distillery (Ronera Santiago)",
+    "sector": "rum",
+    "type": "Confiscated rum distillery — birthplace of Bacardí (1862)",
+    "lat": 20.0217,
+    "lng": -75.8294,
+    "province": "Santiago de Cuba",
+    "scale": "Founding Bacardí site",
+    "status": "Seized Oct 14 1960; now state Ronera Santiago",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "confiscated": true,
+    "claim": {
+      "owner": "Bacardí family",
+      "certified": false,
+      "value_1972": "uncertified (family fled)",
+      "current_holder": "Bacardi Limited (Bermuda)",
+      "title_iii": "potential (uncertified)"
+    },
+    "sources": [
+      "Wikipedia",
+      "bacardi.com"
+    ],
+    "notes": "World's largest family spirits co.; rebuilt in PR/Mexico."
+  },
+  {
+    "id": "brand-edificio-bacardi",
+    "name": "Edificio Bacardí (Bacardi Building)",
+    "sector": "rum",
+    "type": "Confiscated Art Deco HQ landmark",
+    "lat": 23.1389,
+    "lng": -82.3571,
+    "province": "La Habana",
+    "scale": "1930 Art Deco icon, bronze bat",
+    "status": "Nationalized; now govt offices + bar",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "confiscated": true,
+    "claim": {
+      "owner": "Bacardí family",
+      "certified": false,
+      "value_1972": "uncertified",
+      "current_holder": "Bacardi Limited",
+      "title_iii": "potential"
+    },
+    "sources": [
+      "Wikipedia"
+    ],
+    "notes": "Monserrate & San Juan de Dios, Old Havana."
+  },
+  {
+    "id": "brand-arechabala-havana-club",
+    "name": "Arechabala Distillery / Havana Club origin",
+    "sector": "rum",
+    "type": "Confiscated distillery — original Havana Club (1934)",
+    "lat": 23.0366,
+    "lng": -81.206,
+    "province": "Matanzas (Cárdenas)",
+    "scale": "150-acre complex; created Havana Club",
+    "status": "Seized Jan 1 1960; rights sold to Bacardi 1994-95",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "confiscated": true,
+    "claim": {
+      "owner": "José Arechabala S.A.",
+      "certified": false,
+      "value_1972": "uncertified; sold to Bacardi",
+      "current_holder": "Bacardi (rights)",
+      "title_iii": "Havana Club trademark war: Bacardi (US) vs Pernod/Cubaexport (world)"
+    },
+    "sources": [
+      "Wikipedia",
+      "Reuters"
+    ],
+    "notes": "Centerpiece trademark dispute; courts upheld Cuba's renewal 2025-26."
+  },
+  {
+    "id": "brand-partagas",
+    "name": "Partagás Cigar Factory (Cifuentes)",
+    "sector": "cigars",
+    "type": "Confiscated cigar factory/brand (1845)",
+    "lat": 23.1344,
+    "lng": -82.3605,
+    "province": "La Habana",
+    "scale": "2nd best-selling Cuban cigar 1950s",
+    "status": "Confiscated 1960; building closed (2020 roof collapse)",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "confiscated": true,
+    "claim": {
+      "owner": "Cifuentes family",
+      "certified": false,
+      "value_1972": "uncertified",
+      "current_holder": "Habanos S.A. (Cuban) / General Cigar (non-Cuban, DR)",
+      "title_iii": "Rodríguez heirs sued over Partagás building 2020"
+    },
+    "sources": [
+      "Cigar Aficionado",
+      "Wikipedia"
+    ],
+    "notes": "Calle Industria 520, behind Capitolio."
+  },
+  {
+    "id": "brand-hupmann-montecristo",
+    "name": "H. Upmann Factory / Montecristo (Menéndez-García)",
+    "sector": "cigars",
+    "type": "Confiscated cigar factory — Montecristo created here (1935)",
+    "lat": 23.137,
+    "lng": -82.358,
+    "province": "La Habana",
+    "scale": "World's top-selling cigar brand (Montecristo)",
+    "status": "Confiscated Sept 15 1960; family fled to DR",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "confiscated": true,
+    "claim": {
+      "owner": "Menéndez & García family",
+      "certified": false,
+      "value_1972": "uncertified",
+      "current_holder": "Habanos S.A. (Cuban) / Altadis USA, La Romana DR (non-Cuban)",
+      "title_iii": "potential"
+    },
+    "sources": [
+      "Cigar Aficionado",
+      "Wikipedia"
+    ],
+    "notes": "Benji Menéndez became master blender at General Cigar."
+  },
+  {
+    "id": "brand-hoyo-punch",
+    "name": "Hoyo de Monterrey / Punch (Palicio)",
+    "sector": "cigars",
+    "type": "Confiscated cigar factory/brands",
+    "lat": 23.133,
+    "lng": -82.358,
+    "province": "La Habana",
+    "scale": "~13% of Havana cigar exports 1958",
+    "status": "Confiscated 1959-60; Palicio left for FL",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "confiscated": true,
+    "claim": {
+      "owner": "Palicio family",
+      "certified": false,
+      "value_1972": "uncertified",
+      "current_holder": "Habanos S.A. (Cuban) / General Cigar, Honduras (non-Cuban)",
+      "title_iii": "potential"
+    },
+    "sources": [
+      "Cigar Aficionado"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "brand-romeo-julieta",
+    "name": "Romeo y Julieta Cigar Factory",
+    "sector": "cigars",
+    "type": "Confiscated cigar factory/brand (1875)",
+    "lat": 23.132,
+    "lng": -82.37,
+    "province": "La Habana",
+    "scale": "World-famous brand",
+    "status": "Confiscated after 1959",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "confiscated": true,
+    "claim": {
+      "owner": "Rodríguez lineage",
+      "certified": false,
+      "value_1972": "uncertified",
+      "current_holder": "Habanos S.A. (Cuban) / Altadis USA, DR (non-Cuban)",
+      "title_iii": "potential"
+    },
+    "sources": [
+      "Wikipedia"
+    ],
+    "notes": "Belascoaín building (shared w/ El Rey del Mundo)."
+  },
+  {
+    "id": "factory-antillana-steel",
+    "name": "Antillana de Acero 'José Martí' Steelworks",
+    "sector": "manufacturing",
+    "type": "Integrated steel mill (Cuba's largest)",
+    "lat": 23.03,
+    "lng": -82.27,
+    "province": "La Habana (Cotorro)",
+    "scale": "~1,700 workers; new EAF 2023",
+    "status": "Modernization-ready, partly operating (Russian credit)",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "sources": [
+      "Granma"
+    ],
+    "notes": "GESIME."
+  },
+  {
+    "id": "factory-cement-cienfuegos",
+    "name": "Cementos Cienfuegos ('Karl Marx')",
+    "sector": "manufacturing",
+    "type": "Cement plant (largest exporter)",
+    "lat": 22.15,
+    "lng": -80.44,
+    "province": "Cienfuegos",
+    "scale": "Fuel-constrained; modernization need",
+    "status": "Partially operating",
+    "ownership": "jv",
+    "layer": "atlas",
+    "investable_us": false,
+    "sources": [
+      "Cemnet",
+      "USGS"
+    ],
+    "notes": "Historically w/ Votorantim (Brazil)."
+  },
+  {
+    "id": "factory-cement-mariel",
+    "name": "Cementos Mariel ('René Arcay')",
+    "sector": "manufacturing",
+    "type": "Cement plant",
+    "lat": 22.99,
+    "lng": -82.75,
+    "province": "Artemisa",
+    "scale": "~1,500 kt; w/ Cienfuegos = >85% national output",
+    "status": "Fuel-constrained; modernization-ready",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "sources": [
+      "USGS",
+      "ASCE"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "factory-las-camariocas",
+    "name": "Las Camariocas Nickel Plant (unfinished)",
+    "sector": "mining",
+    "type": "Half-built Soviet-era nickel plant",
+    "lat": 20.63,
+    "lng": -75.05,
+    "province": "Holguín",
+    "scale": "Construction suspended ~1996",
+    "status": "IDLE / never completed — greenfield completion",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "sources": [
+      "USGS"
+    ],
+    "notes": "Energy-intensive old tech caveat."
+  },
+  {
+    "id": "factory-nicaro-nickel",
+    "name": "Nicaro Nickel Plant ('René Ramos Latour')",
+    "sector": "mining",
+    "type": "Oldest nickel plant (US-built 1943)",
+    "lat": 20.69,
+    "lng": -75.55,
+    "province": "Holguín",
+    "scale": "Caron-process, obsolete",
+    "status": "Largely IDLE — brownfield redevelopment",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "confiscated": true,
+    "claim": {
+      "owner": "Nicaro Nickel Co.",
+      "certified": true,
+      "value_1972": "$33.0M",
+      "current_holder": "original claimant",
+      "title_iii": "none active"
+    },
+    "sources": [
+      "USGS",
+      "FCSC"
+    ],
+    "notes": "Also a certified claim."
+  },
+  {
+    "id": "factory-refinery-cienfuegos",
+    "name": "Camilo Cienfuegos Oil Refinery",
+    "sector": "energy",
+    "type": "Crude refinery (~65,000 bbl/day, largest functional)",
+    "lat": 22.13,
+    "lng": -80.42,
+    "province": "Cienfuegos",
+    "scale": "Intermittent on Russian crude",
+    "status": "Modernization + feedstock opportunity",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "sources": [
+      "OnCuba"
+    ],
+    "notes": "Originally PDVSA JV."
+  },
+  {
+    "id": "factory-textil-ariguanabo",
+    "name": "Textilera Ariguanabo (Bauta)",
+    "sector": "manufacturing",
+    "type": "Cotton/rayon textile mill — once Cuba's largest non-sugar factory",
+    "lat": 22.98,
+    "lng": -82.55,
+    "province": "Artemisa",
+    "scale": ">2,400 workers in 1958",
+    "status": "LARGELY IDLE/ABANDONED — major brownfield revival",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "confiscated": true,
+    "claim": {
+      "owner": "Dayton Hedges (US)",
+      "certified": false,
+      "value_1972": "built by US capital 1931",
+      "current_holder": "state",
+      "title_iii": "check"
+    },
+    "sources": [
+      "Racked",
+      "EcuRed"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "factory-paper-trinidad",
+    "name": "Papelera Pulpa Cuba (Trinidad)",
+    "sector": "manufacturing",
+    "type": "Pulp & paper mill",
+    "lat": 21.8,
+    "lng": -79.98,
+    "province": "Sancti Spíritus",
+    "scale": "Built 1957-59 (US tech); output ~9.5% of 1989",
+    "status": "Severely degraded — modernization/revival",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "sources": [
+      "Martí Noticias",
+      "EcuRed"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "factory-hershey-sugar",
+    "name": "Central Hershey / Camilo Cienfuegos (sugar)",
+    "sector": "agriculture",
+    "type": "Historic sugar mill + company town + electric railway",
+    "lat": 23.06,
+    "lng": -81.92,
+    "province": "Mayabeque",
+    "scale": "Closed ~2002-03 (1,300 jobs)",
+    "status": "Abandoned industrial ruin — heritage/tourism + redevelopment",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "sources": [
+      "Wikipedia"
+    ],
+    "notes": "Hershey electric rail line still notable."
+  },
+  {
+    "id": "factory-bucanero-brewery",
+    "name": "Cervecería Bucanero (Holguín)",
+    "sector": "manufacturing",
+    "type": "Brewery (Cristal, Bucanero brands)",
+    "lat": 20.89,
+    "lng": -76.26,
+    "province": "Holguín",
+    "scale": "~1M hl/yr; targeting 2M",
+    "status": "Operating, expansion-stage",
+    "ownership": "jv",
+    "layer": "atlas",
+    "investable_us": false,
+    "sources": [
+      "CiberCuba"
+    ],
+    "notes": "Historically Cuba + AB InBev/Labatt."
+  },
+  {
+    "id": "zone-zed-mariel",
+    "name": "ZED Mariel (Special Development Zone)",
+    "sector": "industry-zone",
+    "type": "465 km² special economic/industrial zone",
+    "lat": 22.99,
+    "lng": -82.75,
+    "province": "Artemisa",
+    "scale": "62+ approved businesses; 35-project portfolio",
+    "status": "Active — food, biotech, chemicals, logistics, real estate",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "sources": [
+      "Granma",
+      "OnCuba"
+    ],
+    "notes": "Foreign concessionaires (BrasCuba, Richmeat, Profood). 100% foreign ownership permitted in-zone — still U.S.-restricted."
+  }
+]

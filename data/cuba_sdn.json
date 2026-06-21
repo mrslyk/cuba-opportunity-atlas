@@ -1,0 +1,194 @@
+{
+  "retrieved": "2026-06-20",
+  "sources": [
+    { "name": "OFAC Cuba Sanctions FAQs (Topic 1541)", "url": "https://ofac.treasury.gov/faqs/topic/1541" },
+    { "name": "OFAC Newly Added FAQs (2026-05-07)", "url": "https://ofac.treasury.gov/faqs/added/2026-05-07" },
+    { "name": "Arnold & Porter — U.S. Expands Cuba Sanctions: Analysis of New EO and Early Designations", "url": "https://www.arnoldporter.com/en/perspectives/advisories/2026/06/us-expands-cuba-sanctions" },
+    { "name": "Baker McKenzie — US Continues to Expand Cuba Sanctions: New SDN Designations", "url": "https://sanctionsnews.bakermckenzie.com/us-continues-to-expand-cuba-sanctions-new-sdn-designations-and-secondary-sanctions-guidance/" },
+    { "name": "CubanInsights Cuba Sanctions Tracker (live SDN tracker)", "url": "https://cubaninsights.com/sanctions-tracker" },
+    { "name": "eCFR — 31 CFR 515.340 Independent private sector entrepreneur", "url": "https://www.ecfr.gov/current/title-31/subtitle-B/chapter-V/part-515/subpart-C/section-515.340" },
+    { "name": "eCFR — 31 CFR 515.582 Importation of goods/services from independent Cuban entrepreneurs", "url": "https://www.ecfr.gov/current/title-31/subtitle-B/chapter-V/part-515/subpart-E" },
+    { "name": "eCFR — 31 CFR 515.542 Mail and telecommunications-related transactions", "url": "https://www.ecfr.gov/current/title-31/subtitle-B/chapter-V/part-515/subpart-E/section-515.542" },
+    { "name": "eCFR — 31 CFR 515.578 Certain internet-based services; importation of software", "url": "https://www.ecfr.gov/current/title-31/subtitle-B/chapter-V/part-515/subpart-E/section-515.578" },
+    { "name": "Sullivan & Cromwell — SCOTUS Broad Reading of Title III (Havana Docks)", "url": "https://www.sullcrom.com/insights/memo/2026/May/Supreme-Court-Adopts-Broad-Reading-Key-Terms-Title-III-Helms-Burton-Act" },
+    { "name": "State Department — Section 515.582 List", "url": "https://www.state.gov/division-for-counter-threat-finance-and-sanctions/the-state-departments-section-515-582-list" }
+  ],
+  "authorities": [
+    {
+      "cite": "31 CFR 515.201(c)",
+      "what": "Anti-evasion — any transaction that evades or avoids, has the purpose of evading or avoiding, causes a violation of, or attempts to violate the embargo prohibitions is independently prohibited. Structuring around the embargo is itself a violation."
+    },
+    {
+      "cite": "31 CFR 515.209",
+      "what": "Cuba Restricted List prohibition — bars most direct financial transactions with entities/subentities on the State Department's Cuba Restricted List (CRL), which are determined to be controlled by or to benefit the Cuban military, intelligence, or security services (e.g., GAESA and its affiliates)."
+    },
+    {
+      "cite": "EO 14404 (2026-05-07)",
+      "what": "Issued May 1, 2026 (designations beginning May 7, 2026). IEEPA-based order expanding Cuba sanctions: authorizes sector-based designations of the Cuban economy and secondary sanctions on foreign financial institutions for significant transactions with blocked persons. First designation: GAESA. OFAC adopted a limited non-targeting posture for foreign-person wind-down of GAESA dealings through June 5, 2026."
+    },
+    {
+      "cite": "31 CFR 515.340",
+      "what": "Defines 'independent private sector entrepreneur' (effective May 29, 2024, replacing 'self-employed individual'): a Cuban national who is NOT a prohibited Government of Cuba official (515.337) or prohibited Communist Party member (515.338), and who is an owner (including a cuentapropista) or employee of a small private business/cooperative/sole proprietorship of up to 100 employees; an independent contractor/consultant; a small farmer who owns land; a small usufruct farmer; or a private cooperative/small business of up to 100 employees owned only by such individuals. This is the gating definition for the private-sector general licenses."
+    },
+    {
+      "cite": "31 CFR 515.582",
+      "what": "Authorizes persons subject to U.S. jurisdiction to engage in all transactions, including payments, necessary to import certain goods and services produced by independent Cuban entrepreneurs, as set out on the State Department's Section 515.582 List. Requires documentary evidence of the entrepreneur's independent (non-state-owned/controlled) status."
+    },
+    {
+      "cite": "31 CFR 515.542",
+      "what": "Authorizes all transactions, including payments, incident to mail and telecommunications services involving Cuba — data, telephone, internet connectivity, radio/TV, news wire feeds, roaming agreements, satellite transmissions — and contracts with telecom providers serving particular individuals in Cuba (excluding prohibited officials/Party members)."
+    },
+    {
+      "cite": "31 CFR 515.578",
+      "what": "Authorizes export/reexport from the U.S. to Cuba of services incident to internet communications (messaging, email, social networking, web hosting, domain registration, video conferencing, e-learning, etc.) and supporting services (software design, IT management, cloud-based services), and authorizes importation of Cuban-origin software."
+    }
+  ],
+  "general_licenses_enabling_private_sector": [
+    {
+      "cite": "515.340",
+      "authorizes": "Not a stand-alone license — defines 'independent private sector entrepreneur', the eligibility class the other private-sector GLs run through. Excludes prohibited Cuban government officials and Communist Party members; caps qualifying private businesses/cooperatives at 100 employees.",
+      "relevance": "Establishes who counts as legitimate private sector. A MIPYME or its owners must fit this definition to be a permissible counterparty, keeping the activity clear of GAESA / state-controlled (CRL) entities."
+    },
+    {
+      "cite": "515.582",
+      "authorizes": "Import into the U.S. of goods and services produced by independent Cuban entrepreneurs (per the State Department's 515.582 List), including all payments necessary, with documentary proof of independent status.",
+      "relevance": "Primary legal lane for buying from / paying Cuban private-sector producers (MIPYMEs). Supports remittance- and payment-rail flows (e.g., QvaPay) tied to genuine private-sector goods/services rather than state entities."
+    },
+    {
+      "cite": "515.542",
+      "authorizes": "Mail and telecommunications transactions and payments involving Cuba, including internet connectivity and contracts with providers serving individuals in Cuba.",
+      "relevance": "Underpins the connectivity and payment-messaging layer that fintech and digital private-sector services rely on; legitimizes paying for telecom/data services that QvaPay/MIPYME operations depend on."
+    },
+    {
+      "cite": "515.578",
+      "authorizes": "Export/reexport to Cuba of internet-based communication and supporting services (incl. software design, IT management, cloud services) and import of Cuban-origin software.",
+      "relevance": "The lane for software, fintech app delivery, and cloud/IT services to and from Cuban private-sector developers — directly relevant to a digital wallet / fintech (QvaPay-type) and to investing in MIPYME tech ventures."
+    }
+  ],
+  "sdn_entries": [
+    {
+      "name": "Grupo de Administracion Empresarial S.A. (GAESA)",
+      "program": "CUBA",
+      "type": "entity",
+      "note": "Cuban military-controlled conglomerate estimated to control ~40-80% of the Cuban economy (tourism, retail, import/export, finance). On SDN List / Cuba Restricted List since Dec 21, 2020; designation expanded under EO 14404. Foreign-person wind-down non-targeting posture ran through June 5, 2026.",
+      "date_designated": "2026-05-07"
+    },
+    {
+      "name": "Moa Nickel S.A.",
+      "program": "CUBA",
+      "type": "entity",
+      "note": "Designated alongside GAESA under EO 14404 in the first tranche of designations.",
+      "date_designated": "2026-05-07"
+    },
+    {
+      "name": "Ania Guillermina Lastres Morera",
+      "program": "CUBA",
+      "type": "individual",
+      "note": "Designated in the first EO 14404 tranche (May 7, 2026).",
+      "date_designated": "2026-05-07"
+    },
+    {
+      "name": "Ministry of the Interior (MININT)",
+      "program": "CUBA",
+      "type": "entity",
+      "note": "Cuban interior/security ministry; designated under EO 14404 in the May 18 tranche.",
+      "date_designated": "2026-05-18"
+    },
+    {
+      "name": "Policia Nacional Revolucionaria (PNR)",
+      "program": "CUBA",
+      "type": "entity",
+      "note": "Cuban national revolutionary police; designated under EO 14404.",
+      "date_designated": "2026-05-18"
+    },
+    {
+      "name": "Directorate of Intelligence (DGI)",
+      "program": "CUBA",
+      "type": "entity",
+      "note": "Cuban intelligence directorate; designated under EO 14404.",
+      "date_designated": "2026-05-18"
+    },
+    {
+      "name": "Luis Alberto Rodriguez Lopez-Calleja",
+      "program": "CUBA",
+      "type": "individual",
+      "note": "Former head of GAESA (DOB Jan 19, 1960); among eleven senior Cuban government/military figures designated in the May 18 tranche. Appears as the sole individual on the CubanInsights tracker roster.",
+      "date_designated": "2026-05-18"
+    },
+    {
+      "name": "Rosabel Gamon Verde",
+      "program": "CUBA",
+      "type": "individual",
+      "note": "Senior Cuban official designated in the May 18 EO 14404 tranche.",
+      "date_designated": "2026-05-18"
+    },
+    {
+      "name": "Ministry of the Revolutionary Armed Forces (MINFAR)",
+      "program": "CUBA",
+      "type": "entity",
+      "note": "Cuban armed forces ministry; parent of the military economic apparatus. Designated under EO 14404.",
+      "date_designated": "2026-06-04"
+    },
+    {
+      "name": "Minera La Victoria S.A.",
+      "program": "CUBA",
+      "type": "entity",
+      "note": "Designated in the June 4 EO 14404 tranche.",
+      "date_designated": "2026-06-04"
+    },
+    {
+      "name": "Committees for the Defense of the Revolution (CDR)",
+      "program": "CUBA",
+      "type": "entity",
+      "note": "Neighborhood surveillance/mass organization; designated under EO 14404.",
+      "date_designated": "2026-06-04"
+    },
+    {
+      "name": "Cuban Institute of Friendship with the Peoples (ICAP)",
+      "program": "CUBA",
+      "type": "entity",
+      "note": "Designated in the June 4 tranche, together with its affiliate Amistur Cuba S.A.",
+      "date_designated": "2026-06-04"
+    },
+    {
+      "name": "Amistur Cuba S.A.",
+      "program": "CUBA",
+      "type": "entity",
+      "note": "ICAP-affiliated travel entity; designated June 4, 2026.",
+      "date_designated": "2026-06-04"
+    },
+    {
+      "name": "Miguel Diaz-Canel Bermudez",
+      "program": "CUBA",
+      "type": "individual",
+      "note": "President of Cuba; designated under EO 14404.",
+      "date_designated": "2026-06-04"
+    },
+    {
+      "name": "Lis Cuesta Peraza",
+      "program": "CUBA",
+      "type": "individual",
+      "note": "Spouse of President Diaz-Canel; designated June 4, 2026.",
+      "date_designated": "2026-06-04"
+    },
+    {
+      "name": "Alejandro Castro Espin",
+      "program": "CUBA",
+      "type": "individual",
+      "note": "Senior figure designated in the June 4 EO 14404 tranche.",
+      "date_designated": "2026-06-04"
+    }
+  ],
+  "key_dates": [
+    { "date": "2020-12-21", "event": "GAESA originally placed on the SDN List and Cuba Restricted List" },
+    { "date": "2024-05-29", "event": "CACR amendments effective — 515.340 redefines 'independent private sector entrepreneur'; expanded private-sector general licenses" },
+    { "date": "2026-03-18", "event": "Cuba rule change allowing diaspora/foreign equity in MIPYMEs (private SMEs); formalized via Official Gazette package published May 5, 2026" },
+    { "date": "2026-05-01", "event": "EO 14404 signed — expanded IEEPA-based Cuba sanctions and secondary-sanctions authority" },
+    { "date": "2026-05-07", "event": "First EO 14404 designations: GAESA, Moa Nickel S.A., Ania Guillermina Lastres Morera" },
+    { "date": "2026-05-18", "event": "Second tranche: MININT, PNR, DGI and eleven senior officials (incl. Rodriguez Lopez-Calleja, Rosabel Gamon Verde)" },
+    { "date": "2026-05-21", "event": "SCOTUS Havana Docks ruling (8-1, Thomas, J.) broadened Title III Helms-Burton trafficking liability for use of confiscated Cuban property" },
+    { "date": "2026-06-04", "event": "Third tranche: MINFAR, Minera La Victoria, CDR, ICAP/Amistur, Diaz-Canel and Lis Cuesta Peraza, Alejandro Castro Espin" },
+    { "date": "2026-06-05", "event": "GAESA foreign-person wind-down deadline (OFAC limited non-targeting posture ends)" }
+  ],
+  "notes": "SDN roster is NOT fully enumerable from these sources. CubanInsights tracker reports 77 total Cuba-program OFAC entries (1 individual, 73 entities, 3 vessels) as of Jun 20, 2026, but does not publish per-entry designation dates and lists only one individual (Rodriguez Lopez-Calleja). The 16 entries captured here are the high-confidence named EO 14404 designations (May 7 / May 18 / June 4, 2026) plus GAESA's underlying 2020 listing, cross-confirmed across OFAC FAQs and multiple law-firm advisories. The May 18 tranche reportedly included eleven senior officials; only the named ones (Rodriguez Lopez-Calleja, Gamon Verde) are listed. The pre-2026 GAESA-affiliate entities (CIMEX subsidiaries, Cubanacan, Havanatur, Banco Nacional de Cuba, Havin Bank, vessels MAR AZUL / TIFON / EBANO) appear on the CubanInsights tracker but without reliable per-entry dates and are not individually enumerated here to avoid fabricated detail. For the authoritative full roster, consult OFAC's SDN List search (CUBA program) directly."
+}

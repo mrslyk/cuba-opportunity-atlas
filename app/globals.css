@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #070a0f;
+  --panel: #0b1018;
+  --panel-2: #111927;
+  --line: #1c2740;
+  --fog: #8da2c0;
+  --ghost: #5b6b85;
+  --text: #e8eef7;
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  background:
+    radial-gradient(1200px 600px at 80% -10%, rgba(56, 189, 248, 0.06), transparent 60%),
+    radial-gradient(900px 500px at -10% 10%, rgba(34, 197, 94, 0.05), transparent 55%),
+    var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+}
+
+@layer components {
+  .container-x {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .card {
+    @apply rounded-lg border border-[var(--line)] bg-[var(--panel)] transition-colors;
+  }
+  .card-hover {
+    @apply hover:border-[#2f415f] hover:bg-[var(--panel-2)];
+  }
+
+  .kicker {
+    @apply font-mono text-[11px] uppercase tracking-[0.18em] text-fog;
+  }
+
+  /* ── Badges ──────────────────────────────────────────────────────────────── */
+  .badge {
+    @apply inline-flex items-center gap-1 rounded border px-2 py-0.5 font-mono text-[11px] font-medium leading-none;
+  }
+  .owner-state { @apply border-state/40 bg-state/10 text-state; }
+  .owner-jv { @apply border-jv/40 bg-jv/10 text-jv; }
+  .owner-private { @apply border-private/40 bg-private/10 text-private; }
+  .legal-invest { @apply border-invest/40 bg-invest/10 text-invest; }
+  .legal-atlas { @apply border-atlas/40 bg-atlas/10 text-atlas; }
+  .badge-risk { @apply border-risk/50 bg-risk/15 text-risk; }
+  .badge-sdn { @apply border-sdn/50 bg-sdn/15 text-[#fca5a5]; }
+  .badge-muted { @apply border-[var(--line)] bg-white/5 text-fog; }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-md px-4 py-2 text-sm font-semibold transition-colors;
+  }
+  .btn-primary { @apply bg-private text-ink-950 hover:bg-[#16a34a]; }
+  .btn-ghost { @apply border border-[var(--line)] text-text hover:bg-white/5; }
+  .btn-atlas { @apply border border-atlas/40 bg-atlas/10 text-atlas hover:bg-atlas/20; }
+
+  .link { @apply text-atlas hover:underline underline-offset-2; }
+
+  .prose-cuba { @apply max-w-prose2 leading-relaxed text-[var(--fog)]; }
+  .prose-cuba h2 { @apply mt-8 mb-2 text-xl font-semibold text-text; }
+  .prose-cuba h3 { @apply mt-6 mb-1.5 font-semibold text-text; }
+  .prose-cuba p { @apply mb-3; }
+  .prose-cuba a { @apply link; }
+  .prose-cuba ul { @apply mb-3 list-disc space-y-1 pl-5; }
+}
+
+/* MapLibre overrides for the dark theme */
+.maplibregl-popup-content {
+  background: var(--panel-2);
+  color: var(--text);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 0;
+}
+.maplibregl-popup-tip { border-top-color: var(--panel-2) !important; border-bottom-color: var(--panel-2) !important; }
+.maplibregl-ctrl-group { background: var(--panel-2); border: 1px solid var(--line); }
+.maplibregl-ctrl-group button + button { border-top: 1px solid var(--line); }

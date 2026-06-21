@@ -1,0 +1,329 @@
+{
+  "list": "Cuba Restricted List",
+  "authority": "31 CFR 515.209; FY2018 NDAA; NSPM-5 (June 16, 2017)",
+  "retrieved": "2026-06-20",
+  "sources": [
+    {
+      "name": "U.S. Dept. of State - Cuba Restricted List (program page)",
+      "url": "https://www.state.gov/division-for-counter-threat-finance-and-sanctions/cuba-restricted-list"
+    },
+    {
+      "name": "Federal Register 90 FR 31558, Public Notice 12714, 'Updating Cuba Restricted List' (eff. July 14, 2025) [FR Doc 2025-13149] - BASE CONSOLIDATED LIST",
+      "url": "https://www.federalregister.gov/documents/2025/07/14/2025-13149/updating-cuba-restricted-list"
+    },
+    {
+      "name": "Federal Register raw text of 2025-13149 (used for verbatim transcription)",
+      "url": "https://www.federalregister.gov/documents/full_text/text/2025/07/14/2025-13149.txt"
+    },
+    {
+      "name": "OFAC - Newly Added FAQs (EO 14404 first designations, May 7, 2026)",
+      "url": "https://ofac.treasury.gov/faqs/added/2026-05-07"
+    },
+    {
+      "name": "U.S. Dept. of State - 'U.S. Sanctions Target Cuba's Military Regime, Elites' (June 2026)",
+      "url": "https://www.state.gov/releases/office-of-the-spokesperson/2026/05/u-s-sanctions-target-cubas-military-regime-elites"
+    },
+    {
+      "name": "Arnold & Porter - 'U.S. Expands Cuba Sanctions: Analysis of New Executive Order and Early Designations' (June 2026)",
+      "url": "https://www.arnoldporter.com/en/perspectives/advisories/2026/06/us-expands-cuba-sanctions"
+    },
+    {
+      "name": "Baker McKenzie Sanctions Blog - 'US Continues to Expand Cuba Sanctions: New SDN Designations' (June 2026)",
+      "url": "https://sanctionsnews.bakermckenzie.com/us-continues-to-expand-cuba-sanctions-new-sdn-designations-and-secondary-sanctions-guidance/"
+    }
+  ],
+  "notes": "BASE LIST: The entity roster below is transcribed verbatim from the consolidated Cuba Restricted List published in the Federal Register effective July 14, 2025 (90 FR 31558, Public Notice 12714, FR Doc 2025-13149), which is the most recent FULL machine-readable consolidated CRL. That notice added seven hotels and re-organized the list by province; all other entries were effective February 6, 2025 unless an entry-specific date is noted. The State Department program page (state.gov) is JavaScript/image-rendered and could not be machine-extracted, so the Federal Register raw text was used as the authoritative source. TOTAL ENTITY COUNT: 236 named entities/sub-entities across 11 category groups (provinces consolidated into the 'Hotels' category for the output shape, with province/cayo retained as per-entity metadata; the source breaks hotels out by province/cayo). This sits at the low end of the ~230-250 estimate; every entry is transcribed from the consolidated CRL and no fabricated entries were added. NUMBERING/CAVEATS per the notice: (1) entities owned/controlled by another listed entity are NOT themselves restricted unless separately named; (2) parenthetical activities are illustrative only. also_sdn FLAGS: As of June 2026, EO 14404 (signed May 1, 2026) created a secondary-sanctions program and OFAC/State designated certain CRL entities to the SDN List. Entities on BOTH the CRL and SDN List that are flagged also_sdn=true here: GAESA (SDN since Dec 21, 2020; re-affirmed/designated under EO 14404 May 7, 2026), MININT (SDN May 18, 2026), PNR (SDN May 18, 2026), and MINFAR (SDN June 4, 2026). Other May/June 2026 EO 14404 SDN designations (Moa Nickel S.A., Minera La Victoria S.A., Committees for the Defense of the Revolution/CDR, Cuban Institute of Friendship with the Peoples/ICAP, Amistur Cuba S.A., and several individuals such as Ania Guillermina Lastres Morera and Miguel Diaz-Canel Bermudez) are SDN-only and are NOT on the CRL, so they are intentionally NOT added as CRL entities. GAPS: Could not directly machine-read the live state.gov CRL page to detect any CRL-specific update published after July 14, 2025; no such post-July-2025 CRL update was found in searches as of 2026-06-20, so the July 14, 2025 consolidated list is treated as current.",
+  "categories": [
+    {
+      "category": "Ministries",
+      "entities": [
+        { "name": "MINFAR — Ministerio de las Fuerzas Armadas Revolucionarias", "aka": ["MINFAR", "Ministry of the Revolutionary Armed Forces"], "parent": null, "also_sdn": true, "sdn_note": "Designated to the SDN List under EO 14404 on June 4, 2026" },
+        { "name": "MININT — Ministerio del Interior", "aka": ["MININT", "Ministry of the Interior"], "parent": null, "also_sdn": true, "sdn_note": "Designated to the SDN List under EO 14404 on May 18, 2026" }
+      ]
+    },
+    {
+      "category": "Holding Companies / Conglomerates",
+      "entities": [
+        { "name": "CIMEX — Corporación CIMEX S.A.", "aka": ["CIMEX"], "parent": null, "also_sdn": false },
+        { "name": "Compañía Turística Habaguanex S.A.", "aka": ["Habaguanex"], "parent": null, "also_sdn": false },
+        { "name": "GAESA — Grupo de Administración Empresarial S.A.", "aka": ["GAESA"], "parent": null, "also_sdn": true, "sdn_note": "On OFAC SDN List since Dec 21, 2020; designated under EO 14404 on May 7, 2026" },
+        { "name": "Gaviota — Grupo de Turismo Gaviota", "aka": ["Gaviota", "Grupo de Turismo Gaviota"], "parent": null, "also_sdn": false },
+        { "name": "UIM — Unión de Industria Militar", "aka": ["UIM"], "parent": null, "also_sdn": false }
+      ]
+    },
+    {
+      "category": "Hotels",
+      "entities": [
+        { "name": "Hotel Villa Cabo de San Antonio", "parent": null, "also_sdn": false, "province": "Pinar del Rio" },
+        { "name": "Hotel Villa Maria La Gorda y Centro Internacional de Buceo", "parent": null, "also_sdn": false, "province": "Pinar del Rio" },
+        { "name": "Hostal Los Helechos", "parent": null, "also_sdn": false, "province": "Artemisa" },
+        { "name": "Aparthotel Montehabana", "parent": null, "also_sdn": false, "province": "La Habana" },
+        { "name": "Grand Aston La Habana", "parent": null, "also_sdn": false, "province": "La Habana" },
+        { "name": "Gran Hotel Bristol Kempinski", "parent": null, "also_sdn": false, "province": "La Habana" },
+        { "name": "Gran Hotel Manzana Kempinski", "parent": null, "also_sdn": false, "province": "La Habana" },
+        { "name": "H10 Habana Panorama", "parent": null, "also_sdn": false, "province": "La Habana" },
+        { "name": "Hostal Valencia", "parent": null, "also_sdn": false, "province": "La Habana" },
+        { "name": "Hotel Ambos Mundos", "parent": null, "also_sdn": false, "province": "La Habana" },
+        { "name": "Hotel Armadores de Santander", "parent": null, "also_sdn": false, "province": "La Habana" },
+        { "name": "Hotel Beltrán de Santa Cruz", "parent": null, "also_sdn": false, "province": "La Habana" },
+        { "name": "Hotel Conde de Villanueva", "parent": null, "also_sdn": false, "province": "La Habana" },
+        { "name": "Hotel del Tejadillo", "parent": null, "also_sdn": false, "province": "La Habana" },
+        { "name": "Hotel el Bosque", "parent": null, "also_sdn": false, "province": "La Habana" },
+        { "name": "Hotel el Comendador", "parent": null, "also_sdn": false, "province": "La Habana" },
+        { "name": "Hotel el Mesón de la Flota", "parent": null, "also_sdn": false, "province": "La Habana" },
+        { "name": "Hotel Florida", "parent": null, "also_sdn": false, "province": "La Habana" },
+        { "name": "Hotel Habana 612", "parent": null, "also_sdn": false, "province": "La Habana" },
+        { "name": "Hotel Kohly", "parent": null, "also_sdn": false, "province": "La Habana" },
+        { "name": "Hotel Los Frailes", "parent": null, "also_sdn": false, "province": "La Habana" },
+        { "name": "Hotel Marqués de Prado Ameno", "parent": null, "also_sdn": false, "province": "La Habana" },
+        { "name": "Hotel Marqués de Cardenas de Montehermoso", "parent": null, "also_sdn": false, "province": "La Habana" },
+        { "name": "Hotel Palacio Cueto", "parent": null, "also_sdn": false, "province": "La Habana" },
+        { "name": "Hotel Palacio del Marqués de San Felipe y Santiago de Bejucal", "parent": null, "also_sdn": false, "province": "La Habana" },
+        { "name": "Hotel Palacio O'Farrill", "parent": null, "also_sdn": false, "province": "La Habana" },
+        { "name": "Hotel Park View", "parent": null, "also_sdn": false, "province": "La Habana" },
+        { "name": "Hotel Raquel", "parent": null, "also_sdn": false, "province": "La Habana" },
+        { "name": "Hotel Regis", "parent": null, "also_sdn": false, "province": "La Habana" },
+        { "name": "Hotel San Miguel", "parent": null, "also_sdn": false, "province": "La Habana" },
+        { "name": "Hotel Telégrafo", "parent": null, "also_sdn": false, "province": "La Habana" },
+        { "name": "Hotel Terral", "parent": null, "also_sdn": false, "province": "La Habana" },
+        { "name": "Iberostar Grand Packard Hotel", "parent": null, "also_sdn": false, "province": "La Habana" },
+        { "name": "Iberostar Selection La Habana", "aka": ["Torre K"], "parent": null, "also_sdn": false, "province": "La Habana" },
+        { "name": "INNSiDE Habana Catedral", "parent": null, "also_sdn": false, "province": "La Habana" },
+        { "name": "Memories Miramar Havana", "parent": null, "also_sdn": false, "province": "La Habana" },
+        { "name": "Memories Miramar Montehabana", "parent": null, "also_sdn": false, "province": "La Habana" },
+        { "name": "SO/Havana Paseo del Prado", "parent": null, "also_sdn": false, "province": "La Habana" },
+        { "name": "Hotel Santa Isabel", "parent": null, "also_sdn": false, "province": "La Habana" },
+        { "name": "Blau Marina Varadero Resort", "aka": ["Fiesta Americana Punta Varadero", "Fiesta Club Adults Only"], "parent": null, "also_sdn": false, "province": "Matanzas" },
+        { "name": "Grand Aston Varadero Resort", "parent": null, "also_sdn": false, "province": "Matanzas" },
+        { "name": "Grand Memories Varadero", "parent": null, "also_sdn": false, "province": "Matanzas" },
+        { "name": "Hotel Las Nubes", "parent": null, "also_sdn": false, "province": "Matanzas" },
+        { "name": "Hotel Oasis", "parent": null, "also_sdn": false, "province": "Matanzas" },
+        { "name": "Iberostar Bella Vista", "parent": null, "also_sdn": false, "province": "Matanzas" },
+        { "name": "Iberostar Laguna Azul", "parent": null, "also_sdn": false, "province": "Matanzas" },
+        { "name": "Iberostar Playa Alameda", "parent": null, "also_sdn": false, "province": "Matanzas" },
+        { "name": "Meliá Marina Varadero", "parent": null, "also_sdn": false, "province": "Matanzas" },
+        { "name": "Meliá Peninsula Varadero", "parent": null, "also_sdn": false, "province": "Matanzas" },
+        { "name": "Memories Varadero", "parent": null, "also_sdn": false, "province": "Matanzas" },
+        { "name": "Naviti Varadero", "parent": null, "also_sdn": false, "province": "Matanzas" },
+        { "name": "Ocean Varadero El Patriarca", "parent": null, "also_sdn": false, "province": "Matanzas" },
+        { "name": "Ocean Vista Azul", "parent": null, "also_sdn": false, "province": "Matanzas" },
+        { "name": "Paradisus Princesa del Mar", "parent": null, "also_sdn": false, "province": "Matanzas" },
+        { "name": "Paradisus Varadero", "parent": null, "also_sdn": false, "province": "Matanzas" },
+        { "name": "Sol Sirenas Coral", "parent": null, "also_sdn": false, "province": "Matanzas" },
+        { "name": "Hotel Meliá Marina Varadero Apartments", "parent": null, "also_sdn": false, "province": "Matanzas" },
+        { "name": "Hotel El Caney Varadero", "parent": null, "also_sdn": false, "province": "Matanzas" },
+        { "name": "Varadero Sol Caribe", "parent": null, "also_sdn": false, "province": "Matanzas" },
+        { "name": "Angsana Cayo Santa María", "parent": null, "also_sdn": false, "province": "Villa Clara", "location": "Cayo Santa Maria" },
+        { "name": "Dhawa Cayo Santa María", "parent": null, "also_sdn": false, "province": "Villa Clara", "location": "Cayo Santa Maria" },
+        { "name": "Golden Tulip Aguas Claras", "aka": ["Gran Muthu Cayo Santa María"], "parent": null, "also_sdn": false, "province": "Villa Clara", "location": "Cayo Santa Maria" },
+        { "name": "Hotel Cayo Santa María", "parent": null, "also_sdn": false, "province": "Villa Clara", "location": "Cayo Santa Maria" },
+        { "name": "Hotel Playa Cayo Santa María", "parent": null, "also_sdn": false, "province": "Villa Clara", "location": "Cayo Santa Maria" },
+        { "name": "Meliá Buenavista", "parent": null, "also_sdn": false, "province": "Villa Clara", "location": "Cayo Santa Maria" },
+        { "name": "Meliá Cayo Santa María", "parent": null, "also_sdn": false, "province": "Villa Clara", "location": "Cayo Santa Maria" },
+        { "name": "Meliá Las Dunas", "parent": null, "also_sdn": false, "province": "Villa Clara", "location": "Cayo Santa Maria" },
+        { "name": "Memories Azul", "aka": ["Memories Paraíso"], "parent": null, "also_sdn": false, "province": "Villa Clara", "location": "Cayo Santa Maria" },
+        { "name": "Ocean Casa del Mar", "aka": ["Roc Casa del Mar"], "parent": null, "also_sdn": false, "province": "Villa Clara", "location": "Cayo Santa Maria" },
+        { "name": "Royalton Cayo Santa María", "parent": null, "also_sdn": false, "province": "Villa Clara", "location": "Cayo Santa Maria" },
+        { "name": "Sercotel Experience Cayo Santa María", "parent": null, "also_sdn": false, "province": "Villa Clara", "location": "Cayo Santa Maria" },
+        { "name": "Sol Cayo Santa María", "parent": null, "also_sdn": false, "province": "Villa Clara", "location": "Cayo Santa Maria" },
+        { "name": "Starfish Cayo Santa María", "parent": null, "also_sdn": false, "province": "Villa Clara", "location": "Cayo Santa Maria" },
+        { "name": "Warwick Cayo Santa María", "aka": ["Labranda Cayo Santa María Hotel"], "parent": null, "also_sdn": false, "province": "Villa Clara", "location": "Cayo Santa Maria" },
+        { "name": "Paradisus Los Cayos", "parent": null, "also_sdn": false, "province": "Villa Clara", "location": "Cayo Santa Maria" },
+        { "name": "Valentín Perla Blanca", "parent": null, "also_sdn": false, "province": "Villa Clara", "location": "Cayo Santa Maria" },
+        { "name": "Grand Aston Cayo Las Brujas Beach Resort & Spa", "parent": null, "also_sdn": false, "province": "Villa Clara", "location": "Cayo Las Brujas" },
+        { "name": "Las Salinas Plana & Spa", "parent": null, "also_sdn": false, "province": "Villa Clara", "location": "Cayo Las Brujas" },
+        { "name": "La Salina Noreste", "parent": null, "also_sdn": false, "province": "Villa Clara", "location": "Cayo Las Brujas" },
+        { "name": "La Salina Suroeste", "parent": null, "also_sdn": false, "province": "Villa Clara", "location": "Cayo Las Brujas" },
+        { "name": "Villa Las Brujas", "parent": null, "also_sdn": false, "province": "Villa Clara", "location": "Cayo Las Brujas" },
+        { "name": "Iberostar Ensenachos", "parent": null, "also_sdn": false, "province": "Villa Clara", "location": "Cayo Los Ensenachos" },
+        { "name": "Kurhotel Escambray", "parent": null, "also_sdn": false, "province": "Villa Clara", "location": "Topes de Collantes" },
+        { "name": "Los Helechos", "parent": null, "also_sdn": false, "province": "Villa Clara", "location": "Topes de Collantes" },
+        { "name": "Villa Caburni", "parent": null, "also_sdn": false, "province": "Villa Clara", "location": "Topes de Collantes" },
+        { "name": "Hotel Playa Coco Plus", "parent": null, "also_sdn": false, "province": "Ciego de Avila", "location": "Cayo Coco" },
+        { "name": "Meliá Jardines del Rey", "parent": null, "also_sdn": false, "province": "Ciego de Avila", "location": "Cayo Coco" },
+        { "name": "Memories Caribe", "parent": null, "also_sdn": false, "province": "Ciego de Avila", "location": "Cayo Coco" },
+        { "name": "Memories Flamenco", "parent": null, "also_sdn": false, "province": "Ciego de Avila", "location": "Cayo Coco" },
+        { "name": "Pestana Cayo Coco", "aka": ["Hotel Playa Paraiso"], "parent": null, "also_sdn": false, "province": "Ciego de Avila", "location": "Cayo Coco" },
+        { "name": "Cayo Guillermo Resort Kempinski", "parent": null, "also_sdn": false, "province": "Ciego de Avila", "location": "Cayo Guillermo" },
+        { "name": "Grand Muthu Cayo Guillermo", "parent": null, "also_sdn": false, "province": "Ciego de Avila", "location": "Cayo Guillermo" },
+        { "name": "Gran Muthu Imperial Hotel", "parent": null, "also_sdn": false, "province": "Ciego de Avila", "location": "Cayo Guillermo" },
+        { "name": "Gran Muthu Rainbow Hotel", "parent": null, "also_sdn": false, "province": "Ciego de Avila", "location": "Cayo Guillermo" },
+        { "name": "Iberostar Playa Pilar", "parent": null, "also_sdn": false, "province": "Ciego de Avila", "location": "Cayo Guillermo" },
+        { "name": "Blau Costa Verde Beach & Resort", "aka": ["Fiesta Americana Holguín Costa Verde"], "parent": null, "also_sdn": false, "province": "Holguín" },
+        { "name": "Hotel Playa Costa Verde", "parent": null, "also_sdn": false, "province": "Holguín" },
+        { "name": "Hotel Playa Pesquero", "parent": null, "also_sdn": false, "province": "Holguín" },
+        { "name": "Memories Holguín", "parent": null, "also_sdn": false, "province": "Holguín" },
+        { "name": "Paradisus Río de Oro Resort & Spa", "parent": null, "also_sdn": false, "province": "Holguín" },
+        { "name": "Playa Costa Verde", "parent": null, "also_sdn": false, "province": "Holguín" },
+        { "name": "Playa Pesquero Premium Service", "parent": null, "also_sdn": false, "province": "Holguín" },
+        { "name": "Sol Rio de Luna y Mares", "parent": null, "also_sdn": false, "province": "Holguín" },
+        { "name": "Sol Turquesa Beach", "parent": null, "also_sdn": false, "province": "Holguín" },
+        { "name": "Villa Cayo Naranjo", "parent": null, "also_sdn": false, "province": "Holguín" },
+        { "name": "Villa Cayo Saetia", "parent": null, "also_sdn": false, "province": "Holguín" },
+        { "name": "Villa Pinares de Mayari", "parent": null, "also_sdn": false, "province": "Holguín" },
+        { "name": "Villa Gaviota Santiago", "parent": null, "also_sdn": false, "province": "Santiago de Cuba" },
+        { "name": "Hostal 1511", "parent": null, "also_sdn": false, "province": "Guantanamo" },
+        { "name": "Hostal La Habanera", "parent": null, "also_sdn": false, "province": "Guantanamo" },
+        { "name": "Hostal La Rusa", "parent": null, "also_sdn": false, "province": "Guantanamo" },
+        { "name": "Hostal Rio Miel", "parent": null, "also_sdn": false, "province": "Guantanamo" },
+        { "name": "Hotel El Castillo", "parent": null, "also_sdn": false, "province": "Guantanamo" },
+        { "name": "Hotel Porto Santo", "parent": null, "also_sdn": false, "province": "Guantanamo" },
+        { "name": "Villa Maguana", "parent": null, "also_sdn": false, "province": "Guantanamo" }
+      ]
+    },
+    {
+      "category": "Tourist Agencies",
+      "entities": [
+        { "name": "Crucero del Sol", "parent": null, "also_sdn": false },
+        { "name": "Gaviota Tours", "parent": "Gaviota", "also_sdn": false }
+      ]
+    },
+    {
+      "category": "Marinas",
+      "entities": [
+        { "name": "Marina Gaviota Cabo de San Antonio (Pinar del Rio)", "parent": "Gaviota", "also_sdn": false },
+        { "name": "Marina Gaviota Cayo Coco (Jardines del Rey)", "parent": "Gaviota", "also_sdn": false },
+        { "name": "Marina Gaviota Las Brujas (Cayos de Villa Clara)", "parent": "Gaviota", "also_sdn": false },
+        { "name": "Marina Gaviota Puerto Vita (Holguín)", "parent": "Gaviota", "also_sdn": false },
+        { "name": "Marina Gaviota Varadero (Varadero)", "parent": "Gaviota", "also_sdn": false }
+      ]
+    },
+    {
+      "category": "Stores in Old Havana",
+      "entities": [
+        { "name": "Casa del Abanico", "parent": null, "also_sdn": false },
+        { "name": "Colección Habana", "parent": null, "also_sdn": false },
+        { "name": "Florería Jardín Wagner", "parent": null, "also_sdn": false },
+        { "name": "Joyería Coral Negro", "aka": ["Additional locations throughout Cuba"], "parent": null, "also_sdn": false },
+        { "name": "La Casa del Regalo", "parent": null, "also_sdn": false },
+        { "name": "San Ignacio 415", "parent": null, "also_sdn": false },
+        { "name": "Soldadito de Plomo", "parent": null, "also_sdn": false },
+        { "name": "Tienda El Navegante", "parent": null, "also_sdn": false },
+        { "name": "Tienda Muñecos de Leyenda", "parent": null, "also_sdn": false },
+        { "name": "Tienda Museo El Reloj Cuervo y Sobrinos", "parent": null, "also_sdn": false }
+      ]
+    },
+    {
+      "category": "Entities Directly Serving the Defense and Security Sectors",
+      "entities": [
+        { "name": "ACERPROT — Agencia de Certificación y Consultoría de Seguridad y Protección", "aka": ["Empresa de Certificación de Sistemas de Seguridad y Protección"], "parent": null, "also_sdn": false },
+        { "name": "AGROMIN — Grupo Empresarial Agropecuario del Ministerio del Interior", "parent": "MININT", "also_sdn": false },
+        { "name": "APCI — Agencia de Protección Contra Incendios", "parent": null, "also_sdn": false },
+        { "name": "CAHOMA — Empresa Militar Industrial Comandante Ernesto Che Guevara", "parent": null, "also_sdn": false },
+        { "name": "Casa Editorial Verde Olivo", "parent": null, "also_sdn": false },
+        { "name": "CASEG — Empresa Militar Industrial Transporte Occidente", "parent": null, "also_sdn": false },
+        { "name": "CID NAV — Centro de Investigación y Desarrollo Naval", "parent": null, "also_sdn": false },
+        { "name": "CIDAI — Centro de Investigación y Desarrollo de Armamento de Infantería", "parent": null, "also_sdn": false },
+        { "name": "CIDAO — Centro de Investigación y Desarrollo del Armamento de Artillería e Instrumentos Ópticos y Ópticos Electrónicos", "parent": null, "also_sdn": false },
+        { "name": "CORCEL — Empresa Militar Industrial Emilio Barcenas Pier", "parent": null, "also_sdn": false },
+        { "name": "CUBAGRO — Empresa Comercializadora y Exportadora de Productos Agropecuarios y Agroindustriales", "parent": null, "also_sdn": false },
+        { "name": "DATYS — Empresa Para El Desarrollo De Aplicaciones, Tecnologías Y Sistemas", "parent": null, "also_sdn": false },
+        { "name": "DCM TRANS — Centro de Investigación y Desarrollo del Transporte", "parent": null, "also_sdn": false },
+        { "name": "DEGOR — Empresa Militar Industrial Desembarco Del Granma", "parent": null, "also_sdn": false },
+        { "name": "DSE — Departamento de Seguridad del Estado", "parent": "MININT", "also_sdn": false },
+        { "name": "Editorial Capitán San Luis", "parent": null, "also_sdn": false },
+        { "name": "EMIAT — Empresa Importadora Exportadora de Abastecimientos Técnicos", "parent": null, "also_sdn": false },
+        { "name": "Empresa Militar Industrial Astilleros Astimar", "parent": null, "also_sdn": false },
+        { "name": "Empresa Militar Industrial Astilleros Centro", "parent": null, "also_sdn": false },
+        { "name": "Empresa Militar Industrial Yuri Gagarin", "parent": null, "also_sdn": false },
+        { "name": "ETASE — Empresa de Transporte y Aseguramiento", "parent": null, "also_sdn": false },
+        { "name": "Ferretería TRASVAL", "parent": null, "also_sdn": false },
+        { "name": "GELCOM — Centro de Investigación y Desarrollo Grito de Baire", "parent": null, "also_sdn": false },
+        { "name": "Impresos de Seguridad", "parent": null, "also_sdn": false },
+        { "name": "MECATRONICS — Centro de Investigación y Desarrollo de Electrónica y Mecánica", "parent": null, "also_sdn": false },
+        { "name": "NAZCA — Empresa Militar Industrial Granma", "parent": null, "also_sdn": false },
+        { "name": "OIBS — Organización Integración para el Bienestar Social", "parent": null, "also_sdn": false },
+        { "name": "PLAMEC — Empresa Militar Industrial Ignacio Agramonte", "parent": null, "also_sdn": false },
+        { "name": "PNR — Policía Nacional Revolucionaria", "aka": ["PNR", "Revolutionary National Police"], "parent": "MININT", "also_sdn": true, "sdn_note": "Designated to the SDN List under EO 14404 on May 18, 2026" },
+        { "name": "PROVARI — Empresa de Producciones Varias", "parent": null, "also_sdn": false },
+        { "name": "SEPSA — Servicios Especializados de Protección", "parent": null, "also_sdn": false },
+        { "name": "SERTOD — Servicios de Telecomunicaciones a los Órganos de la Defensa", "parent": null, "also_sdn": false },
+        { "name": "SIMPRO — Centro de Investigación y Desarrollo de Simuladores", "parent": null, "also_sdn": false },
+        { "name": "TECAL — Empresa de Tecnologías Alternativas", "parent": null, "also_sdn": false },
+        { "name": "TECNOPRO — Empresa Militar Industrial “G.B. Francisco Cruz Bourzac”", "parent": null, "also_sdn": false },
+        { "name": "TECNOTEX — Empresa Cubana Exportadora e Importadora de Servicios, Artículos y Productos Técnicos Especializados", "parent": null, "also_sdn": false },
+        { "name": "TGF — Tropas de Guardafronteras", "parent": "MININT", "also_sdn": false },
+        { "name": "UAM — Unión Agropecuaria Militar", "parent": null, "also_sdn": false },
+        { "name": "ULAEX — Unión Latinoamericana de Explosivos", "parent": null, "also_sdn": false },
+        { "name": "XETID — Empresa de Tecnologías de la Información Para La Defensa", "parent": null, "also_sdn": false },
+        { "name": "YABO — Empresa Militar Industrial Coronel Francisco Aguiar Rodríguez", "parent": null, "also_sdn": false }
+      ]
+    },
+    {
+      "category": "Additional Sub Entities of CIMEX",
+      "entities": [
+        { "name": "ADESA/ASAT — Agencia Servicios Aduanales (Customs Services)", "parent": "CIMEX", "also_sdn": false },
+        { "name": "American International Services (Remittances)", "aka": ["AIS Remesas"], "parent": "CIMEX", "also_sdn": false },
+        { "name": "Cachito (Beverage Manufacturer)", "parent": "CIMEX", "also_sdn": false },
+        { "name": "Contex (Fashion)", "parent": "CIMEX", "also_sdn": false },
+        { "name": "Datacimex", "parent": "CIMEX", "also_sdn": false },
+        { "name": "ECUSE — Empresa Cubana de Servicios", "parent": "CIMEX", "also_sdn": false },
+        { "name": "FINCIMEX", "parent": "CIMEX", "also_sdn": false },
+        { "name": "Inmobiliaria CIMEX (Real Estate)", "parent": "CIMEX", "also_sdn": false },
+        { "name": "Inversiones CIMEX", "parent": "CIMEX", "also_sdn": false },
+        { "name": "Jupiña (Beverage Manufacturer)", "parent": "CIMEX", "also_sdn": false },
+        { "name": "La Maisón (Fashion)", "parent": "CIMEX", "also_sdn": false },
+        { "name": "Najita (Beverage Manufacturer)", "parent": "CIMEX", "also_sdn": false },
+        { "name": "Orbit, S.A. (Remittances)", "parent": "CIMEX", "also_sdn": false, "effective": "March 10, 2025" },
+        { "name": "Publicitaria Imagen (Advertising)", "parent": "CIMEX", "also_sdn": false },
+        { "name": "Residencial Tarara S.A. (Real Estate/Property Rental)", "parent": "CIMEX", "also_sdn": false },
+        { "name": "Ron Caney (Rum Production)", "parent": "CIMEX", "also_sdn": false },
+        { "name": "Ron Varadero (Rum Production)", "parent": "CIMEX", "also_sdn": false },
+        { "name": "Telecable (Satellite Television)", "parent": "CIMEX", "also_sdn": false },
+        { "name": "Tropicola (Beverage Manufacturer)", "parent": "CIMEX", "also_sdn": false },
+        { "name": "Zona Especializada de Logística y Comercio (ZELCOM)", "parent": "CIMEX", "also_sdn": false }
+      ]
+    },
+    {
+      "category": "Additional Sub Entities of GAESA",
+      "entities": [
+        { "name": "Almacenes Universales (AUSA)", "aka": ["AUSA", "Almacenes Universales S.A."], "parent": "GAESA", "also_sdn": false },
+        { "name": "ANTEX — Corporación Antillana Exportadora", "parent": "GAESA", "also_sdn": false },
+        { "name": "Banco Financiero Internacional S.A. (BFI)", "aka": ["BFI"], "parent": "GAESA", "also_sdn": false },
+        { "name": "Compañía Inmobiliaria Aurea S.A.", "parent": "GAESA", "also_sdn": false },
+        { "name": "Dirección Integrada Proyecto Mariel (DIP)", "aka": ["DIP"], "parent": "GAESA", "also_sdn": false },
+        { "name": "Empresa Inmobiliaria Almest (Real Estate)", "aka": ["ALMEST"], "parent": "GAESA", "also_sdn": false },
+        { "name": "GRAFOS (Advertising)", "parent": "GAESA", "also_sdn": false },
+        { "name": "RAFIN S.A. (Financial Services)", "parent": "GAESA", "also_sdn": false },
+        { "name": "Sociedad Mercantin Inmobiliaria Caribe (Real Estate)", "parent": "GAESA", "also_sdn": false },
+        { "name": "TECNOIMPORT", "parent": "GAESA", "also_sdn": false },
+        { "name": "Terminal de Contenedores de la Habana (TCH)", "aka": ["TCH"], "parent": "GAESA", "also_sdn": false },
+        { "name": "Terminal de Contenedores de Mariel, S.A.", "parent": "GAESA", "also_sdn": false },
+        { "name": "UCM — Unión de Construcciones Militares", "parent": "GAESA", "also_sdn": false },
+        { "name": "Zona Especial de Desarrollo Mariel (ZEDM)", "aka": ["ZEDM"], "parent": "GAESA", "also_sdn": false },
+        { "name": "Zona Especial de Desarrollo y Actividades Logísticas (ZEDAL)", "aka": ["ZEDAL"], "parent": "GAESA", "also_sdn": false },
+        { "name": "Aerogaviota", "parent": "GAESA", "also_sdn": false }
+      ]
+    },
+    {
+      "category": "Additional Sub Entities of Gaviota",
+      "entities": [
+        { "name": "AT Comercial", "aka": ["AT Comercial S.A."], "parent": "Gaviota", "also_sdn": false },
+        { "name": "Varadero Diving Center", "parent": "Gaviota", "also_sdn": false },
+        { "name": "Gaviota Las Molas International Diving Center", "parent": "Gaviota", "also_sdn": false },
+        { "name": "Cayo Naranjo Dolphinarium", "parent": "Gaviota", "also_sdn": false },
+        { "name": "Diving Center — Marina Gaviota", "parent": "Gaviota", "also_sdn": false },
+        { "name": "Gaviota Hoteles Cuba", "parent": "Gaviota", "also_sdn": false },
+        { "name": "Hoteles Habaguanex", "parent": "Gaviota", "also_sdn": false },
+        { "name": "Hoteles Playa Gaviota", "parent": "Gaviota", "also_sdn": false },
+        { "name": "Manzana de Gomez", "parent": "Gaviota", "also_sdn": false },
+        { "name": "Marinas Gaviota Cuba", "parent": "Gaviota", "also_sdn": false },
+        { "name": "PhotoService", "parent": "Gaviota", "also_sdn": false },
+        { "name": "Plaza La Estrella", "parent": "Gaviota", "also_sdn": false },
+        { "name": "Plaza Las Dunas", "parent": "Gaviota", "also_sdn": false },
+        { "name": "Plaza Las Morlas", "parent": "Gaviota", "also_sdn": false },
+        { "name": "Plaza Las Salinas", "parent": "Gaviota", "also_sdn": false },
+        { "name": "Plaza Las Terrazas del Atardecer", "parent": "Gaviota", "also_sdn": false },
+        { "name": "Plaza Los Flamencos", "parent": "Gaviota", "also_sdn": false },
+        { "name": "Plaza Pesquero", "parent": "Gaviota", "also_sdn": false },
+        { "name": "Producciones TRIMAGEN S.A. (Tiendas Trimagen)", "parent": "Gaviota", "also_sdn": false }
+      ]
+    },
+    {
+      "category": "Additional Sub Entities of Habaguanex",
+      "entities": [
+        { "name": "Sociedad Mercantil Cubana Inmobiliaria Fenix S.A. (Real Estate)", "parent": "Habaguanex", "also_sdn": false }
+      ]
+    }
+  ]
+}

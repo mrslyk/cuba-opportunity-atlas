@@ -1,0 +1,17 @@
+<!-- Static form template so Netlify Forms detects "register-interest" at build.
+     The real form is rendered by components/InterestForm.tsx. No payments. -->
+<!DOCTYPE html>
+<html>
+  <head><meta charset="utf-8" /><title>forms</title></head>
+  <body>
+    <form name="register-interest" data-netlify="true" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="text" name="organization" />
+      <input type="text" name="capital_type" />
+      <input type="text" name="asset_id" />
+      <input type="text" name="asset_name" />
+      <textarea name="note"></textarea>
+    </form>
+  </body>
+</html>

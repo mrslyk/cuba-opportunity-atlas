@@ -1,0 +1,167 @@
+{
+  "registry": "Controlling Government & State Entities",
+  "description": "The Cuban state, military (GAESA), and line-ministry entities that own or gatekeep the assets in the Atlas — i.e. who controls the privatization of the infrastructure that would be up for investment. Sanctions flags (CRL / SDN / CPAL) are computed automatically by cross-referencing each entity's match keys against the ingested official lists; they are not hand-asserted here.",
+  "retrieved": "2026-06-20",
+  "entities": [
+    {
+      "id": "gaesa",
+      "name": "GAESA — Grupo de Administración Empresarial S.A.",
+      "aka": ["GAESA"],
+      "type": "military-holding",
+      "role": "Cuban military business conglomerate. Controls an estimated 40–80% of the economy: ports/logistics, retail (CIMEX), tourism (Gaviota), finance (FINCIMEX), import/export. The single most important — and most legally radioactive — counterparty in Cuba.",
+      "match": ["GAESA", "Grupo de Administración Empresarial"],
+      "controls": ["tc-mariel", "zone-zed-mariel", "port-havana"],
+      "sources": [{ "name": "OFAC / State Dept", "url": "https://www.state.gov/division-for-counter-threat-finance-and-sanctions/cuba-restricted-list" }]
+    },
+    {
+      "id": "almacenes-universales",
+      "name": "Almacenes Universales S.A. (AUSA)",
+      "aka": ["Almacenes Universales", "AUSA"],
+      "type": "military-holding",
+      "role": "GAESA logistics/warehousing subsidiary; owner of the ZED Mariel zone land and bonded warehousing.",
+      "match": ["Almacenes Universales"],
+      "controls": ["tc-mariel", "zone-zed-mariel"],
+      "sources": [{ "name": "Cuba Restricted List", "url": "https://www.state.gov/division-for-counter-threat-finance-and-sanctions/cuba-restricted-list" }]
+    },
+    {
+      "id": "cimex",
+      "name": "CIMEX — Corporación CIMEX S.A.",
+      "aka": ["CIMEX"],
+      "type": "military-holding",
+      "role": "GAESA's retail, remittance and import/export arm. Settlement that touches CIMEX/FINCIMEX is a prohibited path.",
+      "match": ["CIMEX"],
+      "controls": [],
+      "sources": [{ "name": "Cuba Restricted List", "url": "https://www.state.gov/division-for-counter-threat-finance-and-sanctions/cuba-restricted-list" }]
+    },
+    {
+      "id": "fincimex",
+      "name": "FINCIMEX S.A.",
+      "aka": ["FINCIMEX"],
+      "type": "military-holding",
+      "role": "GAESA financial/remittance processor. The state settlement rail Layer-1 money must NEVER route through.",
+      "match": ["FINCIMEX"],
+      "controls": [],
+      "sources": [{ "name": "Cuba Restricted List", "url": "https://www.state.gov/division-for-counter-threat-finance-and-sanctions/cuba-restricted-list" }]
+    },
+    {
+      "id": "gaviota",
+      "name": "Grupo de Turismo Gaviota S.A.",
+      "aka": ["Gaviota"],
+      "type": "military-holding",
+      "role": "GAESA tourism arm; owns/operates a large share of Cuba's hotels — most of the Prohibited Accommodations List.",
+      "match": ["Gaviota"],
+      "controls": ["claim-hotel-nacional"],
+      "sources": [{ "name": "Cuba Restricted List", "url": "https://www.state.gov/division-for-counter-threat-finance-and-sanctions/cuba-restricted-list" }]
+    },
+    {
+      "id": "une",
+      "name": "Unión Eléctrica (UNE)",
+      "aka": ["UNE", "Unión Eléctrica"],
+      "type": "state-utility",
+      "role": "National electric utility under the Ministry of Energy and Mines. Owns the thermoelectric fleet, the China-backed solar program and wind farms. State-owned and embargo-restricted, though not itself on the CRL/SDN.",
+      "match": ["Unión Eléctrica", "UNE"],
+      "controls": ["cte-guiteras", "cte-felton", "solar-national-program", "wind-la-herradura", "claim-cuban-electric"],
+      "sources": [{ "name": "CIA World Factbook / UNE", "url": "https://www.cia.gov/the-world-factbook/countries/cuba/" }]
+    },
+    {
+      "id": "cupet",
+      "name": "CUPET — Cuba Petróleo Unión",
+      "aka": ["CUPET", "Cuba Petróleo"],
+      "type": "state-holding",
+      "role": "State oil & gas monopoly: refineries, the Matanzas supertanker base, onshore oil JVs. Counterparty to confiscated-refinery Title III exposure (Exxon/Belot).",
+      "match": ["CUPET", "Cuba Petróleo"],
+      "controls": ["matanzas-tanker-base", "oil-varadero-boca-jaruco", "factory-refinery-cienfuegos", "port-cienfuegos", "claim-exxon-belot", "claim-texaco-santiago"],
+      "sources": [{ "name": "Reuters / OnCuba", "url": "https://www.cia.gov/the-world-factbook/countries/cuba/" }]
+    },
+    {
+      "id": "ufc-mitrans",
+      "name": "Unión de Ferrocarriles de Cuba (UFC) / MITRANS",
+      "aka": ["UFC", "MITRANS", "Ferrocarriles de Cuba"],
+      "type": "state-holding",
+      "role": "National railway operator under the Ministry of Transport. Controls the only railroad in the Caribbean plus the unfinished national expressway program.",
+      "match": ["Ferrocarriles de Cuba", "MITRANS"],
+      "controls": ["rail-national", "rail-central-line", "autopista-a1"],
+      "sources": [{ "name": "TASS / MITRANS", "url": "https://www.cia.gov/the-world-factbook/countries/cuba/" }]
+    },
+    {
+      "id": "ecasa",
+      "name": "ECASA — Empresa Cubana de Aeropuertos y Servicios Aeronáuticos",
+      "aka": ["ECASA"],
+      "type": "state-holding",
+      "role": "State airport authority. Operates all civil airports; Jardines del Rey is the only one part-run by a foreign operator (AENA), a template for concessions.",
+      "match": ["ECASA"],
+      "controls": ["airport-hav", "airport-cayo-coco"],
+      "sources": [{ "name": "ECASA / AENA", "url": "https://www.cia.gov/the-world-factbook/countries/cuba/" }]
+    },
+    {
+      "id": "inrh",
+      "name": "INRH — Instituto Nacional de Recursos Hidráulicos",
+      "aka": ["INRH"],
+      "type": "state-holding",
+      "role": "National water-resources institute. Controls aqueducts, utilities and desalination; the Aguas de La Habana concession (with Agbar) is the standout PPP precedent.",
+      "match": ["INRH"],
+      "controls": ["water-albear-vento", "water-aguas-habana", "desal-cayo-coco"],
+      "sources": [{ "name": "INRH / OPEC Fund", "url": "https://www.cia.gov/the-world-factbook/countries/cuba/" }]
+    },
+    {
+      "id": "moa-nickel",
+      "name": "Moa Nickel S.A. (Pedro Sotto Alba)",
+      "aka": ["Moa Nickel"],
+      "type": "joint-venture",
+      "role": "Cuban Govt 50% + Sherritt (Canada) 50% nickel/cobalt JV. Designated on the OFAC SDN list under EO 14404 (May 2026) — an active sanctions escalation.",
+      "match": ["Moa Nickel"],
+      "controls": ["mining-moa-nickel", "port-moa"],
+      "sources": [{ "name": "OFAC EO 14404", "url": "https://ofac.treasury.gov/faqs/added/2026-05-07" }]
+    },
+    {
+      "id": "azcuba",
+      "name": "AZCUBA — Grupo Azucarero",
+      "aka": ["AZCUBA"],
+      "type": "state-holding",
+      "role": "State sugar holding. Dozens of mills plus the cogeneration/ethanol modernization story (Ciro Redondo biomass JV is the template).",
+      "match": ["AZCUBA"],
+      "controls": ["sugar-azcuba", "factory-hershey-sugar"],
+      "sources": [{ "name": "AZCUBA", "url": "https://www.cia.gov/the-world-factbook/countries/cuba/" }]
+    },
+    {
+      "id": "habanos",
+      "name": "Habanos S.A.",
+      "aka": ["Habanos"],
+      "type": "joint-venture",
+      "role": "State + foreign-partner cigar distribution monopoly. Current holder of the confiscated Cuban cigar marques (Partagás, Montecristo, H. Upmann, Romeo y Julieta, Hoyo de Monterrey).",
+      "match": ["Habanos"],
+      "controls": ["tobacco-vuelta-abajo", "brand-partagas", "brand-hupmann-montecristo", "brand-hoyo-punch", "brand-romeo-julieta"],
+      "sources": [{ "name": "Habanos S.A.", "url": "https://www.cia.gov/the-world-factbook/countries/cuba/" }]
+    },
+    {
+      "id": "biocubafarma",
+      "name": "BioCubaFarma",
+      "aka": ["BioCubaFarma", "CIGB"],
+      "type": "state-holding",
+      "role": "State biotech & pharma holding (CIGB, CIM). World-class IP; heavy sanctions sensitivity on any U.S. nexus.",
+      "match": ["BioCubaFarma"],
+      "controls": ["biotech-cigb"],
+      "sources": [{ "name": "BioCubaFarma", "url": "https://www.cia.gov/the-world-factbook/countries/cuba/" }]
+    },
+    {
+      "id": "gesime",
+      "name": "GESIME — Grupo Empresarial de la Industria Sidero Mecánica",
+      "aka": ["GESIME"],
+      "type": "state-holding",
+      "role": "State steel & machinery group; controls Antillana de Acero, Cuba's largest steelworks.",
+      "match": ["GESIME"],
+      "controls": ["factory-antillana-steel"],
+      "sources": [{ "name": "Granma", "url": "https://www.cia.gov/the-world-factbook/countries/cuba/" }]
+    },
+    {
+      "id": "mincex-procuba",
+      "name": "MINCEX / ProCuba (FDI gatekeeper)",
+      "aka": ["MINCEX", "ProCuba"],
+      "type": "gatekeeper",
+      "role": "Ministry of Foreign Trade & Investment and its promotion arm. Does not own assets — it approves every foreign-investment deal and publishes the official 'Cartera de Oportunidades'. The gate every state privatization must pass through.",
+      "match": ["MINCEX", "ProCuba"],
+      "controls": [],
+      "sources": [{ "name": "MINCEX / ProCuba", "url": "https://www.cia.gov/the-world-factbook/countries/cuba/" }]
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "country": "Cuba",
+  "retrieved": "2026-06-20",
+  "sources": [
+    {
+      "name": "CIA World Factbook — Cuba (current edition, accessed via Theodora.com mirror; cia.gov blocked automated access)",
+      "url": "https://www.cia.gov/the-world-factbook/countries/cuba/"
+    },
+    {
+      "name": "CIA World Factbook — Cuba Economy page (Theodora mirror)",
+      "url": "https://theodora.com/wfbcurrent/cuba/cuba_economy.html"
+    },
+    {
+      "name": "CIA World Factbook — Cuba People & Society / Energy / Communications (Theodora mirror)",
+      "url": "https://theodora.com/wfbcurrent/cuba/cuba_people.html"
+    },
+    {
+      "name": "World Bank Open Data — Cuba (cross-check)",
+      "url": "https://data.worldbank.org/country/cuba"
+    }
+  ],
+  "population": {
+    "value": "10,985,974",
+    "year": "2023 est.",
+    "growth_rate": "-0.19% (2023 est.)",
+    "note": "Population is declining due to negative growth and net out-migration (-2.5 migrants/1,000). World Bank estimates ~11.0 million."
+  },
+  "gdp": {
+    "ppp": "$137 billion (in 2016 US dollars)",
+    "official": "$93.79 billion (official exchange rate, at 1 CUP = 1 US$)",
+    "year": "2017 est. (PPP and official exchange rate)",
+    "real_growth": "1.25% (2021 est.); -10.95% (2020 est.); -0.16% (2019 est.). World Bank cross-check: approximately -1.1% (2024).",
+    "per_capita": "$12,300 (2016 est., in 2016 US dollars). World Bank current-US$ per capita cross-check: ~$9,600 (2024)."
+  },
+  "gdp_composition_by_sector": {
+    "agriculture": "4%",
+    "industry": "22.7%",
+    "services": "73.4%",
+    "year": "2017 est."
+  },
+  "labor_force": {
+    "total": "5.135 million",
+    "by_occupation": {
+      "agriculture": null,
+      "industry": null,
+      "services": null
+    },
+    "year": "2021 est.",
+    "note": "The Factbook no longer reports a labor-force-by-occupation (agriculture/industry/services) breakdown for Cuba. It instead reports the sector split: state sector 72.3%, non-state sector 27.7% (2021 est.). Unemployment rate 2.76% (2021 est.); unofficial estimates roughly double."
+  },
+  "major_industries": [
+    "petroleum",
+    "nickel",
+    "cobalt",
+    "pharmaceuticals",
+    "tobacco",
+    "construction",
+    "steel",
+    "cement",
+    "agricultural machinery",
+    "sugar"
+  ],
+  "exports": {
+    "value": "$2.63 billion (2017 est.); $2.546 billion (2016 est.)",
+    "year": "2017 est. (value); commodities 2021; partners 2019",
+    "commodities": [
+      "cigars",
+      "nickel",
+      "sugar",
+      "rum",
+      "zinc"
+    ],
+    "partners": [
+      "China 38%",
+      "Spain 11%",
+      "Netherlands 5%",
+      "Germany 5%"
+    ],
+    "note": "Data are in current-year dollars and exclude illicit exports or re-exports. Commodities figures are 2021; partner shares are 2019."
+  },
+  "imports": {
+    "value": "$11.06 billion (2017 est.); $10.28 billion (2016 est.)",
+    "year": "2017 est. (value); commodities & partners 2019",
+    "commodities": [
+      "poultry meat",
+      "wheat",
+      "soybean products",
+      "corn",
+      "concentrated milk"
+    ],
+    "partners": [
+      "Spain 19%",
+      "China 15%",
+      "Italy 6%",
+      "Canada 5%",
+      "Russia 5%",
+      "United States 5%",
+      "Brazil 5%"
+    ]
+  },
+  "energy": {
+    "electrification_pct": "100% of total population (2021)",
+    "installed_capacity": "7.479 million kW (2020 est.)",
+    "generation_mix": "fossil fuels 95.5%, biomass and waste 2.7%, solar 1.4%, hydroelectricity 0.3%, wind 0.1%, nuclear 0% (share of total installed capacity, 2020 est.)",
+    "year": "2020-2021 est.",
+    "note": "Consumption 16,097,460,000 kWh (2019 est.); transmission/distribution losses 3.429 billion kWh (2019 est.). Petroleum production 38,400 bbl/day (2021 est.); crude oil reserves ~124 million barrels (2021 est.). Despite 100% nominal electrification, Cuba has faced severe, recurring grid failures and rolling blackouts in recent years not captured by these Factbook figures."
+  },
+  "telecom": {
+    "internet_users_pct": "71% of population (2021 est.); 7.81 million users",
+    "mobile_subscriptions": "7,103,296 total mobile-cellular subscriptions; 63 per 100 inhabitants (2021 est.)",
+    "year": "2021 est.",
+    "note": "Factbook structured field reports 71% internet penetration (2021 est.), but its own telecom assessment text states only ~64% of Cubans have internet access and ~60% have cell service. Fixed-line subscriptions 1,573,526 (2022 est., ~14 per 100). Fixed broadband only ~2 per 100 (2020 est.). State controls the telecom sector; access is censored; Cuba has among the lowest mobile/internet rates in the region."
+  },
+  "challenges": [
+    "Still largely state-run, centrally planned economy; private sector only gradually expanding under the new constitution",
+    "Chronic shortages of basic necessities (food, medicine, fuel) and severe, recurring electricity blackouts driving public protests",
+    "Heavy import dependence: imports (~$11 billion) dwarf exports (~$2.6 billion), producing a large structural trade deficit",
+    "Dependence on Venezuela via the oil-for-doctors relationship, exposing Cuba to a key partner's instability",
+    "US economic embargo constraining trade, finance, and investment",
+    "High public debt and budget deficit (deficit ~10.8% of GDP, 2017 est.); weak external reserves and external debt ~$30 billion",
+    "Dual/volatile currency legacy and distorted official exchange rate; high inflation pressures",
+    "Declining and aging population (negative growth, high out-migration, elderly dependency ratio rising) shrinking the labor force",
+    "Widespread corruption",
+    "Low telecom/internet penetration and state censorship hindering the digital economy"
+  ],
+  "notes": "PRIMARY DATA STALENESS CAVEAT: The CIA World Factbook's core macroeconomic figures for Cuba are notably stale — GDP (PPP and official), GDP composition by sector, exports/imports values, and fiscal data are all 2017 estimates (PPP per capita is 2016). The most recent figures are real GDP growth and labor force (2021 est.) and population (2023 est.). Cuba publishes limited and unreliable official statistics, so even authoritative cross-checks diverge: World Bank current-US$ figures imply GDP ~$107 billion and per-capita ~$9,600 with negative growth (~-1.1%) in 2024, which is not directly comparable to the Factbook's 2016-dollar PPP basis. Where the Factbook field value and its own narrative disagree (internet penetration 71% vs ~64%), both are noted. Data accessed via the Theodora.com mirror of the current Factbook because cia.gov blocked automated retrieval (HTTP 403); figures match the current CIA World Factbook edition. Fields the Factbook does not provide for Cuba (labor force by occupation) are set to null."
+}
