@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     template: "%s · Cuba Opportunity Atlas",
   },
   description:
-    "The map-first intelligence atlas of Cuba's economy: every major asset, who controls it, what needs to be built, who it was confiscated from — and the licensed private-sector slice that is legally investable today.",
+    "The map-first intelligence atlas of Cuba's economy: every major asset, who controls it, what needs to be built, who it was confiscated from — and the licensed private-sector slice you can legally support today via QvaPay.",
   openGraph: {
     title: "Cuba Opportunity Atlas",
     description:

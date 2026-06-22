@@ -13,7 +13,7 @@ type Change = {
   from: string;
   to: string;
   kind: "status" | "screening" | "new";
-  flip?: boolean; // would flip to investable — requires explicit approval
+  flip?: boolean; // would flip to supportable (Layer-1) — requires explicit approval
 };
 
 const MOCK_QUEUE: Change[] = [
@@ -82,7 +82,7 @@ export default function AdminPage() {
                 <button onClick={() => act(c, "reject")} className="btn btn-ghost px-3 py-1.5 text-xs">Reject</button>
               </div>
             </div>
-            {c.flip && <div className="mt-2 badge legal-invest">⚠️ Would flip to Investable — Layer-1</div>}
+            {c.flip && <div className="mt-2 badge legal-invest">⚠️ Would flip to Supportable — Layer-1</div>}
           </div>
         ))}
       </div>

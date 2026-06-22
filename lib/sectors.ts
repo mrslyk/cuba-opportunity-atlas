@@ -11,7 +11,7 @@ export const SECTORS: Record<string, SectorMeta> = {
   agriculture: { key: "agriculture", label: "Agriculture", color: "#84cc16", blurb: "Tobacco, sugar, coffee — terroir the world pays a premium for." },
   biotech: { key: "biotech", label: "Biotech", color: "#2dd4bf", blurb: "Globally respected vaccines and monoclonals; export-grade IP." },
   tourism: { key: "tourism", label: "Tourism", color: "#f472b6", blurb: "Heritage cities and the dollarized cays; private hospitality." },
-  "private-sector": { key: "private-sector", label: "Private sector", color: "#22c55e", blurb: "Licensed MIPYMEs — the only lane investable today." },
+  "private-sector": { key: "private-sector", label: "Private sector", color: "#22c55e", blurb: "Licensed MIPYMEs — the only lane supportable today (via QvaPay)." },
   telecom: { key: "telecom", label: "Telecom", color: "#60a5fa", blurb: "Confiscated phone system; a thin, state-controlled network." },
   manufacturing: { key: "manufacturing", label: "Manufacturing", color: "#fb7185", blurb: "Steel, cement, textiles, breweries — brownfield revivals." },
   retail: { key: "retail", label: "Retail", color: "#e879f9", blurb: "Confiscated department stores; GAESA-controlled chains today." },

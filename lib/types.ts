@@ -7,7 +7,11 @@ import { z } from "zod";
    ──────────────────────────────────────────────────────────────────────────── */
 
 export const Ownership = z.enum(["state", "jv", "private"]);
-export const Layer = z.enum(["atlas", "invest"]);
+// "atlas" = state/JV infrastructure, information only.
+// "opportunity" = licensed private sector — U.S. persons participate via
+// OFAC-authorized remittances/payments through QvaPay (NOT equity investment).
+export const Layer = z.enum(["atlas", "opportunity"]);
+export const Participation = z.enum(["support_via_qvapay"]);
 
 export const ClaimSchema = z.object({
   owner: z.string(),
@@ -31,21 +35,27 @@ export const OpportunitySchema = z
     status: z.string().optional().default(""),
     ownership: Ownership,
     layer: Layer,
-    investable_us: z.boolean(),
+    investable_us: z.boolean(), // retained for audit; MUST be false (no equity lane)
+    participation: Participation.optional(),
+    helms_burton_overhang: z.boolean().optional().default(false),
+    footnote: z.string().optional().default(""),
     sources: z.array(z.string()).default([]),
     notes: z.string().optional().default(""),
     confiscated: z.boolean().optional().default(false),
     claim: ClaimSchema.optional(),
   })
-  .refine((o) => !(o.investable_us === true && o.ownership !== "private"), {
+  // HARD RULE (§0/§10): there is NO equity-investment lane. No asset may be
+  // marked investable_us=true — U.S. participation is remittance/payment support only.
+  .refine((o) => o.investable_us === false, {
     message:
-      "COMPLIANCE VIOLATION: investable_us=true is only permitted when ownership='private'.",
+      "COMPLIANCE VIOLATION: investable_us must be false — U.S. participation is via QvaPay remittances/payments, not equity.",
     path: ["investable_us"],
   })
-  .refine((o) => !(o.investable_us === true && o.layer !== "invest"), {
+  // Support is permitted only on licensed private-sector ('opportunity') entries.
+  .refine((o) => !(o.participation === "support_via_qvapay" && !(o.ownership === "private" && o.layer === "opportunity")), {
     message:
-      "COMPLIANCE VIOLATION: investable_us=true requires layer='invest'.",
-    path: ["investable_us"],
+      "COMPLIANCE VIOLATION: participation=support_via_qvapay requires ownership='private' AND layer='opportunity'.",
+    path: ["participation"],
   })
   .refine((o) => !(o.confiscated === true && !o.claim), {
     message: "A confiscated asset must carry a claim object.",

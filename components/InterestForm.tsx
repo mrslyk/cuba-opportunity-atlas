@@ -62,8 +62,8 @@ export function InterestForm({ assetId, assetName }: { assetId: string; assetNam
       </div>
       <textarea name="note" rows={2} placeholder="Optional note" className="w-full rounded bg-[var(--panel-2)] px-2 py-2 text-sm text-text placeholder:text-ghost" />
       <p className="text-[11px] text-ghost">
-        Non-binding indication for the pipeline. This asset is not investable by U.S. persons today.
-        No payment path is offered or implied.
+        Non-binding indication for the pipeline. This asset is information only — no U.S. participation
+        today. No payment path is offered or implied.
       </p>
       {error && <p className="text-xs text-state">{error}</p>}
       <button type="submit" className="btn btn-atlas w-full">Register interest</button>

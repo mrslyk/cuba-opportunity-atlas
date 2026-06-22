@@ -1,11 +1,12 @@
 import { describe, it, expect } from "vitest";
-import { enriched, investable } from "./data";
-import { canInvest, titleIIILevel } from "./compliance";
+import { enriched, supportable, confiscated } from "./data";
+import { canSupport, titleIIILevel } from "./compliance";
 
-/* The 6 Layer-1 entries that are legally investable by U.S. persons today.
-   This list is the contract. If a data change adds/removes an Invest button,
-   this test must change with it — deliberately, never accidentally. */
-const EXPECTED_INVESTABLE = [
+/* The 6 licensed private-sector entries U.S. persons may SUPPORT via QvaPay
+   (OFAC-authorized remittances/payments — NOT equity). This list is the contract.
+   If a data change adds/removes a Support button, this test must change with it —
+   deliberately, never accidentally. */
+const EXPECTED_SUPPORTABLE = [
   "coffee-sierra-maestra",
   "tourism-old-havana",
   "tourism-trinidad",
@@ -15,28 +16,32 @@ const EXPECTED_INVESTABLE = [
 ].sort();
 
 describe("compliance engine — the hard rule (§0/§10)", () => {
-  it("exposes Invest for EXACTLY the six private-sector Layer-1 entries", () => {
-    expect(investable.map((o) => o.id).sort()).toEqual(EXPECTED_INVESTABLE);
+  it("exposes Support for EXACTLY the six private-sector entries", () => {
+    expect(supportable.map((o) => o.id).sort()).toEqual(EXPECTED_SUPPORTABLE);
   });
 
-  it("never exposes Invest on a state or JV asset", () => {
+  it("never marks any asset investable_us=true (no equity lane)", () => {
+    for (const o of enriched) expect(o.investable_us).toBe(false);
+  });
+
+  it("never exposes Support on a state or JV asset", () => {
     for (const o of enriched) {
       if (o.ownership === "state" || o.ownership === "jv") {
-        expect(o.investable).toBe(false);
+        expect(o.supportable).toBe(false);
       }
     }
   });
 
-  it("never exposes Invest on an atlas-layer asset", () => {
+  it("never exposes Support on an atlas-layer asset", () => {
     for (const o of enriched) {
-      if (o.layer === "atlas") expect(o.investable).toBe(false);
+      if (o.layer === "atlas") expect(o.supportable).toBe(false);
     }
   });
 
-  it("blocks Invest when the controlling counterparty is sanctioned", () => {
+  it("blocks Support when the controlling counterparty is sanctioned", () => {
     for (const o of enriched) {
       if (o.flags.crl || o.flags.sdn || o.flags.cpal) {
-        expect(canInvest(o, o.flags)).toBe(false);
+        expect(canSupport(o, o.flags)).toBe(false);
       }
     }
   });
@@ -51,14 +56,17 @@ describe("compliance engine — the hard rule (§0/§10)", () => {
 
 describe("Helms-Burton / Title III classification", () => {
   it("classifies Havana Docks as active risk", () => {
-    const o = enriched.find((x) => x.id === "claim-havana-docks")!;
-    expect(o.titleIII).toBe("active");
+    expect(enriched.find((x) => x.id === "claim-havana-docks")!.titleIII).toBe("active");
   });
   it("classifies Exxon/Belot as active risk", () => {
-    const o = enriched.find((x) => x.id === "claim-exxon-belot")!;
-    expect(o.titleIII).toBe("active");
+    expect(enriched.find((x) => x.id === "claim-exxon-belot")!.titleIII).toBe("active");
   });
   it("treats 'none active' claims as no live Title III risk", () => {
     expect(titleIIILevel({ owner: "x", certified: true, value_1972: "", current_holder: "", title_iii: "none active" })).toBe("none");
+  });
+  it("the helms_burton_overhang flag aligns with the confiscated set", () => {
+    const overhang = enriched.filter((o) => o.overhang).map((o) => o.id).sort();
+    const confiscatedIds = confiscated.map((o) => o.id).sort();
+    expect(overhang).toEqual(confiscatedIds);
   });
 });

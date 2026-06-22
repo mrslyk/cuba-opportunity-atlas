@@ -8,8 +8,8 @@ export function OwnershipBadge({ o }: { o: EnrichedOpportunity }) {
 }
 
 export function LegalBadge({ o }: { o: EnrichedOpportunity }) {
-  return o.investable ? (
-    <span className="badge legal-invest">✅ Investable today</span>
+  return o.supportable ? (
+    <span className="badge legal-invest">✅ Supportable via QvaPay</span>
   ) : (
     <span className="badge legal-atlas">ℹ️ Atlas — info only</span>
   );

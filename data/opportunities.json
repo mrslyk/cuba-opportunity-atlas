@@ -16,7 +16,8 @@
       "Seatrade",
       "BNamericas"
     ],
-    "notes": "Terminal operated by PSA (Singapore); zone owned by Almacenes Universales (GAESA — Restricted List)."
+    "notes": "Terminal operated by PSA (Singapore); zone owned by Almacenes Universales (GAESA — Restricted List).",
+    "helms_burton_overhang": false
   },
   {
     "id": "port-havana",
@@ -34,7 +35,8 @@
     "sources": [
       "Seatrade"
     ],
-    "notes": "Cruise terminal under concession to Global Ports Holding (Turkey) + Cuban partner Aries S.A."
+    "notes": "Cruise terminal under concession to Global Ports Holding (Turkey) + Cuban partner Aries S.A.",
+    "helms_burton_overhang": false
   },
   {
     "id": "port-santiago",
@@ -60,7 +62,8 @@
       "value_1972": "196th-ranked uncertified",
       "current_holder": "García-Bengochea family",
       "title_iii": "v. Carnival/Royal Caribbean/Norwegian/MSC + Airbnb; subject to Havana Docks SCOTUS reasoning"
-    }
+    },
+    "helms_burton_overhang": true
   },
   {
     "id": "port-cienfuegos",
@@ -78,7 +81,8 @@
     "sources": [
       "BNamericas"
     ],
-    "notes": "Refinery historically Cuvenpetrol (Cuba-Venezuela JV)."
+    "notes": "Refinery historically Cuvenpetrol (Cuba-Venezuela JV).",
+    "helms_burton_overhang": false
   },
   {
     "id": "port-moa",
@@ -105,7 +109,8 @@
       "value_1972": "$88.3M",
       "current_holder": "Freeport lineage",
       "title_iii": "none active"
-    }
+    },
+    "helms_burton_overhang": true
   },
   {
     "id": "matanzas-tanker-base",
@@ -123,7 +128,8 @@
     "sources": [
       "Reuters"
     ],
-    "notes": "CUPET; reconstruction backed by Venezuela/China."
+    "notes": "CUPET; reconstruction backed by Venezuela/China.",
+    "helms_burton_overhang": false
   },
   {
     "id": "port-antilla",
@@ -141,7 +147,8 @@
     "sources": [
       "Cuba Strategic Partners"
     ],
-    "notes": "AntillaPort hub is a marketing concept, not a funded project."
+    "notes": "AntillaPort hub is a marketing concept, not a funded project.",
+    "helms_burton_overhang": false
   },
   {
     "id": "rail-national",
@@ -160,7 +167,8 @@
       "TASS",
       "Wikipedia"
     ],
-    "notes": "UFC/MITRANS."
+    "notes": "UFC/MITRANS.",
+    "helms_burton_overhang": false
   },
   {
     "id": "rail-central-line",
@@ -178,7 +186,8 @@
     "sources": [
       "TASS"
     ],
-    "notes": "Havana → Santa Clara → Camagüey → Santiago."
+    "notes": "Havana → Santa Clara → Camagüey → Santiago.",
+    "helms_burton_overhang": false
   },
   {
     "id": "airport-hav",
@@ -197,7 +206,8 @@
       "ECASA",
       "Cuban press"
     ],
-    "notes": "ECASA."
+    "notes": "ECASA.",
+    "helms_burton_overhang": false
   },
   {
     "id": "airport-cayo-coco",
@@ -215,7 +225,8 @@
     "sources": [
       "AENA"
     ],
-    "notes": "ECASA + AENA."
+    "notes": "ECASA + AENA.",
+    "helms_burton_overhang": false
   },
   {
     "id": "autopista-a1",
@@ -233,7 +244,8 @@
     "sources": [
       "Wikipedia"
     ],
-    "notes": "Havana → Santa Clara → Taguasco (eastern terminus)."
+    "notes": "Havana → Santa Clara → Taguasco (eastern terminus).",
+    "helms_burton_overhang": false
   },
   {
     "id": "cte-guiteras",
@@ -252,7 +264,8 @@
       "Microgrid Media",
       "Cuban press"
     ],
-    "notes": "Unión Eléctrica (UNE)."
+    "notes": "Unión Eléctrica (UNE).",
+    "helms_burton_overhang": false
   },
   {
     "id": "cte-felton",
@@ -270,7 +283,8 @@
     "sources": [
       "GEM Wiki"
     ],
-    "notes": "UNE."
+    "notes": "UNE.",
+    "helms_burton_overhang": false
   },
   {
     "id": "solar-national-program",
@@ -289,7 +303,8 @@
       "Microgrid Media",
       "Power Technology"
     ],
-    "notes": "UNE + Chinese supply. Solar tripled to >20% of generation in one year."
+    "notes": "UNE + Chinese supply. Solar tripled to >20% of generation in one year.",
+    "helms_burton_overhang": false
   },
   {
     "id": "biomass-ciro-redondo",
@@ -307,7 +322,8 @@
     "sources": [
       "Havana Energy"
     ],
-    "notes": "Havana Energy (UK) 51% / Zerus (Cuba) 49%; EPC Shanghai Electric."
+    "notes": "Havana Energy (UK) 51% / Zerus (Cuba) 49%; EPC Shanghai Electric.",
+    "helms_burton_overhang": false
   },
   {
     "id": "oil-varadero-boca-jaruco",
@@ -325,7 +341,8 @@
     "sources": [
       "Reuters"
     ],
-    "notes": "CUPET + Russia's Zarubezhneft JV."
+    "notes": "CUPET + Russia's Zarubezhneft JV.",
+    "helms_burton_overhang": false
   },
   {
     "id": "wind-la-herradura",
@@ -343,7 +360,8 @@
     "sources": [
       "GEM Wiki"
     ],
-    "notes": "UNE."
+    "notes": "UNE.",
+    "helms_burton_overhang": false
   },
   {
     "id": "water-albear-vento",
@@ -362,7 +380,8 @@
       "INRH",
       "OPEC Fund"
     ],
-    "notes": "Operated by Aguas de La Habana."
+    "notes": "Operated by Aguas de La Habana.",
+    "helms_burton_overhang": false
   },
   {
     "id": "water-aguas-habana",
@@ -380,7 +399,8 @@
     "sources": [
       "OPEC Fund"
     ],
-    "notes": "Historically INRH 50% + Agbar (Spain) ~45% + Grupo Martinón ~5%."
+    "notes": "Historically INRH 50% + Agbar (Spain) ~45% + Grupo Martinón ~5%.",
+    "helms_burton_overhang": false
   },
   {
     "id": "desal-cayo-coco",
@@ -398,7 +418,8 @@
     "sources": [
       "INRH"
     ],
-    "notes": "Tourism entities."
+    "notes": "Tourism entities.",
+    "helms_burton_overhang": false
   },
   {
     "id": "mining-moa-nickel",
@@ -425,7 +446,8 @@
       "value_1972": "$88.3M",
       "current_holder": "Freeport lineage",
       "title_iii": "none active"
-    }
+    },
+    "helms_burton_overhang": true
   },
   {
     "id": "mining-las-camariocas",
@@ -443,7 +465,8 @@
     "sources": [
       "USGS"
     ],
-    "notes": "Approximate coordinates."
+    "notes": "Approximate coordinates.",
+    "helms_burton_overhang": false
   },
   {
     "id": "tobacco-vuelta-abajo",
@@ -461,7 +484,8 @@
     "sources": [
       "Habanos S.A."
     ],
-    "notes": "Habanos S.A. = Cuban state + (historically) Imperial/Allied. Private growers = potential Layer-1."
+    "notes": "Habanos S.A. = Cuban state + (historically) Imperial/Allied. Private growers = potential Layer-1.",
+    "helms_burton_overhang": false
   },
   {
     "id": "sugar-azcuba",
@@ -479,7 +503,8 @@
     "sources": [
       "AZCUBA"
     ],
-    "notes": "Ciro Redondo biomass JV is the template."
+    "notes": "Ciro Redondo biomass JV is the template.",
+    "helms_burton_overhang": false
   },
   {
     "id": "coffee-sierra-maestra",
@@ -492,12 +517,15 @@
     "scale": "Historic export crop; production well below potential",
     "status": "Smallholder/private revival; specialty-export thesis",
     "ownership": "private",
-    "layer": "invest",
-    "investable_us": true,
+    "layer": "opportunity",
+    "investable_us": false,
     "sources": [
       "Cuban ag press"
     ],
-    "notes": "Smallholder coops/private farms can be Layer-1 with proper structuring."
+    "notes": "Smallholder coops/private farms can be Layer-1 with proper structuring.",
+    "helms_burton_overhang": false,
+    "participation": "support_via_qvapay",
+    "footnote": "Clean title — no Helms-Burton/Title III overhang. U.S. participation is via OFAC-authorized remittances & payments through QvaPay (31 CFR §515.570(g) / §515.582), NOT equity in the Cuban entity; equity is taken only in U.S.-side vehicles. CACR bars U.S.-person equity in Cuban entities (§515.201; §515.570 Note 1; OFAC FAQ 758)."
   },
   {
     "id": "biotech-cigb",
@@ -515,7 +543,8 @@
     "sources": [
       "BioCubaFarma"
     ],
-    "notes": "State (BioCubaFarma). Heavy sanctions sensitivity."
+    "notes": "State (BioCubaFarma). Heavy sanctions sensitivity.",
+    "helms_burton_overhang": false
   },
   {
     "id": "tourism-old-havana",
@@ -528,12 +557,15 @@
     "scale": "UNESCO World Heritage core; private paladares & casas particulares thriving",
     "status": "Private hospitality (restaurants, B&Bs, boutique) = Layer-1 deal flow",
     "ownership": "private",
-    "layer": "invest",
-    "investable_us": true,
+    "layer": "opportunity",
+    "investable_us": false,
     "sources": [
       "UNESCO"
     ],
-    "notes": "State hotels = atlas; private paladares/casas = investable Layer-1."
+    "notes": "State hotels = atlas; private paladares/casas = investable Layer-1.",
+    "helms_burton_overhang": false,
+    "participation": "support_via_qvapay",
+    "footnote": "Clean title — no Helms-Burton/Title III overhang. U.S. participation is via OFAC-authorized remittances & payments through QvaPay (31 CFR §515.570(g) / §515.582), NOT equity in the Cuban entity; equity is taken only in U.S.-side vehicles. CACR bars U.S.-person equity in Cuban entities (§515.201; §515.570 Note 1; OFAC FAQ 758)."
   },
   {
     "id": "tourism-trinidad",
@@ -546,12 +578,15 @@
     "scale": "UNESCO colonial town; dense private B&B / restaurant economy",
     "status": "Strong private-sector hospitality deal flow",
     "ownership": "private",
-    "layer": "invest",
-    "investable_us": true,
+    "layer": "opportunity",
+    "investable_us": false,
     "sources": [
       "UNESCO"
     ],
-    "notes": "Layer-1: vetted private hospitality MIPYMEs."
+    "notes": "Layer-1: vetted private hospitality MIPYMEs.",
+    "helms_burton_overhang": false,
+    "participation": "support_via_qvapay",
+    "footnote": "Clean title — no Helms-Burton/Title III overhang. U.S. participation is via OFAC-authorized remittances & payments through QvaPay (31 CFR §515.570(g) / §515.582), NOT equity in the Cuban entity; equity is taken only in U.S.-side vehicles. CACR bars U.S.-person equity in Cuban entities (§515.201; §515.570 Note 1; OFAC FAQ 758)."
   },
   {
     "id": "private-havana-mipymes",
@@ -562,15 +597,18 @@
     "lng": -82.38,
     "province": "La Habana",
     "scale": "Largest concentration of Cuba's 11,000+ legalized MIPYMEs",
-    "status": "INVESTABLE NOW — diaspora/foreign equity allowed since Mar 18 2026; deploy via QvaPay wallets",
+    "status": "SUPPORTABLE NOW via QvaPay (remittances/payments) — diaspora/foreign equity allowed since Mar 18 2026; deploy via QvaPay wallets",
     "ownership": "private",
-    "layer": "invest",
-    "investable_us": true,
+    "layer": "opportunity",
+    "investable_us": false,
     "sources": [
       "Cuba Study Group",
       "MINCEX"
     ],
-    "notes": "Layer-1 core. Each deal: KYC + OFAC SDN screen + ≤100-employee private-entity check + OFAC counsel."
+    "notes": "Layer-1 core. Each deal: KYC + OFAC SDN screen + ≤100-employee private-entity check + OFAC counsel.",
+    "helms_burton_overhang": false,
+    "participation": "support_via_qvapay",
+    "footnote": "Clean title — no Helms-Burton/Title III overhang. U.S. participation is via OFAC-authorized remittances & payments through QvaPay (31 CFR §515.570(g) / §515.582), NOT equity in the Cuban entity; equity is taken only in U.S.-side vehicles. CACR bars U.S.-person equity in Cuban entities (§515.201; §515.570 Note 1; OFAC FAQ 758)."
   },
   {
     "id": "private-pinar-farms",
@@ -581,32 +619,38 @@
     "lng": -83.7,
     "province": "Pinar del Río",
     "scale": "Private vegueros + food producers",
-    "status": "INVESTABLE NOW — private agricultural MIPYMEs",
+    "status": "SUPPORTABLE NOW via QvaPay (remittances/payments) — private agricultural MIPYMEs",
     "ownership": "private",
-    "layer": "invest",
-    "investable_us": true,
+    "layer": "opportunity",
+    "investable_us": false,
     "sources": [
       "Cuban ag press"
     ],
-    "notes": "Layer-1 with structuring."
+    "notes": "Layer-1 with structuring.",
+    "helms_burton_overhang": false,
+    "participation": "support_via_qvapay",
+    "footnote": "Clean title — no Helms-Burton/Title III overhang. U.S. participation is via OFAC-authorized remittances & payments through QvaPay (31 CFR §515.570(g) / §515.582), NOT equity in the Cuban entity; equity is taken only in U.S.-side vehicles. CACR bars U.S.-person equity in Cuban entities (§515.201; §515.570 Note 1; OFAC FAQ 758)."
   },
   {
     "id": "private-emprende-graduates",
     "name": "Cuba Emprende Graduate Network",
     "sector": "private-sector",
-    "type": "Trained private entrepreneurs (Slyk + QvaPay bundle pipeline)",
+    "type": "Trained private entrepreneurs (Slyk-powered Upside Hubs + QvaPay pipeline)",
     "lat": 23.13,
     "lng": -82.36,
     "province": "Havana / Camagüey / Cienfuegos",
     "scale": "~5,800+ graduates / ~4,070 businesses (Proyecto Cuba Emprende)",
-    "status": "INVESTABLE NOW — pre-trained, high-intent MIPYMEs; activation via Slyk store + QvaPay wallet",
+    "status": "SUPPORTABLE NOW via QvaPay (remittances/payments) — pre-trained, high-intent MIPYMEs; activation via Slyk-powered Upside Hub + QvaPay wallet",
     "ownership": "private",
-    "layer": "invest",
-    "investable_us": true,
+    "layer": "opportunity",
+    "investable_us": false,
     "sources": [
       "Cuba Emprende Foundation"
     ],
-    "notes": "Layer-1 distribution channel + deal flow."
+    "notes": "Layer-1 distribution channel + deal flow.",
+    "helms_burton_overhang": false,
+    "participation": "support_via_qvapay",
+    "footnote": "Clean title — no Helms-Burton/Title III overhang. U.S. participation is via OFAC-authorized remittances & payments through QvaPay (31 CFR §515.570(g) / §515.582), NOT equity in the Cuban entity; equity is taken only in U.S.-side vehicles. CACR bars U.S.-person equity in Cuban entities (§515.201; §515.570 Note 1; OFAC FAQ 758)."
   },
   {
     "id": "claim-cuban-electric",
@@ -633,7 +677,8 @@
       "Brookings/WaPo",
       "FCSC"
     ],
-    "notes": "Tallapiedra & Regla thermo plants + grid."
+    "notes": "Tallapiedra & Regla thermo plants + grid.",
+    "helms_burton_overhang": true
   },
   {
     "id": "claim-itt-telephone",
@@ -660,7 +705,8 @@
       "Brookings/WaPo",
       "FCSC"
     ],
-    "notes": "Marriott controls the claim."
+    "notes": "Marriott controls the claim.",
+    "helms_burton_overhang": true
   },
   {
     "id": "claim-exxon-belot",
@@ -688,7 +734,8 @@
       "Andersen",
       "ABA"
     ],
-    "notes": "9th-largest certified claim."
+    "notes": "9th-largest certified claim.",
+    "helms_burton_overhang": true
   },
   {
     "id": "claim-texaco-santiago",
@@ -714,7 +761,8 @@
     "sources": [
       "FCSC"
     ],
-    "notes": "Now Hermanos Díaz refinery site."
+    "notes": "Now Hermanos Díaz refinery site.",
+    "helms_burton_overhang": true
   },
   {
     "id": "claim-united-fruit",
@@ -740,7 +788,8 @@
     "sources": [
       "FCSC"
     ],
-    "notes": "4th-largest certified claim."
+    "notes": "4th-largest certified claim.",
+    "helms_burton_overhang": true
   },
   {
     "id": "claim-coca-cola",
@@ -766,7 +815,8 @@
     "sources": [
       "FCSC"
     ],
-    "notes": "Plants in Havana, Santiago + 4 cities."
+    "notes": "Plants in Havana, Santiago + 4 cities.",
+    "helms_burton_overhang": true
   },
   {
     "id": "claim-colgate",
@@ -792,7 +842,8 @@
     "sources": [
       "FCSC"
     ],
-    "notes": ""
+    "notes": "",
+    "helms_burton_overhang": true
   },
   {
     "id": "claim-havana-docks",
@@ -819,7 +870,8 @@
       "SCOTUS",
       "Skadden"
     ],
-    "notes": "The case that broadened Title III."
+    "notes": "The case that broadened Title III.",
+    "helms_burton_overhang": true
   },
   {
     "id": "claim-el-encanto",
@@ -845,7 +897,8 @@
     "sources": [
       "Wikipedia"
     ],
-    "notes": "Galiano & San Rafael."
+    "notes": "Galiano & San Rafael.",
+    "helms_burton_overhang": true
   },
   {
     "id": "claim-hotel-nacional",
@@ -871,7 +924,8 @@
     "sources": [
       "Wikipedia"
     ],
-    "notes": ""
+    "notes": "",
+    "helms_burton_overhang": true
   },
   {
     "id": "brand-bacardi-santiago",
@@ -898,7 +952,8 @@
       "Wikipedia",
       "bacardi.com"
     ],
-    "notes": "World's largest family spirits co.; rebuilt in PR/Mexico."
+    "notes": "World's largest family spirits co.; rebuilt in PR/Mexico.",
+    "helms_burton_overhang": true
   },
   {
     "id": "brand-edificio-bacardi",
@@ -924,7 +979,8 @@
     "sources": [
       "Wikipedia"
     ],
-    "notes": "Monserrate & San Juan de Dios, Old Havana."
+    "notes": "Monserrate & San Juan de Dios, Old Havana.",
+    "helms_burton_overhang": true
   },
   {
     "id": "brand-arechabala-havana-club",
@@ -951,7 +1007,8 @@
       "Wikipedia",
       "Reuters"
     ],
-    "notes": "Centerpiece trademark dispute; courts upheld Cuba's renewal 2025-26."
+    "notes": "Centerpiece trademark dispute; courts upheld Cuba's renewal 2025-26.",
+    "helms_burton_overhang": true
   },
   {
     "id": "brand-partagas",
@@ -978,7 +1035,8 @@
       "Cigar Aficionado",
       "Wikipedia"
     ],
-    "notes": "Calle Industria 520, behind Capitolio."
+    "notes": "Calle Industria 520, behind Capitolio.",
+    "helms_burton_overhang": true
   },
   {
     "id": "brand-hupmann-montecristo",
@@ -1005,7 +1063,8 @@
       "Cigar Aficionado",
       "Wikipedia"
     ],
-    "notes": "Benji Menéndez became master blender at General Cigar."
+    "notes": "Benji Menéndez became master blender at General Cigar.",
+    "helms_burton_overhang": true
   },
   {
     "id": "brand-hoyo-punch",
@@ -1031,7 +1090,8 @@
     "sources": [
       "Cigar Aficionado"
     ],
-    "notes": ""
+    "notes": "",
+    "helms_burton_overhang": true
   },
   {
     "id": "brand-romeo-julieta",
@@ -1057,7 +1117,8 @@
     "sources": [
       "Wikipedia"
     ],
-    "notes": "Belascoaín building (shared w/ El Rey del Mundo)."
+    "notes": "Belascoaín building (shared w/ El Rey del Mundo).",
+    "helms_burton_overhang": true
   },
   {
     "id": "factory-antillana-steel",
@@ -1075,7 +1136,8 @@
     "sources": [
       "Granma"
     ],
-    "notes": "GESIME."
+    "notes": "GESIME.",
+    "helms_burton_overhang": false
   },
   {
     "id": "factory-cement-cienfuegos",
@@ -1094,7 +1156,8 @@
       "Cemnet",
       "USGS"
     ],
-    "notes": "Historically w/ Votorantim (Brazil)."
+    "notes": "Historically w/ Votorantim (Brazil).",
+    "helms_burton_overhang": false
   },
   {
     "id": "factory-cement-mariel",
@@ -1113,7 +1176,8 @@
       "USGS",
       "ASCE"
     ],
-    "notes": ""
+    "notes": "",
+    "helms_burton_overhang": false
   },
   {
     "id": "factory-las-camariocas",
@@ -1131,7 +1195,8 @@
     "sources": [
       "USGS"
     ],
-    "notes": "Energy-intensive old tech caveat."
+    "notes": "Energy-intensive old tech caveat.",
+    "helms_burton_overhang": false
   },
   {
     "id": "factory-nicaro-nickel",
@@ -1158,7 +1223,8 @@
       "USGS",
       "FCSC"
     ],
-    "notes": "Also a certified claim."
+    "notes": "Also a certified claim.",
+    "helms_burton_overhang": true
   },
   {
     "id": "factory-refinery-cienfuegos",
@@ -1176,7 +1242,8 @@
     "sources": [
       "OnCuba"
     ],
-    "notes": "Originally PDVSA JV."
+    "notes": "Originally PDVSA JV.",
+    "helms_burton_overhang": false
   },
   {
     "id": "factory-textil-ariguanabo",
@@ -1203,7 +1270,8 @@
       "Racked",
       "EcuRed"
     ],
-    "notes": ""
+    "notes": "",
+    "helms_burton_overhang": true
   },
   {
     "id": "factory-paper-trinidad",
@@ -1222,7 +1290,8 @@
       "Martí Noticias",
       "EcuRed"
     ],
-    "notes": ""
+    "notes": "",
+    "helms_burton_overhang": false
   },
   {
     "id": "factory-hershey-sugar",
@@ -1240,7 +1309,8 @@
     "sources": [
       "Wikipedia"
     ],
-    "notes": "Hershey electric rail line still notable."
+    "notes": "Hershey electric rail line still notable.",
+    "helms_burton_overhang": false
   },
   {
     "id": "factory-bucanero-brewery",
@@ -1258,7 +1328,8 @@
     "sources": [
       "CiberCuba"
     ],
-    "notes": "Historically Cuba + AB InBev/Labatt."
+    "notes": "Historically Cuba + AB InBev/Labatt.",
+    "helms_burton_overhang": false
   },
   {
     "id": "zone-zed-mariel",
@@ -1277,7 +1348,8 @@
       "Granma",
       "OnCuba"
     ],
-    "notes": "Foreign concessionaires (BrasCuba, Richmeat, Profood). 100% foreign ownership permitted in-zone — still U.S.-restricted."
+    "notes": "Foreign concessionaires (BrasCuba, Richmeat, Profood). 100% foreign ownership permitted in-zone — still U.S.-restricted.",
+    "helms_burton_overhang": false
   },
   {
     "id": "airport-vra",
@@ -1297,7 +1369,8 @@
       "CiberCuba",
       "Flightradar24"
     ],
-    "notes": "Operated by ECASA (state airport operator). No current foreign operator."
+    "notes": "Operated by ECASA (state airport operator). No current foreign operator.",
+    "helms_burton_overhang": false
   },
   {
     "id": "airport-hog",
@@ -1317,7 +1390,8 @@
       "CiberCuba",
       "Universal Weather"
     ],
-    "notes": "Operated by ECASA (state). No current foreign operator."
+    "notes": "Operated by ECASA (state). No current foreign operator.",
+    "helms_burton_overhang": false
   },
   {
     "id": "airport-scu",
@@ -1337,7 +1411,8 @@
       "CiberCuba",
       "Airport Code Guide"
     ],
-    "notes": "Operated by ECASA (state). No current foreign operator."
+    "notes": "Operated by ECASA (state). No current foreign operator.",
+    "helms_burton_overhang": false
   },
   {
     "id": "airport-snu",
@@ -1357,7 +1432,8 @@
       "Universal Weather",
       "airportcuba.net"
     ],
-    "notes": "Operated by ECASA (state). No current foreign operator."
+    "notes": "Operated by ECASA (state). No current foreign operator.",
+    "helms_burton_overhang": false
   },
   {
     "id": "airport-cmw",
@@ -1377,7 +1453,8 @@
       "CiberCuba",
       "Universal Weather"
     ],
-    "notes": "Operated by ECASA (state). No current foreign operator."
+    "notes": "Operated by ECASA (state). No current foreign operator.",
+    "helms_burton_overhang": false
   },
   {
     "id": "airport-cfg",
@@ -1397,7 +1474,8 @@
       "Universal Weather",
       "airportcuba.net"
     ],
-    "notes": "Operated by ECASA (state). No current foreign operator."
+    "notes": "Operated by ECASA (state). No current foreign operator.",
+    "helms_burton_overhang": false
   },
   {
     "id": "airport-cyo",
@@ -1417,7 +1495,8 @@
       "CiberCuba",
       "world-airport-codes"
     ],
-    "notes": "Operated by ECASA (state). No current foreign operator."
+    "notes": "Operated by ECASA (state). No current foreign operator.",
+    "helms_burton_overhang": false
   },
   {
     "id": "airport-mzo",
@@ -1437,7 +1516,8 @@
       "Universal Weather",
       "airportcuba.net"
     ],
-    "notes": "Operated by ECASA (state). No current foreign operator."
+    "notes": "Operated by ECASA (state). No current foreign operator.",
+    "helms_burton_overhang": false
   },
   {
     "id": "airport-vtu",
@@ -1457,7 +1537,8 @@
       "metar-taf.com",
       "Universal Weather"
     ],
-    "notes": "Operated by ECASA (state). No current foreign operator."
+    "notes": "Operated by ECASA (state). No current foreign operator.",
+    "helms_burton_overhang": false
   },
   {
     "id": "airport-bca",
@@ -1477,7 +1558,8 @@
       "SkyVector",
       "Great Circle Mapper"
     ],
-    "notes": "Operated by ECASA (state). No current foreign operator."
+    "notes": "Operated by ECASA (state). No current foreign operator.",
+    "helms_burton_overhang": false
   },
   {
     "id": "port-nuevitas",
@@ -1498,7 +1580,8 @@
       "MagicPort",
       "Wikipedia"
     ],
-    "notes": "Camagüey's main commercial port; state port authority. Adjacent to the Diez de Octubre thermo plant."
+    "notes": "Camagüey's main commercial port; state port authority. Adjacent to the Diez de Octubre thermo plant.",
+    "helms_burton_overhang": false
   },
   {
     "id": "port-cardenas",
@@ -1518,7 +1601,8 @@
       "Bansar",
       "TheFreight"
     ],
-    "notes": "UN/LOCODE CUCAR. State-operated. Distinct from the Matanzas Supertanker Base on the adjacent bay."
+    "notes": "UN/LOCODE CUCAR. State-operated. Distinct from the Matanzas Supertanker Base on the adjacent bay.",
+    "helms_burton_overhang": false
   },
   {
     "id": "port-manzanillo",
@@ -1539,7 +1623,8 @@
       "CargoRouter",
       "Wikipedia"
     ],
-    "notes": "On the Gulf of Guacanayabo near the Cauto delta; state-operated. Also a regional fishing base. UN/LOCODE CUMZO."
+    "notes": "On the Gulf of Guacanayabo near the Cauto delta; state-operated. Also a regional fishing base. UN/LOCODE CUMZO.",
+    "helms_burton_overhang": false
   },
   {
     "id": "port-casilda",
@@ -1560,7 +1645,8 @@
       "CruiseMapper",
       "MarineTraffic"
     ],
-    "notes": "Casilda Bay enclosed by the Ancón Peninsula; state-operated. Rail terminus to Trinidad. UN/LOCODE CUCAS."
+    "notes": "Casilda Bay enclosed by the Ancón Peninsula; state-operated. Rail terminus to Trinidad. UN/LOCODE CUCAS.",
+    "helms_burton_overhang": false
   },
   {
     "id": "port-isabela-de-sagua",
@@ -1581,7 +1667,8 @@
       "Navily",
       "LoveCuba"
     ],
-    "notes": "Northern terminus of the rail line serving Sagua La Grande mills; state-operated."
+    "notes": "Northern terminus of the rail line serving Sagua La Grande mills; state-operated.",
+    "helms_burton_overhang": false
   },
   {
     "id": "port-carupano",
@@ -1602,7 +1689,8 @@
       "Tageo",
       "Mindat"
     ],
-    "notes": "On Cayo Juan Claro in Puerto Padre Bay; state-operated. Counterpart to Guayabal on the south coast. Coordinates approximate."
+    "notes": "On Cayo Juan Claro in Puerto Padre Bay; state-operated. Counterpart to Guayabal on the south coast. Coordinates approximate.",
+    "helms_burton_overhang": false
   },
   {
     "id": "port-guayabal",
@@ -1623,7 +1711,8 @@
       "MarineLink",
       "CiberCuba"
     ],
-    "notes": "Operated by Empresa Terminales Mambisas de La Habana (state). Cuba's first bulk-sugar terminal site. UN/LOCODE CUGYB. Coordinates approximate."
+    "notes": "Operated by Empresa Terminales Mambisas de La Habana (state). Cuba's first bulk-sugar terminal site. UN/LOCODE CUGYB. Coordinates approximate.",
+    "helms_burton_overhang": false
   },
   {
     "id": "cte-maximo-gomez-mariel",
@@ -1644,7 +1733,8 @@
       "OpenInfraMap",
       "Cubadebate"
     ],
-    "notes": "Operated by Unión Eléctrica (UNE) under MINEM via the SEN national grid."
+    "notes": "Operated by Unión Eléctrica (UNE) under MINEM via the SEN national grid.",
+    "helms_burton_overhang": false
   },
   {
     "id": "cte-ernesto-guevara-santa-cruz",
@@ -1665,7 +1755,8 @@
       "MEP Cuba",
       "Cubadebate"
     ],
-    "notes": "Also called 'Este de la Habana'. Operated by Unión Eléctrica (UNE) under MINEM."
+    "notes": "Also called 'Este de la Habana'. Operated by Unión Eléctrica (UNE) under MINEM.",
+    "helms_burton_overhang": false
   },
   {
     "id": "cte-cespedes-cienfuegos",
@@ -1686,7 +1777,8 @@
       "CiberCuba",
       "OpenInfraMap"
     ],
-    "notes": "Operated by Unión Eléctrica (UNE) under MINEM."
+    "notes": "Operated by Unión Eléctrica (UNE) under MINEM.",
+    "helms_burton_overhang": false
   },
   {
     "id": "cte-rente-santiago",
@@ -1707,7 +1799,8 @@
       "Translating Cuba",
       "OpenStreetMap"
     ],
-    "notes": "On the Renté peninsula, Santiago Bay. Operated by Unión Eléctrica (UNE) under MINEM."
+    "notes": "On the Renté peninsula, Santiago Bay. Operated by Unión Eléctrica (UNE) under MINEM.",
+    "helms_burton_overhang": false
   },
   {
     "id": "cte-diez-de-octubre-nuevitas",
@@ -1728,7 +1821,8 @@
       "CiberCuba",
       "OpenStreetMap"
     ],
-    "notes": "At Punta de Domingo, Nuevitas Bay. Operated by Unión Eléctrica (UNE) under MINEM."
+    "notes": "At Punta de Domingo, Nuevitas Bay. Operated by Unión Eléctrica (UNE) under MINEM.",
+    "helms_burton_overhang": false
   },
   {
     "id": "cte-otto-parellada-tallapiedra",
@@ -1748,7 +1842,8 @@
       "CiberCuba",
       "lahabana.gob.cu"
     ],
-    "notes": "Operated by Unión Eléctrica (UNE) under MINEM. Overlaps the pre-1959 Havana grid in the Cuban Electric Company confiscation claim — not treated as a separate claim here. Coordinates approximate."
+    "notes": "Operated by Unión Eléctrica (UNE) under MINEM. Overlaps the pre-1959 Havana grid in the Cuban Electric Company confiscation claim — not treated as a separate claim here. Coordinates approximate.",
+    "helms_burton_overhang": false
   },
   {
     "id": "energy-energas-boca-de-jaruco",
@@ -1769,7 +1864,8 @@
       "PowerMag",
       "OpenInfraMap"
     ],
-    "notes": "Energas S.A. JV: Sherritt (Canada) ~1/3; Unión Eléctrica (UNE) + CUPET ~2/3. Under MINEM."
+    "notes": "Energas S.A. JV: Sherritt (Canada) ~1/3; Unión Eléctrica (UNE) + CUPET ~2/3. Under MINEM.",
+    "helms_burton_overhang": false
   },
   {
     "id": "energy-karpowership-cuba",
@@ -1790,7 +1886,8 @@
       "elTOQUE",
       "CiberCuba"
     ],
-    "notes": "Operated by Karpowership (Karadeniz Holding, Türkiye) under contract to UNE/MINEM; vessels are leased and mobile, not Cuban-owned. Coordinates approximate (Havana Bay anchorage)."
+    "notes": "Operated by Karpowership (Karadeniz Holding, Türkiye) under contract to UNE/MINEM; vessels are leased and mobile, not Cuban-owned. Coordinates approximate (Havana Bay anchorage).",
+    "helms_burton_overhang": false
   },
   {
     "id": "rail-hershey-electric",
@@ -1811,7 +1908,8 @@
       "Havana Times",
       "CiberCuba"
     ],
-    "notes": "Operated by Unión de Ferrocarriles de Cuba (UFC) under MITRANS. Built in the 1920s by the Hershey Chocolate Corp."
+    "notes": "Operated by Unión de Ferrocarriles de Cuba (UFC) under MITRANS. Built in the 1920s by the Hershey Chocolate Corp.",
+    "helms_burton_overhang": false
   },
   {
     "id": "rail-estacion-central-habana",
@@ -1832,7 +1930,8 @@
       "CubaHeadlines",
       "lahabana.gob.cu"
     ],
-    "notes": "Owned/operated by Unión de Ferrocarriles de Cuba (UFC) under MITRANS. National Monument; hub of the national and Havana suburban networks."
+    "notes": "Owned/operated by Unión de Ferrocarriles de Cuba (UFC) under MITRANS. National Monument; hub of the national and Havana suburban networks.",
+    "helms_burton_overhang": false
   },
   {
     "id": "rail-rolling-stock-recap",
@@ -1853,7 +1952,8 @@
       "International Railway Journal",
       "CiberCuba"
     ],
-    "notes": "Procured by Unión de Ferrocarriles de Cuba (UFC) under MITRANS. Suppliers: TMH/Sinara (Russia) via RZD; CRRC-type stock (China) — sanctioned counterparties."
+    "notes": "Procured by Unión de Ferrocarriles de Cuba (UFC) under MITRANS. Suppliers: TMH/Sinara (Russia) via RZD; CRRC-type stock (China) — sanctioned counterparties.",
+    "helms_burton_overhang": false
   },
   {
     "id": "rail-azcuba-sugar",
@@ -1874,7 +1974,8 @@
       "railography.co.uk",
       "Pilot Guides"
     ],
-    "notes": "Operated by the AZCUBA sugar group (formerly MINAZ), separate from the public UFC network."
+    "notes": "Operated by the AZCUBA sugar group (formerly MINAZ), separate from the public UFC network.",
+    "helms_burton_overhang": false
   },
   {
     "id": "rail-havana-suburban",
@@ -1894,7 +1995,8 @@
       "Seat61",
       "tramz.com"
     ],
-    "notes": "Operated by Unión de Ferrocarriles de Cuba (UFC) under MITRANS; the Casablanca line is the Hershey electric line."
+    "notes": "Operated by Unión de Ferrocarriles de Cuba (UFC) under MITRANS; the Casablanca line is the Hershey electric line.",
+    "helms_burton_overhang": false
   },
   {
     "id": "road-carretera-central",
@@ -1914,7 +2016,8 @@
       "AARoads Wiki",
       "EcuRed"
     ],
-    "notes": "Controlled by MITRANS. Original 1927-31 build under President Machado; U.S. contractor Warren Bros. (Boston) involved. Representative point near the central spine."
+    "notes": "Controlled by MITRANS. Original 1927-31 build under President Machado; U.S. contractor Warren Bros. (Boston) involved. Representative point near the central spine.",
+    "helms_burton_overhang": false
   },
   {
     "id": "road-via-blanca",
@@ -1934,7 +2037,8 @@
       "AARoads Wiki",
       "TollGuru"
     ],
-    "notes": "MITRANS. Runs along the Straits of Florida shoreline; part of the Circuito Norte."
+    "notes": "MITRANS. Runs along the Straits of Florida shoreline; part of the Circuito Norte.",
+    "helms_burton_overhang": false
   },
   {
     "id": "bridge-bacunayagua",
@@ -1954,7 +2058,8 @@
       "HighestBridges.com",
       "Lonely Planet"
     ],
-    "notes": "MITRANS. Inaugurated 1959; marks the Mayabeque–Matanzas boundary ~86 km east of Havana."
+    "notes": "MITRANS. Inaugurated 1959; marks the Mayabeque–Matanzas boundary ~86 km east of Havana.",
+    "helms_burton_overhang": false
   },
   {
     "id": "road-tunel-bahia-habana",
@@ -1974,7 +2079,8 @@
       "Structurae",
       "lahabana.com"
     ],
-    "notes": "MITRANS. Built 1957-58 by France's Société de Grands Travaux de Marseille; opened May 1958."
+    "notes": "MITRANS. Built 1957-58 by France's Société de Grands Travaux de Marseille; opened May 1958.",
+    "helms_burton_overhang": false
   },
   {
     "id": "road-circuito-norte",
@@ -1994,7 +2100,8 @@
       "AARoads Wiki",
       "Red vial de Cuba"
     ],
-    "notes": "MITRANS. Feeds the Caibarién and Morón causeways to the northern cays."
+    "notes": "MITRANS. Feeds the Caibarién and Morón causeways to the northern cays.",
+    "helms_burton_overhang": false
   },
   {
     "id": "road-pedraplen-cayo-santa-maria",
@@ -2014,7 +2121,8 @@
       "thecubanhistory.com",
       "CubaPlus"
     ],
-    "notes": "Roadway under MITRANS; toll-gated access from Caibarién tied to MINTUR tourism entities."
+    "notes": "Roadway under MITRANS; toll-gated access from Caibarién tied to MINTUR tourism entities.",
+    "helms_burton_overhang": false
   },
   {
     "id": "road-pedraplen-cayo-coco",
@@ -2034,6 +2142,7 @@
       "dangerousroads.org",
       "ASCE Cuba database"
     ],
-    "notes": "Roadway under MITRANS; toll-gated from Morón; resort access tied to MINTUR entities."
+    "notes": "Roadway under MITRANS; toll-gated from Morón; resort access tied to MINTUR entities.",
+    "helms_burton_overhang": false
   }
 ]

@@ -24,7 +24,7 @@ export default function SectorsPage() {
       <h1 className="text-3xl font-bold tracking-tight">Sectors &amp; the buildout gap</h1>
       <p className="prose-cuba mt-3">
         What exists, what&apos;s broken, and what needs to be built — across every sector of Cuba&apos;s
-        economy. The private-sector lane is the only one investable today; the rest is the atlas of
+        economy. The private-sector lane is the only one supportable today (via QvaPay); the rest is the atlas of
         the prize when it opens.
       </p>
 
@@ -41,14 +41,14 @@ export default function SectorsPage() {
         {grouped.map(({ key, items }) => {
           const m = sectorMeta(key);
           const buildout = items.filter((o) => /distress|idle|abandon|deteriorat|degrad|crisis|never|unfinished|stall|collaps|rebuild|moderniz|revival/i.test(`${o.status} ${o.type}`));
-          const investable = items.filter((o) => o.investable);
+          const supportable = items.filter((o) => o.supportable);
           return (
             <section key={key}>
               <div className="flex items-center gap-2 border-b border-[var(--line)] pb-2">
                 <span className="h-3 w-3 rounded-full" style={{ background: m.color }} />
                 <h2 className="text-lg font-semibold text-text">{m.label}</h2>
                 <span className="text-xs text-ghost">{items.length} assets</span>
-                {investable.length > 0 && <span className="badge legal-invest">{investable.length} investable</span>}
+                {supportable.length > 0 && <span className="badge legal-invest">{supportable.length} supportable</span>}
                 {buildout.length > 0 && <span className="badge badge-muted">{buildout.length} need buildout</span>}
               </div>
               <p className="mt-2 text-sm text-fog">{m.blurb}</p>

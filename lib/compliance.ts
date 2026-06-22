@@ -3,15 +3,18 @@ import type { Opportunity, Claim } from "./types";
 /* ─────────────────────────────────────────────────────────────────────────────
    THE COMPLIANCE ENGINE (§0 / §10 hard rules).
 
-   Every "Invest" affordance in the entire app MUST resolve through canInvest().
-   There is intentionally no other code path that renders an Invest CTA.
+   There is NO equity-investment lane. U.S. persons do not buy equity in Cuban
+   entities. The only authorized participation is REMITTANCE / PAYMENT SUPPORT to
+   the licensed independent private sector, routed through QvaPay under OFAC
+   general licenses (31 CFR §515.570 remittances, §515.578 internet-based
+   services, §515.542). Every "Support" affordance routes through canSupport().
    ──────────────────────────────────────────────────────────────────────────── */
 
 export type SanctionFlags = {
   crl: boolean; // Cuba Restricted List (§515.209)
   sdn: boolean; // OFAC SDN
   cpal: boolean; // Cuba Prohibited Accommodations List
-  refs: string[]; // human-readable citations for whatever matched
+  refs: string[];
 };
 
 export const NO_FLAGS: SanctionFlags = { crl: false, sdn: false, cpal: false, refs: [] };
@@ -21,23 +24,24 @@ export function isSanctioned(f: SanctionFlags | undefined): boolean {
 }
 
 /**
- * The single gate. Invest is permitted ONLY when the asset is explicitly a
- * private-sector Layer-1 entry AND nothing about its controlling entity hits a
- * sanctions list. Belt and suspenders: even a data error that set investable_us
- * on a sanctioned counterparty cannot produce an Invest button.
+ * The single gate. Support (via QvaPay) is permitted ONLY when the asset is an
+ * explicitly licensed private-sector 'opportunity' entry AND nothing about its
+ * counterparty hits a sanctions list. Belt and suspenders: a data error cannot
+ * surface a Support button on a state/JV/sanctioned/atlas asset.
  */
-export function canInvest(opp: Opportunity, controllerFlags?: SanctionFlags): boolean {
+export function canSupport(opp: Opportunity, controllerFlags?: SanctionFlags): boolean {
   const baseLegal =
-    opp.investable_us === true &&
+    opp.participation === "support_via_qvapay" &&
     opp.ownership === "private" &&
-    opp.layer === "invest";
+    opp.layer === "opportunity" &&
+    opp.investable_us === false;
   return baseLegal && !isSanctioned(controllerFlags);
 }
 
-export type CtaKind = "invest" | "register-interest";
+export type CtaKind = "support" | "register-interest";
 
 export function ctaFor(opp: Opportunity, controllerFlags?: SanctionFlags): CtaKind {
-  return canInvest(opp, controllerFlags) ? "invest" : "register-interest";
+  return canSupport(opp, controllerFlags) ? "support" : "register-interest";
 }
 
 /* ── Ownership & legal badges (shown on every marker and card) ──────────────── */
@@ -54,8 +58,8 @@ export function ownershipBadge(o: Opportunity) {
 }
 
 export function legalBadge(opp: Opportunity, controllerFlags?: SanctionFlags) {
-  return canInvest(opp, controllerFlags)
-    ? { label: "Investable today", icon: "✅", className: "legal-invest" }
+  return canSupport(opp, controllerFlags)
+    ? { label: "Supportable via QvaPay", icon: "✅", className: "legal-invest" }
     : { label: "Atlas — info only", icon: "ℹ️", className: "legal-atlas" };
 }
 
@@ -67,11 +71,9 @@ export function titleIIILevel(claim?: Claim): TitleIIILevel {
   if (!claim) return "none";
   const t = (claim.title_iii || "").toLowerCase().trim();
   if (!t || t === "none" || t === "none active") return "none";
-  // Active litigation signals
   if (/\b(v\.|ongoing|affirmed|scotus|remanded|suit|sued|war)\b/.test(t)) return "active";
   if (t.includes("potential")) return "potential";
   if (t.includes("check")) return "check";
-  // Any other non-empty, non-"none" string implies some live exposure.
   return "potential";
 }
 

@@ -5,7 +5,7 @@ import { enriched, getOpportunity } from "@/lib/data";
 import { sectorMeta } from "@/lib/sectors";
 import { OwnershipBadge, LegalBadge, TitleIIIBadge, SanctionBadges } from "@/components/Badges";
 import { DisclosureBanner } from "@/components/DisclosureBanner";
-import { InvestCta } from "@/components/InvestCta";
+import { SupportCta } from "@/components/SupportCta";
 import { InterestForm } from "@/components/InterestForm";
 import { ClaimPanel } from "@/components/ClaimPanel";
 
@@ -48,7 +48,7 @@ export default function OpportunityPage({ params }: { params: { id: string } }) 
             <Cell label="Sector" value={m.label} />
             <Cell label="Province" value={o.province} />
             <Cell label="Coordinates" value={`${o.lat.toFixed(3)}, ${o.lng.toFixed(3)}`} mono />
-            <Cell label="Layer" value={o.layer === "invest" ? "Layer 1 · Invest" : "Layer 2 · Atlas"} />
+            <Cell label="Layer" value={o.layer === "opportunity" ? "Layer 1 · Support" : "Layer 2 · Atlas"} />
           </dl>
 
           {o.notes && (
@@ -87,14 +87,14 @@ export default function OpportunityPage({ params }: { params: { id: string } }) 
 
         {/* Sidebar — the conditional CTA (compliance engine decides) */}
         <aside className="space-y-4 lg:sticky lg:top-20 lg:self-start">
-          {o.investable ? (
-            <InvestCta investable={o.investable} assetName={o.name} />
+          {o.supportable ? (
+            <SupportCta supportable={o.supportable} assetName={o.name} footnote={o.footnote} />
           ) : (
             <div>
               <div className="mb-2 text-sm font-semibold text-text">Register interest</div>
               <p className="mb-3 text-xs text-fog">
-                Not investable by U.S. persons today. Register a non-binding indication for the
-                pipeline — for non-U.S. capital or a post-sanctions world.
+                Information only — no U.S. participation today. Register a non-binding indication for
+                the pipeline (for non-U.S. capital or a post-sanctions world).
               </p>
               <InterestForm assetId={o.id} assetName={o.name} />
             </div>

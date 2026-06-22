@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { sdn, crl, cpal, investable } from "@/lib/data";
+import { sdn, crl, cpal, supportable } from "@/lib/data";
 import { DisclosureBanner } from "@/components/DisclosureBanner";
 
 export const metadata: Metadata = {
@@ -9,12 +9,13 @@ export const metadata: Metadata = {
 };
 
 const GUARDRAILS = [
-  "No Invest CTA anywhere on Layer-2 / state / JV / Restricted-List / SDN / confiscated assets.",
+  "No equity lane: no asset is investable_us=true. U.S. participation is remittance/payment support only.",
+  "No Support CTA anywhere on Layer-2 / state / JV / Restricted-List / SDN / confiscated assets.",
   "OFAC SDN + Cuba Restricted List + CPAL screening on every counterparty (auto cross-referenced here).",
   "Recipient = independent private entity ≤100 employees, non-regime, documented.",
   "Settlement path proven to avoid GAESA / state banks / FINCIMEX.",
-  "No confiscated-property (Helms-Burton) nexus on any funded deal.",
-  "Fund mandate limited to the private sector; securities + OFAC counsel sign-off.",
+  "No confiscated-property (Helms-Burton) nexus on any supported deal.",
+  "Support routed only through OFAC-authorized channels (§515.570 / §515.578 / §515.542); OFAC counsel sign-off.",
   "Disclosures on /invest and every opportunity page.",
   "Zero payments or inducements to officials or regime entities (FCPA + sanctions).",
 ];
@@ -28,10 +29,12 @@ export default function CompliancePage() {
         <h1 className="text-3xl font-bold tracking-tight">Compliance</h1>
         <p className="prose-cuba mt-3">
           A U.S. person cannot wire money into Cuban state infrastructure — ports, energy, water,
-          rail, refineries, large hotels, state industry. That is not a gray area. What is legal is
-          financing the licensed independent private sector. This site is built so the line is
-          enforced in code: an Invest button can only appear on the{" "}
-          <Link href="/invest" className="link">{investable.length} private-sector entries</Link>{" "}
+          rail, refineries, large hotels, state industry — and does not take equity in Cuban
+          MIPYMEs. What is legal is <strong className="text-text">supporting</strong> the licensed
+          independent private sector through OFAC-authorized remittances and payments (31 CFR
+          §515.570, §515.578, §515.542) routed via QvaPay. This site is built so the line is enforced
+          in code: a Support button can only appear on the{" "}
+          <Link href="/invest" className="link">{supportable.length} private-sector entries</Link>{" "}
           that clear every screen.
         </p>
 
@@ -39,11 +42,11 @@ export default function CompliancePage() {
         <div className="mt-6 card p-5">
           <h2 className="text-lg font-semibold text-text">Enforced in code</h2>
           <p className="mt-2 text-sm text-fog">
-            A single compliance engine decides every CTA: <code className="rounded bg-[var(--panel-2)] px-1.5 py-0.5 font-mono text-xs text-invest">canInvest()</code> returns
-            true only when an asset is <span className="text-text">private + Layer-1 + investable_us</span> AND
+            A single compliance engine decides every CTA: <code className="rounded bg-[var(--panel-2)] px-1.5 py-0.5 font-mono text-xs text-invest">canSupport()</code> returns
+            true only when an asset is <span className="text-text">private + an &apos;opportunity&apos; entry tagged support_via_qvapay</span> AND
             its controlling counterparty clears the Cuba Restricted List ({crl.categories.reduce((n, c) => n + c.entities.length, 0)} entities),
             the OFAC SDN list, and the Prohibited Accommodations List ({cpal.properties.length} hotels).
-            The data set fails to build if any record contradicts this.
+            The build fails if any record sets investable_us=true (there is no equity lane) or contradicts this.
           </p>
         </div>
 

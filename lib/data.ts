@@ -16,7 +16,7 @@ import {
   type ControllingEntity,
 } from "./types";
 import {
-  canInvest,
+  canSupport,
   isSanctioned,
   titleIIILevel,
   type SanctionFlags,
@@ -88,7 +88,8 @@ for (const e of entities) for (const oid of e.controls) controllerOf.set(oid, e)
 export type EnrichedOpportunity = Opportunity & {
   controller: EnrichedEntity | null;
   flags: SanctionFlags; // controller flags ∪ direct name matches in notes
-  investable: boolean; // final, engine-decided
+  supportable: boolean; // final, engine-decided (QvaPay remittance/payment support)
+  overhang: boolean; // Helms-Burton / Title III overhang flag
   titleIII: TitleIIILevel;
 };
 
@@ -112,7 +113,8 @@ export const enriched: EnrichedOpportunity[] = opportunities.map((o) => {
     ...o,
     controller,
     flags,
-    investable: canInvest(o, flags),
+    supportable: canSupport(o, flags),
+    overhang: !!o.helms_burton_overhang,
     titleIII: titleIIILevel(o.claim),
   };
 });
@@ -123,8 +125,8 @@ export function getOpportunity(id: string): EnrichedOpportunity | undefined {
 }
 
 /* ── Derived collections for the pages ─────────────────────────────────────── */
-export const investable = enriched.filter((o) => o.investable);
-export const atlasOnly = enriched.filter((o) => !o.investable);
+export const supportable = enriched.filter((o) => o.supportable);
+export const atlasOnly = enriched.filter((o) => !o.supportable);
 export const confiscated = enriched.filter((o) => o.confiscated && o.claim);
 export const titleIIIRiskAssets = confiscated.filter(
   (o) => o.titleIII === "active" || o.titleIII === "potential" || o.titleIII === "check"
@@ -143,8 +145,9 @@ export type MapPoint = {
   lat: number;
   lng: number;
   layer: Opportunity["layer"];
-  investable: boolean;
+  supportable: boolean;
   confiscated: boolean;
+  overhang: boolean;
   titleIII: TitleIIILevel;
   sanctioned: boolean;
   needsBuild: boolean;
@@ -164,8 +167,9 @@ export function toMapPoint(o: EnrichedOpportunity): MapPoint {
     lat: o.lat,
     lng: o.lng,
     layer: o.layer,
-    investable: o.investable,
+    supportable: o.supportable,
     confiscated: !!o.confiscated,
+    overhang: o.overhang,
     titleIII: o.titleIII,
     sanctioned: isSanctioned(o.flags),
     needsBuild: BUILD_SIGNALS.test(`${o.status} ${o.type}`),
@@ -185,18 +189,22 @@ export function assetsControlledBy(entityId: string): EnrichedOpportunity[] {
   return e.controls.map((id) => byId.get(id)).filter(Boolean) as EnrichedOpportunity[];
 }
 
-/* ── Build-time invariant guard (§10): no investable asset may have a
-   sanctioned controller, and the investable set must be exactly the
-   private/invest/investable_us records. Throws → fails `next build`. ────────── */
+/* ── Build-time invariant guard (§10). Throws → fails `next build`:
+   - no asset may be marked investable_us=true (there is no equity lane);
+   - a supportable asset must be private + 'opportunity' layer with a clear
+     (non-sanctioned) counterparty. ──────────────────────────────────────────── */
 (function assertInvariants() {
   for (const o of enriched) {
-    if (o.investable && isSanctioned(o.flags)) {
+    if (o.investable_us === true) {
+      throw new Error(`COMPLIANCE INVARIANT BROKEN: ${o.id} has investable_us=true — no equity lane is permitted.`);
+    }
+    if (o.supportable && isSanctioned(o.flags)) {
       throw new Error(
-        `COMPLIANCE INVARIANT BROKEN: ${o.id} is investable but its counterparty is sanctioned (${o.flags.refs.join("; ")}).`
+        `COMPLIANCE INVARIANT BROKEN: ${o.id} is supportable but its counterparty is sanctioned (${o.flags.refs.join("; ")}).`
       );
     }
-    if (o.investable && (o.ownership !== "private" || o.layer !== "invest")) {
-      throw new Error(`COMPLIANCE INVARIANT BROKEN: ${o.id} marked investable without private/invest status.`);
+    if (o.supportable && (o.ownership !== "private" || o.layer !== "opportunity")) {
+      throw new Error(`COMPLIANCE INVARIANT BROKEN: ${o.id} marked supportable without private/opportunity status.`);
     }
   }
 })();

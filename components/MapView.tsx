@@ -7,7 +7,7 @@ import "maplibre-gl/dist/maplibre-gl.css";
 import type { MapPoint } from "@/lib/data";
 import { sectorMeta, SECTORS } from "@/lib/sectors";
 
-type LayerMode = "all" | "invest" | "atlas" | "claims";
+type LayerMode = "all" | "support" | "atlas" | "claims";
 
 const ESRI_SATELLITE: maplibregl.StyleSpecification = {
   version: 8,
@@ -58,8 +58,8 @@ export function MapView({
 
   const visible = useMemo(() => {
     return points.filter((p) => {
-      if (mode === "invest" && !p.investable) return false;
-      if (mode === "atlas" && p.investable) return false;
+      if (mode === "support" && !p.supportable) return false;
+      if (mode === "atlas" && p.supportable) return false;
       if (mode === "claims" && !p.confiscated) return false;
       if (sector !== "all" && p.sector !== sector) return false;
       if (ownership !== "all" && p.ownership !== ownership) return false;
@@ -113,7 +113,7 @@ export function MapView({
       el.style.cssText = `
         width:${risk ? 18 : 13}px;height:${risk ? 18 : 13}px;border-radius:50%;
         background:${mode === "claims" && p.confiscated ? "#f97316" : color};
-        border:2px solid ${p.investable ? "#22c55e" : "rgba(255,255,255,.65)"};
+        border:2px solid ${p.supportable ? "#22c55e" : "rgba(255,255,255,.65)"};
         box-shadow:0 0 0 1px rgba(0,0,0,.6)${risk ? ",0 0 12px 3px rgba(249,115,22,.7)" : ""};
         cursor:pointer;`;
       el.addEventListener("click", (e) => {
@@ -135,7 +135,7 @@ export function MapView({
         <div className="flex overflow-hidden rounded-md border border-[var(--line)] bg-[var(--panel)]/95 text-xs font-medium shadow-lg backdrop-blur">
           {([
             ["all", "All"],
-            ["invest", "Invest now"],
+            ["support", "Support now"],
             ["atlas", "Atlas"],
             ["claims", "Helms-Burton"],
           ] as [LayerMode, string][]).map(([k, label]) => (
@@ -144,7 +144,7 @@ export function MapView({
               onClick={() => setMode(k)}
               className={`px-3 py-2 transition-colors ${
                 mode === k
-                  ? k === "invest"
+                  ? k === "support"
                     ? "bg-invest/[0.14] text-[#047857]"
                     : k === "claims"
                     ? "bg-risk/[0.14] text-[#c2410c]"
@@ -181,7 +181,7 @@ export function MapView({
 
       {/* Legend */}
       <div className="pointer-events-none absolute bottom-3 left-3 z-10 hidden rounded-md border border-[var(--line)] bg-[var(--panel)]/90 p-2 text-[11px] text-fog backdrop-blur sm:block">
-        <div className="flex items-center gap-1.5"><span className="inline-block h-3 w-3 rounded-full border-2 border-invest bg-private" /> Investable today</div>
+        <div className="flex items-center gap-1.5"><span className="inline-block h-3 w-3 rounded-full border-2 border-invest bg-private" /> Supportable via QvaPay</div>
         <div className="mt-1 flex items-center gap-1.5"><span className="inline-block h-3 w-3 rounded-full border-2 border-ghost bg-atlas" /> Atlas — info only</div>
         <div className="mt-1 flex items-center gap-1.5"><span className="inline-block h-3 w-3 rounded-full bg-risk shadow-[0_0_8px_2px_rgba(249,115,22,.7)]" /> ⚠️ Title III risk</div>
       </div>
@@ -199,8 +199,8 @@ export function MapView({
             <span className={`badge owner-${selected.ownership}`}>
               {selected.ownership === "private" ? "🟢 Private" : selected.ownership === "jv" ? "🟡 JV" : "🔴 State"}
             </span>
-            {selected.investable ? (
-              <span className="badge legal-invest">✅ Investable</span>
+            {selected.supportable ? (
+              <span className="badge legal-invest">✅ Supportable</span>
             ) : (
               <span className="badge legal-atlas">ℹ️ Atlas only</span>
             )}
@@ -211,8 +211,8 @@ export function MapView({
             <Link href={`/opportunity/${selected.id}`} className="btn btn-ghost flex-1 px-3 py-1.5 text-xs">
               Open dossier →
             </Link>
-            {selected.investable && (
-              <Link href="/invest" className="btn btn-primary px-3 py-1.5 text-xs">Invest</Link>
+            {selected.supportable && (
+              <Link href="/invest" className="btn btn-primary px-3 py-1.5 text-xs">Support</Link>
             )}
           </div>
         </div>

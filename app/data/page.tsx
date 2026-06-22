@@ -51,8 +51,8 @@ export default function DataPage() {
       <ol className="prose-cuba mt-2 list-decimal pl-5">
         <li>Each asset declares <code className="font-mono text-xs">ownership</code>, <code className="font-mono text-xs">layer</code> and <code className="font-mono text-xs">investable_us</code>.</li>
         <li>Its controlling entity&apos;s name/aka are matched against the Restricted List, SDN and CPAL.</li>
-        <li><code className="font-mono text-xs">canInvest()</code> returns true only if the asset is private/Layer-1/investable AND no list matched.</li>
-        <li>A build-time invariant throws if any &quot;investable&quot; asset has a sanctioned counterparty — so a data error cannot ship an illegal Invest button.</li>
+        <li><code className="font-mono text-xs">canSupport()</code> returns true only if the asset is a private &apos;opportunity&apos; entry tagged support_via_qvapay AND no list matched.</li>
+        <li>A build-time invariant throws if any asset sets investable_us=true (no equity lane) or if a &quot;supportable&quot; asset has a sanctioned counterparty — so a data error cannot ship an illegal Support button.</li>
       </ol>
 
       <p className="mt-6 text-xs text-ghost">

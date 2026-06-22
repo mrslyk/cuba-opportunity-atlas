@@ -38,11 +38,11 @@ export default function AboutPage() {
 
         <h2>The two layers</h2>
         <p>
-          <strong className="text-text">Layer 1 — Invest now:</strong> licensed private-sector
-          MIPYMEs, compliant under OFAC general licenses, funded through an AngelList SPV with
-          capital landing via QvaPay wallets. <strong className="text-text">Layer 2 — Atlas:</strong>{" "}
+          <strong className="text-text">Layer 1 — Support now:</strong> licensed private-sector
+          MIPYMEs, backed through OFAC-authorized remittances and payments via QvaPay wallets — not
+          equity. <strong className="text-text">Layer 2 — Atlas:</strong>{" "}
           the full state economy, information only, &quot;register interest&quot; for a post-sanctions
-          world or non-U.S. capital. Publishing information is protected; soliciting U.S. money into
+          world or non-U.S. capital. Publishing information is protected; routing U.S. money into
           Layer 2 is the violation — so the product never does. See <Link href="/compliance" className="link">Compliance</Link>.
         </p>
 
@@ -51,7 +51,7 @@ export default function AboutPage() {
           A scheduled agentic worker (Netlify Scheduled Function) refreshes asset status and sources
           and re-screens ownership against the live Cuba Restricted List and SDN. Nothing
           auto-publishes to Layer-1: a human approves every change in an admin review screen before
-          any asset flips to &quot;investable.&quot; The lists shown here are dated snapshots — see{" "}
+          any asset becomes &quot;supportable.&quot; The lists shown here are dated snapshots — see{" "}
           <Link href="/data" className="link">Data &amp; methodology</Link>.
         </p>
 

@@ -14,7 +14,7 @@ export default function MapPage() {
         <h1 className="text-xl font-semibold">Opportunity Atlas — interactive map</h1>
         <p className="text-sm text-fog">
           Satellite imagery (keyless Esri). Toggle layers, filter, and click any asset for its
-          dossier. Green-ringed markers are investable today; orange glow = active Title III risk.
+          dossier. Green-ringed markers are supportable via QvaPay; orange glow = active Title III risk.
         </p>
       </div>
       <MapView points={mapPoints} />
