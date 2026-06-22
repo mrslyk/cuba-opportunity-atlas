@@ -3,26 +3,32 @@
 @tailwind utilities;
 
 :root {
-  --bg: #070a0f;
-  --panel: #0b1018;
-  --panel-2: #111927;
-  --line: #1c2740;
-  --fog: #8da2c0;
-  --ghost: #5b6b85;
-  --text: #e8eef7;
+  --bg: #f4f7fb;
+  --surface: #ffffff;
+  --surface-2: #eef2f8;
+  --line: #e2e8f1;
+  --text: #0e1828;
+  --fog: #46586f;
+  --ghost: #8493a8;
+  /* Back-compat aliases (components reference these) → light surfaces */
+  --panel: #ffffff;
+  --panel-2: #eef2f8;
 }
 
 html {
-  color-scheme: dark;
+  color-scheme: light;
 }
 
 body {
   background:
-    radial-gradient(1200px 600px at 80% -10%, rgba(56, 189, 248, 0.06), transparent 60%),
-    radial-gradient(900px 500px at -10% 10%, rgba(34, 197, 94, 0.05), transparent 55%),
+    radial-gradient(900px 480px at 88% -8%, rgba(6, 182, 212, 0.10), transparent 60%),
+    radial-gradient(820px 460px at -6% 2%, rgba(16, 185, 129, 0.10), transparent 58%),
+    radial-gradient(700px 700px at 50% 120%, rgba(59, 130, 246, 0.07), transparent 60%),
     var(--bg);
+  background-attachment: fixed;
   color: var(--text);
   -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 @layer components {
@@ -31,39 +37,48 @@ body {
   }
 
   .card {
-    @apply rounded-lg border border-[var(--line)] bg-[var(--panel)] transition-colors;
+    @apply rounded-xl border border-line bg-surface shadow-card transition-all duration-200;
   }
   .card-hover {
-    @apply hover:border-[#2f415f] hover:bg-[var(--panel-2)];
+    @apply hover:-translate-y-0.5 hover:border-brand2/40 hover:shadow-cardhover;
   }
 
   .kicker {
-    @apply font-mono text-[11px] uppercase tracking-[0.18em] text-fog;
+    @apply font-mono text-[11px] font-medium uppercase tracking-[0.16em] text-ghost;
+  }
+
+  /* Gradient text + hairline accents */
+  .grad-text {
+    @apply bg-brand bg-clip-text text-transparent;
+  }
+  .grad-rule {
+    height: 2px;
+    @apply w-full rounded bg-brand opacity-80;
   }
 
   /* ── Badges ──────────────────────────────────────────────────────────────── */
   .badge {
-    @apply inline-flex items-center gap-1 rounded border px-2 py-0.5 font-mono text-[11px] font-medium leading-none;
+    @apply inline-flex items-center gap-1 rounded-md border px-2 py-0.5 font-mono text-[11px] font-medium leading-none;
   }
-  .owner-state { @apply border-state/40 bg-state/10 text-state; }
-  .owner-jv { @apply border-jv/40 bg-jv/10 text-jv; }
-  .owner-private { @apply border-private/40 bg-private/10 text-private; }
-  .legal-invest { @apply border-invest/40 bg-invest/10 text-invest; }
-  .legal-atlas { @apply border-atlas/40 bg-atlas/10 text-atlas; }
-  .badge-risk { @apply border-risk/50 bg-risk/15 text-risk; }
-  .badge-sdn { @apply border-sdn/50 bg-sdn/15 text-[#fca5a5]; }
-  .badge-muted { @apply border-[var(--line)] bg-white/5 text-fog; }
+  .owner-state { @apply border-state/30 bg-state/[0.08] text-[#b91c1c]; }
+  .owner-jv { @apply border-jv/30 bg-jv/[0.10] text-[#b45309]; }
+  .owner-private { @apply border-private/30 bg-private/[0.10] text-[#047857]; }
+  .legal-invest { @apply border-private/30 bg-private/[0.10] text-[#047857]; }
+  .legal-atlas { @apply border-atlas/30 bg-atlas/[0.10] text-[#0369a1]; }
+  .badge-risk { @apply border-risk/40 bg-risk/[0.10] text-[#c2410c]; }
+  .badge-sdn { @apply border-sdn/40 bg-sdn/[0.10] text-[#b91c1c]; }
+  .badge-muted { @apply border-line bg-black/[0.035] text-fog; }
 
   .btn {
-    @apply inline-flex items-center justify-center gap-2 rounded-md px-4 py-2 text-sm font-semibold transition-colors;
+    @apply inline-flex items-center justify-center gap-2 rounded-lg px-4 py-2 text-sm font-semibold transition-all duration-200;
   }
-  .btn-primary { @apply bg-private text-ink-950 hover:bg-[#16a34a]; }
-  .btn-ghost { @apply border border-[var(--line)] text-text hover:bg-white/5; }
-  .btn-atlas { @apply border border-atlas/40 bg-atlas/10 text-atlas hover:bg-atlas/20; }
+  .btn-primary { @apply bg-brand text-white shadow-glow hover:brightness-[1.06] hover:shadow-cardhover; }
+  .btn-ghost { @apply border border-line bg-surface text-text shadow-card hover:border-brand2/40 hover:-translate-y-0.5; }
+  .btn-atlas { @apply border border-atlas/30 bg-atlas/[0.08] text-[#0369a1] hover:bg-atlas/[0.14]; }
 
-  .link { @apply text-atlas hover:underline underline-offset-2; }
+  .link { @apply font-medium text-atlas hover:underline underline-offset-2; }
 
-  .prose-cuba { @apply max-w-prose2 leading-relaxed text-[var(--fog)]; }
+  .prose-cuba { @apply max-w-prose2 leading-relaxed text-fog; }
   .prose-cuba h2 { @apply mt-8 mb-2 text-xl font-semibold text-text; }
   .prose-cuba h3 { @apply mt-6 mb-1.5 font-semibold text-text; }
   .prose-cuba p { @apply mb-3; }
@@ -71,14 +86,16 @@ body {
   .prose-cuba ul { @apply mb-3 list-disc space-y-1 pl-5; }
 }
 
-/* MapLibre overrides for the dark theme */
+/* MapLibre overrides for the light theme — frosted-glass controls */
 .maplibregl-popup-content {
-  background: var(--panel-2);
+  background: rgba(255, 255, 255, 0.96);
   color: var(--text);
   border: 1px solid var(--line);
-  border-radius: 8px;
+  border-radius: 10px;
   padding: 0;
+  box-shadow: 0 8px 30px rgba(16, 24, 40, 0.12);
 }
-.maplibregl-popup-tip { border-top-color: var(--panel-2) !important; border-bottom-color: var(--panel-2) !important; }
-.maplibregl-ctrl-group { background: var(--panel-2); border: 1px solid var(--line); }
+.maplibregl-popup-tip { border-top-color: rgba(255,255,255,0.96) !important; border-bottom-color: rgba(255,255,255,0.96) !important; }
+.maplibregl-ctrl-group { background: rgba(255,255,255,0.92); border: 1px solid var(--line); backdrop-filter: blur(8px); }
 .maplibregl-ctrl-group button + button { border-top: 1px solid var(--line); }
+.maplibregl-ctrl-attrib { background: rgba(255,255,255,0.8) !important; }

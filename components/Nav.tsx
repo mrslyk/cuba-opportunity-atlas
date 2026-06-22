@@ -31,8 +31,8 @@ export function Nav() {
               <Link
                 key={l.href}
                 href={l.href}
-                className={`rounded px-2.5 py-1.5 text-sm transition-colors ${
-                  active ? "bg-white/10 text-text" : "text-fog hover:bg-white/5 hover:text-text"
+                className={`rounded-md px-2.5 py-1.5 text-sm transition-colors ${
+                  active ? "bg-black/[0.05] font-medium text-text" : "text-fog hover:bg-black/[0.04] hover:text-text"
                 }`}
               >
                 {l.label}
@@ -53,8 +53,8 @@ export function Nav() {
             <Link
               key={l.href}
               href={l.href}
-              className={`whitespace-nowrap rounded px-2.5 py-1 text-sm ${
-                active ? "bg-white/10 text-text" : "text-fog"
+              className={`whitespace-nowrap rounded-md px-2.5 py-1 text-sm ${
+                active ? "bg-black/[0.05] font-medium text-text" : "text-fog"
               }`}
             >
               {l.label}

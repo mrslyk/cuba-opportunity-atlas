@@ -14,7 +14,7 @@ export function OpportunityCard({ o }: { o: EnrichedOpportunity }) {
       <div className="flex items-start justify-between gap-3">
         <div>
           <div className="kicker" style={{ color: m.color }}>{m.label} · {o.province}</div>
-          <h3 className="mt-1 font-semibold leading-tight text-text group-hover:text-white">{o.name}</h3>
+          <h3 className="mt-1 font-semibold leading-tight text-text group-hover:text-[#047857]">{o.name}</h3>
         </div>
       </div>
       <p className="line-clamp-2 text-sm text-fog">{o.status || o.type}</p>

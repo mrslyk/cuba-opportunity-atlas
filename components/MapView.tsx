@@ -145,11 +145,11 @@ export function MapView({
               className={`px-3 py-2 transition-colors ${
                 mode === k
                   ? k === "invest"
-                    ? "bg-invest/20 text-invest"
+                    ? "bg-invest/[0.14] text-[#047857]"
                     : k === "claims"
-                    ? "bg-risk/20 text-risk"
-                    : "bg-white/10 text-text"
-                  : "text-fog hover:bg-white/5"
+                    ? "bg-risk/[0.14] text-[#c2410c]"
+                    : "bg-black/[0.06] text-text"
+                  : "text-fog hover:bg-black/[0.04]"
               }`}
             >
               {label}
@@ -182,7 +182,7 @@ export function MapView({
       {/* Legend */}
       <div className="pointer-events-none absolute bottom-3 left-3 z-10 hidden rounded-md border border-[var(--line)] bg-[var(--panel)]/90 p-2 text-[11px] text-fog backdrop-blur sm:block">
         <div className="flex items-center gap-1.5"><span className="inline-block h-3 w-3 rounded-full border-2 border-invest bg-private" /> Investable today</div>
-        <div className="mt-1 flex items-center gap-1.5"><span className="inline-block h-3 w-3 rounded-full border-2 border-white/60 bg-atlas" /> Atlas — info only</div>
+        <div className="mt-1 flex items-center gap-1.5"><span className="inline-block h-3 w-3 rounded-full border-2 border-ghost bg-atlas" /> Atlas — info only</div>
         <div className="mt-1 flex items-center gap-1.5"><span className="inline-block h-3 w-3 rounded-full bg-risk shadow-[0_0_8px_2px_rgba(249,115,22,.7)]" /> ⚠️ Title III risk</div>
       </div>
 

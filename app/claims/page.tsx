@@ -86,7 +86,7 @@ export default function ClaimsPage() {
           </thead>
           <tbody>
             {rest.map((o) => (
-              <tr key={o.id} className="border-t border-[var(--line)] hover:bg-white/5">
+              <tr key={o.id} className="border-t border-[var(--line)] hover:bg-black/[0.025]">
                 <td className="p-3">
                   <Link href={`/opportunity/${o.id}`} className="font-medium text-text hover:underline">{o.name}</Link>
                   <div className="kicker mt-0.5" style={{ color: sectorMeta(o.sector).color }}>{sectorMeta(o.sector).label}</div>

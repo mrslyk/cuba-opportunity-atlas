@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { Nav } from "@/components/Nav";
+
+const sans = Inter({ subsets: ["latin"], variable: "--font-sans", display: "swap" });
+const mono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono", display: "swap" });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://cuba-opportunity-atlas.netlify.app"),
@@ -22,7 +26,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${sans.variable} ${mono.variable}`}>
       <body className="min-h-screen font-sans antialiased">
         <Nav />
         <main className="min-h-[calc(100vh-3.5rem)]">{children}</main>

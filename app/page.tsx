@@ -28,9 +28,9 @@ export default function Home() {
           <a href="https://qvapay.com" target="_blank" rel="noopener noreferrer" className="text-private hover:underline">QvaPay</a>{" "}
           · independent research
         </div>
-        <h1 className="max-w-4xl text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
+        <h1 className="max-w-4xl text-4xl font-bold leading-[1.05] tracking-tight sm:text-[3.4rem]">
           Invest in a free Cuba&apos;s economy — and back its entrepreneurs{" "}
-          <span className="text-private">today</span>.
+          <span className="grad-text">today</span>.
         </h1>
         <p className="prose-cuba mt-5 text-base">
           The map-first intelligence atlas of every major asset in Cuba: who controls it, what it
