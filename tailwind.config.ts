@@ -46,6 +46,8 @@ const config: Config = {
       },
       backgroundImage: {
         brand: "linear-gradient(135deg, #10b981 0%, #06b6d4 50%, #3b82f6 100%)",
+        // Optimistic "dawn over a free Cuba" — warm gold rising into growth-green & sky
+        sun: "linear-gradient(120deg, #f59e0b 0%, #f5b50b 18%, #34d399 60%, #06b6d4 100%)",
       },
     },
   },

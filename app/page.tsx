@@ -30,13 +30,16 @@ export default function Home() {
         </div>
         <h1 className="max-w-4xl text-4xl font-bold leading-[1.05] tracking-tight sm:text-[3.4rem]">
           Invest in a free Cuba&apos;s economy — and back its entrepreneurs{" "}
-          <span className="grad-text">today</span>.
+          <span className="grad-sun">today</span>.
         </h1>
         <p className="prose-cuba mt-5 text-base">
           The map-first intelligence atlas of every major asset in Cuba: who controls it, what it
           would take to rebuild it, who it was confiscated from in 1960 — and the licensed
           private-sector slice that&apos;s legally investable right now. Two layers, one compliance
           line drawn on every pixel.
+        </p>
+        <p className="mt-4 text-base font-medium text-[#047857]">
+          When Cuba opens, the map is already drawn — and the rebuilding starts with its people.
         </p>
         <div className="mt-6 flex flex-wrap gap-3">
           <Link href="/map" className="btn btn-atlas">Open the map →</Link>
