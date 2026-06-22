@@ -8,7 +8,7 @@ const sans = Inter({ subsets: ["latin"], variable: "--font-sans", display: "swap
 const mono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono", display: "swap" });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://newqva.com"),
+  metadataBase: new URL("https://cubanew.com"),
   title: {
     default: "Cuba Opportunity Atlas",
     template: "%s · Cuba Opportunity Atlas",

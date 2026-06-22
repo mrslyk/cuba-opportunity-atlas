@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { enriched, entities } from "@/lib/data";
 
-const BASE = "https://newqva.com";
+const BASE = "https://cubanew.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes = ["", "/map", "/sectors", "/claims", "/entities", "/invest", "/compliance", "/data", "/about"];
