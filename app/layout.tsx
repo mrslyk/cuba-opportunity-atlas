@@ -56,7 +56,10 @@ function Footer() {
       </div>
       <div className="border-t border-[var(--line)]">
         <div className="container-x flex flex-wrap items-center justify-between gap-2 py-4 text-xs text-ghost">
-          <span>© {new Date().getFullYear()} Cuba Opportunity Atlas · powered by QvaPay</span>
+          <span>
+            © 2026 Cuba Opportunity Atlas · powered by{" "}
+            <span className="text-text">QvaPay</span> — fintech OS for a free and prosperous Cuba.
+          </span>
           <span className="font-mono">Data as of 2026-06-20</span>
         </div>
       </div>
