@@ -58,7 +58,8 @@ function Footer() {
         <div className="container-x flex flex-wrap items-center justify-between gap-2 py-4 text-xs text-ghost">
           <span>
             © 2026 Cuba Opportunity Atlas · powered by{" "}
-            <span className="text-text">QvaPay</span> — fintech OS for a free and prosperous Cuba.
+            <a href="https://qvapay.com" target="_blank" rel="noopener noreferrer" className="text-text hover:text-private hover:underline">QvaPay</a>{" "}
+            — fintech OS for a free and prosperous Cuba.
           </span>
           <span className="font-mono">Data as of 2026-06-20</span>
         </div>

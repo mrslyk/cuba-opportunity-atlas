@@ -23,7 +23,11 @@ export default function Home() {
     <div>
       {/* Hero */}
       <section className="container-x pt-12 pb-8">
-        <div className="kicker mb-3">Powered by QvaPay · independent research</div>
+        <div className="kicker mb-3">
+          Powered by{" "}
+          <a href="https://qvapay.com" target="_blank" rel="noopener noreferrer" className="text-private hover:underline">QvaPay</a>{" "}
+          · independent research
+        </div>
         <h1 className="max-w-4xl text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
           Invest in a free Cuba&apos;s economy — and back its entrepreneurs{" "}
           <span className="text-private">today</span>.
