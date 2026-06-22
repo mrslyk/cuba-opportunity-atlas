@@ -1278,5 +1278,762 @@
       "OnCuba"
     ],
     "notes": "Foreign concessionaires (BrasCuba, Richmeat, Profood). 100% foreign ownership permitted in-zone — still U.S.-restricted."
+  },
+  {
+    "id": "airport-vra",
+    "name": "Juan Gualberto Gómez Airport (VRA)",
+    "sector": "transport",
+    "type": "International tourism airport",
+    "lat": 23.034,
+    "lng": -81.436,
+    "province": "Matanzas",
+    "scale": "Cuba's 2nd-busiest airport; ~1.3M+ pax/yr (peak); single 3,500 m runway; 1 international terminal",
+    "status": "Operational; serves the Varadero resort corridor. Terminal repaired/upgraded 2024 under the 2024-2030 airport modernization plan. Concession/JV opportunity in terminal operations and ground services.",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "sources": [
+      "Wikipedia",
+      "CiberCuba",
+      "Flightradar24"
+    ],
+    "notes": "Operated by ECASA (state airport operator). No current foreign operator."
+  },
+  {
+    "id": "airport-hog",
+    "name": "Frank País Airport (HOG)",
+    "sector": "transport",
+    "type": "International tourism airport",
+    "lat": 20.785,
+    "lng": -76.316,
+    "province": "Holguín",
+    "scale": "Single 3,238 m runway with ILS; terminal ~1,200 pax/hr after 2007 expansion",
+    "status": "Operational; gateway to Guardalavaca beaches. Comfort/AC upgrades ongoing under the 2024-2030 plan. Open to foreign concession/modernization.",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "sources": [
+      "Wikipedia",
+      "CiberCuba",
+      "Universal Weather"
+    ],
+    "notes": "Operated by ECASA (state). No current foreign operator."
+  },
+  {
+    "id": "airport-scu",
+    "name": "Antonio Maceo Airport (SCU)",
+    "sector": "transport",
+    "type": "International airport",
+    "lat": 19.975,
+    "lng": -75.836,
+    "province": "Santiago de Cuba",
+    "scale": "Main runway ~4,002 m plus secondary 1,400 m; 1 terminal",
+    "status": "Operational; principal airport of eastern Cuba. Full renovation under evaluation for 2025. Concession/upgrade opportunity.",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "sources": [
+      "Wikipedia",
+      "CiberCuba",
+      "Airport Code Guide"
+    ],
+    "notes": "Operated by ECASA (state). No current foreign operator."
+  },
+  {
+    "id": "airport-snu",
+    "name": "Abel Santamaría Airport (SNU)",
+    "sector": "transport",
+    "type": "International airport",
+    "lat": 22.492,
+    "lng": -79.944,
+    "province": "Villa Clara",
+    "scale": "Single ~3,017 m runway; 1 terminal; ~10 km from Santa Clara",
+    "status": "Operational; main gateway for Cayo Santa María resorts. In national runway-safety and modernization upgrades. Open to terminal/services investment.",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "sources": [
+      "Wikipedia",
+      "Universal Weather",
+      "airportcuba.net"
+    ],
+    "notes": "Operated by ECASA (state). No current foreign operator."
+  },
+  {
+    "id": "airport-cmw",
+    "name": "Ignacio Agramonte International Airport (CMW)",
+    "sector": "transport",
+    "type": "International airport",
+    "lat": 21.42,
+    "lng": -77.848,
+    "province": "Camagüey",
+    "scale": "Single 3,000 m runway; 1 terminal",
+    "status": "Operational; serves Camagüey city and Santa Lucía beach. AC/comfort improvements ongoing under the 2024-2030 plan. Concession/modernization opportunity.",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "sources": [
+      "Wikipedia",
+      "CiberCuba",
+      "Universal Weather"
+    ],
+    "notes": "Operated by ECASA (state). No current foreign operator."
+  },
+  {
+    "id": "airport-cfg",
+    "name": "Jaime González Airport (CFG)",
+    "sector": "transport",
+    "type": "International airport",
+    "lat": 22.15,
+    "lng": -80.414,
+    "province": "Cienfuegos",
+    "scale": "Single 2,400 m runway; ~4 km from Cienfuegos",
+    "status": "Operational with limited scheduled international traffic. In the national runway-safety program. Opportunity to grow tourism/charter capacity.",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "sources": [
+      "Wikipedia",
+      "Universal Weather",
+      "airportcuba.net"
+    ],
+    "notes": "Operated by ECASA (state). No current foreign operator."
+  },
+  {
+    "id": "airport-cyo",
+    "name": "Vilo Acuña Airport (CYO)",
+    "sector": "transport",
+    "type": "International tourism airport",
+    "lat": 21.617,
+    "lng": -81.546,
+    "province": "Isla de la Juventud (Cayo Largo del Sur)",
+    "scale": "Single 3,000 m runway; 1 terminal",
+    "status": "Operational; dedicated resort gateway for Cayo Largo del Sur. Rehabilitation completed under the 2024-2030 plan. Open to concession tied to resort development.",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "sources": [
+      "Wikipedia",
+      "CiberCuba",
+      "world-airport-codes"
+    ],
+    "notes": "Operated by ECASA (state). No current foreign operator."
+  },
+  {
+    "id": "airport-mzo",
+    "name": "Sierra Maestra Airport (MZO)",
+    "sector": "transport",
+    "type": "Domestic/regional airport",
+    "lat": 20.288,
+    "lng": -77.089,
+    "province": "Granma",
+    "scale": "Single 3,000 m runway; ~12 km from Manzanillo",
+    "status": "Operational; serves Manzanillo and Granma with mainly domestic and seasonal charter flights. Upside tied to southeastern tourism growth.",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "sources": [
+      "world-airport-codes",
+      "Universal Weather",
+      "airportcuba.net"
+    ],
+    "notes": "Operated by ECASA (state). No current foreign operator."
+  },
+  {
+    "id": "airport-vtu",
+    "name": "Hermanos Ameijeiras Airport (VTU)",
+    "sector": "transport",
+    "type": "Domestic/regional airport",
+    "lat": 20.988,
+    "lng": -76.936,
+    "province": "Las Tunas",
+    "scale": "Single ~1,819 m runway; small terminal",
+    "status": "Small regional airport serving Las Tunas, primarily domestic Cubana service. Needs runway/terminal investment for international or larger aircraft.",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "sources": [
+      "Wikipedia",
+      "metar-taf.com",
+      "Universal Weather"
+    ],
+    "notes": "Operated by ECASA (state). No current foreign operator."
+  },
+  {
+    "id": "airport-bca",
+    "name": "Gustavo Rizo Airport (BCA)",
+    "sector": "transport",
+    "type": "Domestic airport",
+    "lat": 20.365,
+    "lng": -74.506,
+    "province": "Guantánamo",
+    "scale": "Single 1,850 m runway; daytime-only; small terminal",
+    "status": "Small domestic airport serving Baracoa, daytime-only. Niche eco/heritage-tourism upside; needs lighting/runway investment.",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "sources": [
+      "Wikipedia",
+      "SkyVector",
+      "Great Circle Mapper"
+    ],
+    "notes": "Operated by ECASA (state). No current foreign operator."
+  },
+  {
+    "id": "port-nuevitas",
+    "name": "Port of Nuevitas (Puerto Tarafa / Pastelillo)",
+    "sector": "ports",
+    "type": "Bulk cargo / sugar / fertilizer / cement port",
+    "lat": 21.5453,
+    "lng": -77.2644,
+    "province": "Camagüey",
+    "scale": "Berths across Pastelillo, Puerto Tarafa, Bufadero; max draft ~10.3 m; tankers up to ~14,000 DWT; ~40 calls/yr",
+    "status": "Operational but aging — a principal sugar-export and bulk-import port (fertilizer, grain, cement). Narrow channel limits vessel size. Opportunity in dredging and terminal modernization.",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "sources": [
+      "SeaRates",
+      "MarineTraffic",
+      "MagicPort",
+      "Wikipedia"
+    ],
+    "notes": "Camagüey's main commercial port; state port authority. Adjacent to the Diez de Octubre thermo plant."
+  },
+  {
+    "id": "port-cardenas",
+    "name": "Port of Cárdenas",
+    "sector": "ports",
+    "type": "Sugar / general cargo port",
+    "lat": 23.0356,
+    "lng": -81.2042,
+    "province": "Matanzas",
+    "scale": "Single pier ~750 m, 4 berths; shallow bay limits draft",
+    "status": "Operational regional port on Cárdenas Bay — sugar exports plus agricultural/industrial cargo. Near the Varadero tourism corridor. Opportunity in cargo-handling upgrades and dredging.",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "sources": [
+      "MarineLink Ports Directory",
+      "Bansar",
+      "TheFreight"
+    ],
+    "notes": "UN/LOCODE CUCAR. State-operated. Distinct from the Matanzas Supertanker Base on the adjacent bay."
+  },
+  {
+    "id": "port-manzanillo",
+    "name": "Port of Manzanillo",
+    "sector": "ports",
+    "type": "Anchorage / transshipment / petroleum (CBM)",
+    "lat": 20.3417,
+    "lng": -77.1213,
+    "province": "Granma",
+    "scale": "Cargo worked at anchor; anchorage LOA up to 200 m, draft ~10 m; petroleum via conventional buoy mooring",
+    "status": "Operational but constrained — transshipment for sugar, tobacco, timber; CBM handles petroleum imports. Reef-limited, daylight-only navigation. Opportunity in fixed-berth construction and channel/aids improvement.",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "sources": [
+      "FindAPort",
+      "SeaRates",
+      "CargoRouter",
+      "Wikipedia"
+    ],
+    "notes": "On the Gulf of Guacanayabo near the Cauto delta; state-operated. Also a regional fishing base. UN/LOCODE CUMZO."
+  },
+  {
+    "id": "port-casilda",
+    "name": "Port of Casilda (Trinidad)",
+    "sector": "ports",
+    "type": "Minor cargo / fishing / cruise-loading port",
+    "lat": 21.7513,
+    "lng": -79.9913,
+    "province": "Sancti Spíritus",
+    "scale": "One pier, 2 berths; small vessels; loading also at anchor in Casilda Bay",
+    "status": "Small operational port serving Trinidad (5 km inland, UNESCO city). Historic sugar/rum export point; now minor cargo, fishing and small-vessel/yacht calls. Strong tourism-linked upside near Playa Ancón.",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "sources": [
+      "Wikipedia",
+      "SeaRates",
+      "CruiseMapper",
+      "MarineTraffic"
+    ],
+    "notes": "Casilda Bay enclosed by the Ancón Peninsula; state-operated. Rail terminus to Trinidad. UN/LOCODE CUCAS."
+  },
+  {
+    "id": "port-isabela-de-sagua",
+    "name": "Port of Isabela de Sagua",
+    "sector": "ports",
+    "type": "Minor sugar / fishing port",
+    "lat": 22.9401,
+    "lng": -80.013,
+    "province": "Villa Clara",
+    "scale": "Shallow-draft north-coast port; small-vessel berths plus marina; rail link to Sagua La Grande sugar valley",
+    "status": "Diminished — once a busy sugar/tobacco export port; now low-volume fishing and a small marina, threatened by sea-level rise. Opportunity is largely tourism/marina rather than heavy cargo.",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "sources": [
+      "Wikipedia",
+      "database.earth",
+      "Navily",
+      "LoveCuba"
+    ],
+    "notes": "Northern terminus of the rail line serving Sagua La Grande mills; state-operated."
+  },
+  {
+    "id": "port-carupano",
+    "name": "Puerto Carúpano (Cayo Juan Claro, Puerto Padre Bay)",
+    "sector": "ports",
+    "type": "Bulk sugar export terminal",
+    "lat": 21.2667,
+    "lng": -76.55,
+    "province": "Las Tunas",
+    "scale": "Bulk sugar terminal on Cayo Juan Claro (causeway-linked); deep, protected Puerto Padre Bay; bulk sugar/molasses loading, fuel-oil discharge",
+    "status": "North-coast bulk-sugar export terminal (1978), serving the Antonio Guiteras mill and Camagüey/Holguín output. Operational but underutilized amid the sugar-industry collapse. Opportunity in terminal rehab tied to any sugar/agro revival.",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "sources": [
+      "Wikipedia (Puerto Padre)",
+      "EcuRed",
+      "Tageo",
+      "Mindat"
+    ],
+    "notes": "On Cayo Juan Claro in Puerto Padre Bay; state-operated. Counterpart to Guayabal on the south coast. Coordinates approximate."
+  },
+  {
+    "id": "port-guayabal",
+    "name": "Port of Guayabal",
+    "sector": "ports",
+    "type": "Bulk sugar export terminal",
+    "lat": 20.7167,
+    "lng": -77.6333,
+    "province": "Las Tunas",
+    "scale": "Single pier ~156 m; bulk sugar loaded by onshore grab cranes / ship's gear; south-coast Gulf of Guacanayabo",
+    "status": "Largely abandoned/derelict as of 2026 — local reporting (Apr 2026) calls it a 'cemetery of iron and rust,' non-operational despite deep-water access and proximity to the U.S. East Coast. High-upside rehabilitation/greenfield bulk-terminal opportunity.",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "sources": [
+      "UNIS",
+      "Seabay",
+      "MarineLink",
+      "CiberCuba"
+    ],
+    "notes": "Operated by Empresa Terminales Mambisas de La Habana (state). Cuba's first bulk-sugar terminal site. UN/LOCODE CUGYB. Coordinates approximate."
+  },
+  {
+    "id": "cte-maximo-gomez-mariel",
+    "name": "CTE Máximo Gómez (Mariel)",
+    "sector": "energy",
+    "type": "Thermoelectric power plant (oil-fired)",
+    "lat": 23.0218,
+    "lng": -82.7498,
+    "province": "Artemisa",
+    "scale": "~400 MW nameplate (Soviet-era ~90 MW units; effective output far lower)",
+    "status": "Severely degraded 2025-2026. A 2022 fire knocked out Units 6-7 (~170 MW); Unit 6 returned then went offline again Sept 2025 on oil contamination and pump faults. Chronic outages. Opportunity: full retrofit/repowering.",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "sources": [
+      "Global Energy Monitor",
+      "CiberCuba",
+      "OpenInfraMap",
+      "Cubadebate"
+    ],
+    "notes": "Operated by Unión Eléctrica (UNE) under MINEM via the SEN national grid."
+  },
+  {
+    "id": "cte-ernesto-guevara-santa-cruz",
+    "name": "CTE Ernesto Guevara (Santa Cruz del Norte)",
+    "sector": "energy",
+    "type": "Thermoelectric power plant (national-crude-fired)",
+    "lat": 23.1587,
+    "lng": -81.9518,
+    "province": "Mayabeque",
+    "scale": "~295-300 MW (two ~100 MW + one ~95 MW; Soviet technology)",
+    "status": "One of the larger western plants, plagued by frequent unit trips through 2025-2026. Burns national crude via pipeline (lower fuel-transport cost). Opportunity: unit overhaul/repowering.",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "sources": [
+      "Global Energy Monitor",
+      "CiberCuba",
+      "MEP Cuba",
+      "Cubadebate"
+    ],
+    "notes": "Also called 'Este de la Habana'. Operated by Unión Eléctrica (UNE) under MINEM."
+  },
+  {
+    "id": "cte-cespedes-cienfuegos",
+    "name": "CTE Carlos Manuel de Céspedes (Cienfuegos)",
+    "sector": "energy",
+    "type": "Thermoelectric power plant (oil-fired)",
+    "lat": 22.1585,
+    "lng": -80.456,
+    "province": "Cienfuegos",
+    "scale": "316 MW (two ~158 MW oil-fired units)",
+    "status": "Repeatedly down through 2025: Unit 3 tripped on a boiler leak then a condenser fault; Unit 4 under maintenance. Long repair cycles add to the national deficit. Opportunity: boiler/condenser rehabilitation.",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "sources": [
+      "Global Energy Monitor",
+      "Cubaheadlines",
+      "CiberCuba",
+      "OpenInfraMap"
+    ],
+    "notes": "Operated by Unión Eléctrica (UNE) under MINEM."
+  },
+  {
+    "id": "cte-rente-santiago",
+    "name": "CTE Antonio Maceo (Renté)",
+    "sector": "energy",
+    "type": "Thermoelectric power plant (oil-fired)",
+    "lat": 19.9947,
+    "lng": -75.8705,
+    "province": "Santiago de Cuba",
+    "scale": "~380 MW nameplate (four ~95 MW Soviet-era units); real output ~258 MW",
+    "status": "Critically aged (in service since the late 1960s). Frequent furnace leaks and vacuum/feed-water faults caused eastern-Cuba blackouts through 2025-2026. Opportunity: comprehensive rehabilitation or replacement.",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "sources": [
+      "Global Energy Monitor",
+      "Cubaheadlines",
+      "Translating Cuba",
+      "OpenStreetMap"
+    ],
+    "notes": "On the Renté peninsula, Santiago Bay. Operated by Unión Eléctrica (UNE) under MINEM."
+  },
+  {
+    "id": "cte-diez-de-octubre-nuevitas",
+    "name": "CTE Diez de Octubre (Nuevitas)",
+    "sector": "energy",
+    "type": "Thermoelectric power plant (oil-fired)",
+    "lat": 21.56498,
+    "lng": -77.27175,
+    "province": "Camagüey",
+    "scale": "~280-375 MW (~125 MW units; sources vary)",
+    "status": "Operating but unreliable — a boiler caught fire Dec 2025; multiple unit trips through 2025-2026. Major contributor to the central-Cuba deficit. Opportunity: boiler replacement/modernization.",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "sources": [
+      "Global Energy Monitor",
+      "Unión Eléctrica",
+      "CiberCuba",
+      "OpenStreetMap"
+    ],
+    "notes": "At Punta de Domingo, Nuevitas Bay. Operated by Unión Eléctrica (UNE) under MINEM."
+  },
+  {
+    "id": "cte-otto-parellada-tallapiedra",
+    "name": "CTE Otto Parellada (Tallapiedra)",
+    "sector": "energy",
+    "type": "Thermoelectric power plant (urban Havana, oil-fired)",
+    "lat": 23.1289,
+    "lng": -82.3461,
+    "province": "La Habana",
+    "scale": "~60-64 MW (single legacy unit)",
+    "status": "Small, very old urban plant on Havana Bay; a 64 MW unit (1972) ran until ~2024, intermittently feeding ~45 MW. Site sits on the historic Havana grid tied to the confiscated Cuban Electric Company — see /claims. Opportunity: limited; value mainly as urban land/peaker.",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "sources": [
+      "Global Energy Monitor",
+      "CiberCuba",
+      "lahabana.gob.cu"
+    ],
+    "notes": "Operated by Unión Eléctrica (UNE) under MINEM. Overlaps the pre-1959 Havana grid in the Cuban Electric Company confiscation claim — not treated as a separate claim here. Coordinates approximate."
+  },
+  {
+    "id": "energy-energas-boca-de-jaruco",
+    "name": "Energas Boca de Jaruco (Sherritt JV)",
+    "sector": "energy",
+    "type": "Gas-fired combined-cycle (CCGT)",
+    "lat": 23.18349,
+    "lng": -82.02603,
+    "province": "Mayabeque",
+    "scale": "~150 MW combined-cycle (part of Energas' ~480-506 MW across Boca de Jaruco, Varadero & Puerto Escondido)",
+    "status": "Among Cuba's cheapest, cleanest power — burns associated gas from oil production. Energas supplies ~8-10% of national generation but faces gas-supply/maintenance constraints. Opportunity: gas-capture expansion, though the JV slot is held by Sherritt.",
+    "ownership": "jv",
+    "layer": "atlas",
+    "investable_us": false,
+    "sources": [
+      "Sherritt International 2024-2025 filings",
+      "Global Energy Monitor",
+      "PowerMag",
+      "OpenInfraMap"
+    ],
+    "notes": "Energas S.A. JV: Sherritt (Canada) ~1/3; Unión Eléctrica (UNE) + CUPET ~2/3. Under MINEM."
+  },
+  {
+    "id": "energy-karpowership-cuba",
+    "name": "Karpowership Floating Powerships (Cuba fleet)",
+    "sector": "energy",
+    "type": "Floating powership (barge-mounted generation)",
+    "lat": 23.1497,
+    "lng": -82.3344,
+    "province": "La Habana",
+    "scale": "Up to ~420 MW across the fleet at peak (e.g. Suheyla Sultan ~240 MW; contract ~300 MW)",
+    "status": "Highly volatile — at peak (2023-24) up to 8 Turkish barges off Havana, Mariel and Santiago supplied ~a quarter of Cuba's power. Most departed by May 2025 over unpaid fuel/operating costs; one returned to Havana April 2026. Opportunity is large but financing is the bottleneck.",
+    "ownership": "jv",
+    "layer": "atlas",
+    "investable_us": false,
+    "sources": [
+      "U.S.-Cuba Trade & Economic Council",
+      "Maritime Executive",
+      "elTOQUE",
+      "CiberCuba"
+    ],
+    "notes": "Operated by Karpowership (Karadeniz Holding, Türkiye) under contract to UNE/MINEM; vessels are leased and mobile, not Cuban-owned. Coordinates approximate (Havana Bay anchorage)."
+  },
+  {
+    "id": "rail-hershey-electric",
+    "name": "Hershey Electric Railway (Casablanca–Hershey–Matanzas)",
+    "sector": "rail",
+    "type": "Electric interurban / commuter railway",
+    "lat": 23.1512,
+    "lng": -82.345,
+    "province": "Multi-province",
+    "scale": "~92 km, standard gauge, 600 V DC (Cuba's only electric railway); rolling stock = ex-FGC cars ~60 yrs old",
+    "status": "Severely degraded; mostly suspended since Hurricane Irma (2017), partial Hershey–Jaruco service since 2018. A June 2025 'revival' plan would switch to diesel and restore Matanzas station as heritage. Heritage/tourism rehabilitation opportunity.",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "sources": [
+      "Wikipedia",
+      "IEEE Spectrum",
+      "Havana Times",
+      "CiberCuba"
+    ],
+    "notes": "Operated by Unión de Ferrocarriles de Cuba (UFC) under MITRANS. Built in the 1920s by the Hershey Chocolate Corp."
+  },
+  {
+    "id": "rail-estacion-central-habana",
+    "name": "Estación Central de La Habana (Havana Central Station)",
+    "sector": "rail",
+    "type": "Major passenger rail terminal (National Monument)",
+    "lat": 23.131,
+    "lng": -82.3528,
+    "province": "La Habana",
+    "scale": "Principal national terminal (1912); restoration since 2017; solar panels being added to platforms",
+    "status": "Under long-running restoration (delayed by crisis, sanctions, pandemic); partial reopening targeted late 2025/early 2026 per MITRANS. Second phase covers offices and a commercial gallery — adaptive-reuse/commercial concession opportunity.",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "sources": [
+      "OnCubaNews",
+      "CiberCuba",
+      "CubaHeadlines",
+      "lahabana.gob.cu"
+    ],
+    "notes": "Owned/operated by Unión de Ferrocarriles de Cuba (UFC) under MITRANS. National Monument; hub of the national and Havana suburban networks."
+  },
+  {
+    "id": "rail-rolling-stock-recap",
+    "name": "National Rolling Stock & Locomotive Recapitalization",
+    "sector": "rail",
+    "type": "Rolling stock / motive-power modernization program",
+    "lat": 23.131,
+    "lng": -82.3528,
+    "province": "Nationwide",
+    "scale": "RZD framework ~€1.888B (~$2B); RA-2 EMUs, LDE-2500 locos, TGM shunters (Russia); ~80 of ~250 Chinese carriages delivered",
+    "status": "Chronically under-delivered on Cuban payment incapacity; formally resumed Sept 2024 under a March 2024 Russia-Cuba credit agreement. Major equipment-supply and financing opportunity (state-to-state, non-U.S.).",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "sources": [
+      "Railway Gazette",
+      "TASS",
+      "International Railway Journal",
+      "CiberCuba"
+    ],
+    "notes": "Procured by Unión de Ferrocarriles de Cuba (UFC) under MITRANS. Suppliers: TMH/Sinara (Russia) via RZD; CRRC-type stock (China) — sanctioned counterparties."
+  },
+  {
+    "id": "rail-azcuba-sugar",
+    "name": "Sugar-Mill Railway Network (AZCUBA)",
+    "sector": "rail",
+    "type": "Industrial sugar railways (standard + narrow gauge)",
+    "lat": 22.0,
+    "lng": -79.5,
+    "province": "Multi-province",
+    "scale": "~7,742 km of plantation track (2003): ~65% standard, ~35% narrow gauge; current operable mileage far lower",
+    "status": "Heavily contracted with the collapse of sugar output (mass mill closures since 2002); much track abandoned or steam-era. Niche heritage/tourism (steam) and freight-rehab potential where mills remain active.",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "sources": [
+      "Wikipedia",
+      "IndexMundi",
+      "railography.co.uk",
+      "Pilot Guides"
+    ],
+    "notes": "Operated by the AZCUBA sugar group (formerly MINAZ), separate from the public UFC network."
+  },
+  {
+    "id": "rail-havana-suburban",
+    "name": "Havana Suburban Railway",
+    "sector": "rail",
+    "type": "Suburban / commuter rail network",
+    "lat": 23.13,
+    "lng": -82.354,
+    "province": "Multi-province",
+    "scale": "8 lines from 3 terminals (Central, Tulipán, Casablanca); standard gauge; only the Hershey line electrified",
+    "status": "Partially operational/degraded — several lines non-operational, some seasonal. Commuter-rail rehabilitation and EMU re-equipment opportunity serving Havana, Artemisa, Mayabeque, Matanzas.",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "sources": [
+      "Wikipedia",
+      "Seat61",
+      "tramz.com"
+    ],
+    "notes": "Operated by Unión de Ferrocarriles de Cuba (UFC) under MITRANS; the Casablanca line is the Hershey electric line."
+  },
+  {
+    "id": "road-carretera-central",
+    "name": "Carretera Central (CN)",
+    "sector": "transport",
+    "type": "National highway",
+    "lat": 22.1483,
+    "lng": -80.4392,
+    "province": "Multi-province",
+    "scale": "~1,139 km original (1927-31); ~1,435 km modern, mostly 2-lane",
+    "status": "Aging 1920s spine from La Fe (Pinar del Río) to Baracoa (Guantánamo), linking nearly all provincial capitals. Worn pavement, narrow lanes, no shoulders — large-scale rehabilitation/capacity-upgrade opportunity.",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "sources": [
+      "Wikipedia",
+      "AARoads Wiki",
+      "EcuRed"
+    ],
+    "notes": "Controlled by MITRANS. Original 1927-31 build under President Machado; U.S. contractor Warren Bros. (Boston) involved. Representative point near the central spine."
+  },
+  {
+    "id": "road-via-blanca",
+    "name": "Vía Blanca (Havana–Matanzas–Varadero)",
+    "sector": "transport",
+    "type": "Coastal highway (partial toll road)",
+    "lat": 23.0469,
+    "lng": -82.2569,
+    "province": "Multi-province",
+    "scale": "~138 km (85 km Havana–Matanzas + ~53 km to Varadero); mostly 4-lane",
+    "status": "One of Cuba's busiest highways, the tourism-critical Havana–Varadero link. The Matanzas–Varadero segment is Cuba's only inter-city toll road — resurfacing/widening and toll-concession (PPP) potential.",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "sources": [
+      "Wikipedia",
+      "AARoads Wiki",
+      "TollGuru"
+    ],
+    "notes": "MITRANS. Runs along the Straits of Florida shoreline; part of the Circuito Norte."
+  },
+  {
+    "id": "bridge-bacunayagua",
+    "name": "Puente de Bacunayagua",
+    "sector": "transport",
+    "type": "Bridge",
+    "lat": 23.1561,
+    "lng": -81.8267,
+    "province": "Multi-province",
+    "scale": "~314 m long, ~103-110 m high; 41 slender concrete columns",
+    "status": "Cuba's tallest and longest bridge, an iconic Vía Blanca landmark over the Bacunayagua canyon (Mayabeque/Matanzas border). Built 1957-59. Major tourist viewpoint; long-term structural maintenance and tourism-infrastructure upside.",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "sources": [
+      "Wikipedia",
+      "HighestBridges.com",
+      "Lonely Planet"
+    ],
+    "notes": "MITRANS. Inaugurated 1959; marks the Mayabeque–Matanzas boundary ~86 km east of Havana."
+  },
+  {
+    "id": "road-tunel-bahia-habana",
+    "name": "Túnel de la Bahía de La Habana (Havana Bay Tunnel)",
+    "sector": "transport",
+    "type": "Harbor tunnel",
+    "lat": 23.1476,
+    "lng": -82.3561,
+    "province": "La Habana",
+    "scale": "~733 m long, ~12 m below ground; immersed-tube under the bay",
+    "status": "Operating since 1958; the sole road link under Havana harbor connecting the city to East Havana and the Vía Blanca/Matanzas corridor. Critical 1950s chokepoint with rehabilitation/safety-systems and capacity needs.",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "sources": [
+      "Wikipedia",
+      "Structurae",
+      "lahabana.com"
+    ],
+    "notes": "MITRANS. Built 1957-58 by France's Société de Grands Travaux de Marseille; opened May 1958."
+  },
+  {
+    "id": "road-circuito-norte",
+    "name": "Circuito Norte (Northern Circuit)",
+    "sector": "transport",
+    "type": "National highway (coastal circuit)",
+    "lat": 22.5167,
+    "lng": -79.45,
+    "province": "Multi-province",
+    "scale": "~1,222 km, predominantly 2-lane; incorporates the 138 km Vía Blanca",
+    "status": "Second-longest Cuban highway, west-east along the north coast linking Cárdenas, Sagua, Remedios, Caibarién, Morón and Holguín — the access spine for north-coast cayo tourism. Variable condition; rehabilitation/tourism-access upgrade opportunity.",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "sources": [
+      "Wikipedia",
+      "AARoads Wiki",
+      "Red vial de Cuba"
+    ],
+    "notes": "MITRANS. Feeds the Caibarién and Morón causeways to the northern cays."
+  },
+  {
+    "id": "road-pedraplen-cayo-santa-maria",
+    "name": "Pedraplén Caibarién–Cayo Santa María",
+    "sector": "transport",
+    "type": "Causeway / pedraplén",
+    "lat": 22.5167,
+    "lng": -79.4667,
+    "province": "Villa Clara",
+    "scale": "~48 km stone causeway with ~46 bridge openings",
+    "status": "One of the world's longest sea causeways (built 1989-1999); the sole vehicular access to the Cayo Santa María resort enclave. Tourism-revenue-linked asset — maintenance, bridge-opening and resort-access expansion potential.",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "sources": [
+      "Wikipedia (Cayo Santa María)",
+      "thecubanhistory.com",
+      "CubaPlus"
+    ],
+    "notes": "Roadway under MITRANS; toll-gated access from Caibarién tied to MINTUR tourism entities."
+  },
+  {
+    "id": "road-pedraplen-cayo-coco",
+    "name": "Pedraplén Cayo Coco (Morón–Cayo Coco Causeway)",
+    "sector": "transport",
+    "type": "Causeway / pedraplén",
+    "lat": 22.2333,
+    "lng": -78.5167,
+    "province": "Ciego de Ávila",
+    "scale": "~27 km stone causeway across Bahía de Perros; ~3 million m³ of stone",
+    "status": "Built 1988 across the 'Bay of Dogs' from Morón to Cayo Coco — primary access to Cayo Coco/Cayo Guillermo resorts. Documented water-flow/environmental concerns; upgrade and additional bridge-opening opportunity.",
+    "ownership": "state",
+    "layer": "atlas",
+    "investable_us": false,
+    "sources": [
+      "Wikipedia (Cayo Coco)",
+      "dangerousroads.org",
+      "ASCE Cuba database"
+    ],
+    "notes": "Roadway under MITRANS; toll-gated from Morón; resort access tied to MINTUR entities."
   }
 ]
