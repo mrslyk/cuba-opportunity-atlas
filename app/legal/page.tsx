@@ -58,6 +58,14 @@ export default function LegalPage() {
           </p>
         </div>
 
+        <Link href="/legal/process" className="card card-hover mt-6 flex items-center justify-between gap-3 p-4">
+          <div>
+            <div className="kicker text-atlas">Go deeper</div>
+            <div className="mt-1 font-semibold text-text">How to invest under Cuban law — every requirement →</div>
+            <div className="mt-0.5 text-sm text-fog">The full Law 118 process: the 7 approval stages &amp; deadlines, the three vehicles, capital, tax &amp; labor regimes, guarantees, and the Mariel fast-track.</div>
+          </div>
+        </Link>
+
         {/* PART 1 — CUBA */}
         <h2 className="mt-10 text-2xl font-bold">1 · On the ground in Cuba (Cuban law)</h2>
         <p className="prose-cuba mt-2">
