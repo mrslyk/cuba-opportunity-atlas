@@ -12,6 +12,11 @@ export default function AboutPage() {
       <div className="kicker mb-2">About</div>
       <h1 className="text-3xl font-bold tracking-tight">The Bloomberg-meets-Google-Maps of Cuban opportunity</h1>
       <div className="prose-cuba mt-4">
+        <p className="text-base font-medium text-[#047857]">
+          We&apos;re building this because we believe Cuba opens — and when it does, the people who
+          mapped the opportunity and backed its entrepreneurs early will have built something that
+          matters. This is optimism with a spreadsheet attached.
+        </p>
         <p>
           This is the single best place to <em>discover</em> where value will be unlocked across
           Cuba — and to <em>act</em> on the slice that is legal today. Three products fused on one

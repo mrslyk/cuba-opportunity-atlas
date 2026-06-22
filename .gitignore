@@ -7,3 +7,4 @@ out
 *.log
 .netlify
 coverage
+data/worker-queue.json

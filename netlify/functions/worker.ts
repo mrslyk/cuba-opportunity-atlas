@@ -1,12 +1,16 @@
 /* Netlify Scheduled Function wrapper (schedule set in netlify.toml → @daily).
-   Keeps the DRY-RUN, never-auto-publish posture of scripts/worker.ts. */
+   Live when ANTHROPIC_API_KEY is set; DRY-RUN otherwise. Never auto-publishes
+   and never flips an asset to Layer-1 — proposals go to the /admin review queue.
+
+   Note: a web-search-backed refresh can exceed Netlify's synchronous function
+   timeout; for heavier runs use a background function or the local `npm run worker`. */
+
+import { runRefresh } from "../../scripts/worker-core";
 
 export default async () => {
-  const live = !!process.env.ANTHROPIC_API_KEY;
-  console.log(`[netlify worker] tick · mode=${live ? "LIVE" : "DRY-RUN"} · ${new Date().toISOString()}`);
-  // TODO(live): re-pull CRL/SDN, diff vs snapshots, enqueue changes for /admin.
-  // Layer-1 flips are NEVER auto-published — human approval required.
-  return new Response(JSON.stringify({ ok: true, mode: live ? "live" : "dry-run" }), {
+  const result = await runRefresh();
+  console.log(`[netlify worker] ${result.mode} · ${result.note}`);
+  return new Response(JSON.stringify(result), {
     headers: { "content-type": "application/json" },
   });
 };

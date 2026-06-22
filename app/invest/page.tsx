@@ -24,6 +24,11 @@ export default function InvestPage() {
           capital can take equity in them. That&apos;s exactly where QvaPay wallets are legal and
           powerful.
         </p>
+        <p className="mt-4 max-w-prose2 text-base font-medium text-[#047857]">
+          This is the hopeful part: every dollar here goes straight to a Cuban entrepreneur building
+          something real — a paladar, a farm, a workshop — and lands on the ground the same day. You
+          don&apos;t have to wait for the island to open to start backing its people.
+        </p>
 
         {/* How it works */}
         <div className="mt-6 grid gap-3 md:grid-cols-3">
