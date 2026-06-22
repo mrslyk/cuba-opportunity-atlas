@@ -48,7 +48,7 @@ function Footer() {
           </p>
         </div>
         <FooterCol title="Explore" links={[["/map", "Interactive map"], ["/sectors", "Sectors"], ["/claims", "Helms-Burton claims"], ["/entities", "Controlling entities"]]} />
-        <FooterCol title="Act" links={[["/invest", "Back entrepreneurs"], ["/compliance", "Compliance posture"], ["/data", "Data & methodology"], ["/about", "About"]]} />
+        <FooterCol title="Act" links={[["/invest", "Support entrepreneurs"], ["/legal", "What's allowed"], ["/compliance", "Compliance posture"], ["/about", "About"]]} />
         <div className="text-xs text-ghost">
           <div className="kicker mb-2">Legal</div>
           <p>

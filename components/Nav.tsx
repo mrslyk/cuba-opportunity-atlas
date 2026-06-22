@@ -8,7 +8,8 @@ const LINKS = [
   { href: "/sectors", label: "Sectors" },
   { href: "/claims", label: "Claims" },
   { href: "/entities", label: "Entities" },
-  { href: "/invest", label: "Invest" },
+  { href: "/invest", label: "Support" },
+  { href: "/legal", label: "Legal" },
   { href: "/compliance", label: "Compliance" },
   { href: "/data", label: "Data" },
   { href: "/about", label: "About" },
@@ -41,7 +42,7 @@ export function Nav() {
           })}
         </nav>
         <Link href="/invest" className="btn btn-primary ml-auto md:ml-0 px-3 py-1.5 text-xs">
-          Back entrepreneurs
+          Support entrepreneurs
         </Link>
       </div>
 
