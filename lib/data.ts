@@ -4,6 +4,8 @@ import rawSdn from "@/data/cuba_sdn.json";
 import rawCpal from "@/data/cpal.json";
 import rawEntities from "@/data/entities.json";
 import rawMacro from "@/data/cuba_macro.json";
+import rawReform from "@/data/reform_cards.json";
+import rawEcosystem from "@/data/ecosystem.json";
 
 import {
   OpportunitiesSchema,
@@ -12,6 +14,8 @@ import {
   CpalSchema,
   EntitiesSchema,
   MacroSchema,
+  ReformCardsSchema,
+  EcosystemSchema,
   type Opportunity,
   type ControllingEntity,
 } from "./types";
@@ -30,6 +34,8 @@ export const sdn = SdnSchema.parse(rawSdn);
 export const cpal = CpalSchema.parse(rawCpal);
 export const entitiesFile = EntitiesSchema.parse(rawEntities);
 export const macro = MacroSchema.parse(rawMacro);
+export const reformCards = ReformCardsSchema.parse(rawReform);
+export const ecosystem = EcosystemSchema.parse(rawEcosystem);
 
 /* ── Build fast lookup indexes from the official lists ──────────────────────── */
 const crlNames: { name: string; aka: string[] }[] = crl.categories.flatMap((c) =>
@@ -151,6 +157,7 @@ export type MapPoint = {
   titleIII: TitleIIILevel;
   sanctioned: boolean;
   needsBuild: boolean;
+  priorityRecovery: boolean;
   status: string;
   type: string;
 };
@@ -173,6 +180,7 @@ export function toMapPoint(o: EnrichedOpportunity): MapPoint {
     titleIII: o.titleIII,
     sanctioned: isSanctioned(o.flags),
     needsBuild: BUILD_SIGNALS.test(`${o.status} ${o.type}`),
+    priorityRecovery: !!o.priority_recovery,
     status: o.status ?? "",
     type: o.type ?? "",
   };

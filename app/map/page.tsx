@@ -7,7 +7,10 @@ export const metadata: Metadata = {
   description: "The full-screen interactive atlas of Cuba's assets — filter by sector, ownership, and legal status, toggle the Helms-Burton / Rightful Owners overlay.",
 };
 
-export default function MapPage() {
+export default function MapPage({ searchParams }: { searchParams: { sector?: string; recovery?: string } }) {
+  const sector = typeof searchParams.sector === "string" ? searchParams.sector : "all";
+  const recovery = searchParams.recovery === "1" || searchParams.recovery === "logistics";
+  const logistics = searchParams.recovery === "logistics";
   return (
     <div className="container-x py-4">
       <div className="mb-3">
@@ -17,7 +20,7 @@ export default function MapPage() {
           dossier. Green-ringed markers are supportable via QvaPay; orange glow = active Title III risk.
         </p>
       </div>
-      <MapView points={mapPoints} />
+      <MapView points={mapPoints} initialSector={sector} initialRecovery={recovery} initialLogistics={logistics} />
     </div>
   );
 }

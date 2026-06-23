@@ -5,6 +5,8 @@ import { usePathname } from "next/navigation";
 
 const LINKS = [
   { href: "/map", label: "Map" },
+  { href: "/reform", label: "Reform Watch" },
+  { href: "/ecosystem", label: "Ecosystem" },
   { href: "/sectors", label: "Sectors" },
   { href: "/claims", label: "Claims" },
   { href: "/entities", label: "Entities" },
@@ -25,7 +27,7 @@ export function Nav() {
           <span>Cuba</span>
           <span className="kicker hidden sm:inline">Opportunity Atlas</span>
         </Link>
-        <nav className="ml-auto hidden items-center gap-1 md:flex">
+        <nav className="ml-auto hidden items-center gap-1 xl:flex">
           {LINKS.map((l) => {
             const active = path === l.href || (l.href !== "/" && path.startsWith(l.href));
             return (
@@ -41,13 +43,13 @@ export function Nav() {
             );
           })}
         </nav>
-        <Link href="/invest" className="btn btn-primary ml-auto md:ml-0 px-3 py-1.5 text-xs">
+        <Link href="/invest" className="btn btn-primary ml-auto xl:ml-0 px-3 py-1.5 text-xs">
           Support entrepreneurs
         </Link>
       </div>
 
-      {/* Mobile: horizontally scrollable link row */}
-      <nav className="flex gap-1 overflow-x-auto border-t border-[var(--line)] px-3 py-2 md:hidden">
+      {/* Below xl: horizontally scrollable link row */}
+      <nav className="flex gap-1 overflow-x-auto border-t border-[var(--line)] px-3 py-2 xl:hidden">
         {LINKS.map((l) => {
           const active = path === l.href || (l.href !== "/" && path.startsWith(l.href));
           return (

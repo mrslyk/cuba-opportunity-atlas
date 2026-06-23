@@ -38,6 +38,7 @@ export const OpportunitySchema = z
     investable_us: z.boolean(), // retained for audit; MUST be false (no equity lane)
     participation: Participation.optional(),
     helms_burton_overhang: z.boolean().optional().default(false),
+    priority_recovery: z.boolean().optional().default(false),
     footnote: z.string().optional().default(""),
     sources: z.array(z.string()).default([]),
     notes: z.string().optional().default(""),
@@ -143,3 +144,41 @@ export type ControllingEntity = EntitiesFile["entities"][number];
 /* The macro file is display-only context; keep its schema permissive. */
 export const MacroSchema = z.object({ country: z.string(), retrieved: z.string() }).passthrough();
 export type Macro = z.infer<typeof MacroSchema>;
+
+/* ── Reform Watch — curated digest cards (§0: NO article body field exists) ─── */
+export const ReformCardSchema = z.object({
+  id: z.string(),
+  source: z.string(),
+  publisher: z.string(),
+  authors: z.array(z.string()).min(1), // attribution is mandatory
+  date: z.string(),
+  edition: z.number().optional(),
+  title: z.string(),
+  synopsis: z.string(), // our words, 2-3 sentences — never the article body
+  key_stat: z.string().optional().default(""),
+  map_tags: z.array(z.string()).default([]),
+  why_matters: z.string().optional().default(""),
+  url: z.string(),
+  url_status: z.string().optional().default("ok"),
+  curated_by: z.string().optional().default(""),
+});
+export const ReformCardsSchema = z.array(ReformCardSchema);
+export type ReformCard = z.infer<typeof ReformCardSchema>;
+
+/* ── Ecosystem directory ────────────────────────────────────────────────────── */
+export const EcosystemCategory = z.enum(["on-island", "diaspora", "research"]);
+export const EcosystemEntrySchema = z.object({
+  id: z.string(),
+  name: z.string(),
+  category: EcosystemCategory,
+  type: z.string(),
+  blurb: z.string(),
+  location: z.string().optional().default(""),
+  url: z.string().optional(),
+  tags: z.array(z.string()).default([]),
+  venture: z.string().optional(),
+  watchlist: z.boolean().optional().default(false),
+  featured: z.boolean().optional().default(false),
+});
+export const EcosystemSchema = z.array(EcosystemEntrySchema);
+export type EcosystemEntry = z.infer<typeof EcosystemEntrySchema>;

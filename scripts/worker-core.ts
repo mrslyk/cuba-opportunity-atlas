@@ -22,7 +22,36 @@ export type Proposal = {
   wouldFlipLayer1: boolean; // hard rule: never auto-applied
 };
 
-export type RefreshResult = { mode: "live" | "dry-run"; proposals: Proposal[]; note: string };
+export type RefreshResult = {
+  mode: "live" | "dry-run";
+  proposals: Proposal[];
+  deadLinks: string[]; // ecosystem/reform URLs that failed a reachability check
+  note: string;
+};
+
+/* §4.4 — audit Reform Watch + Ecosystem outbound links. Live only (needs network);
+   returns URLs to prune. pending_canonical links are skipped (intentionally not live yet). */
+async function auditDirectoryLinks(): Promise<string[]> {
+  const dead: string[] = [];
+  const urls = new Set<string>();
+  try {
+    const eco = JSON.parse(fs.readFileSync(path.join(DATA_DIR, "ecosystem.json"), "utf8")) as { url?: string }[];
+    for (const e of eco) if (e.url) urls.add(e.url);
+    const reform = JSON.parse(fs.readFileSync(path.join(DATA_DIR, "reform_cards.json"), "utf8")) as { url: string; url_status?: string }[];
+    for (const c of reform) if (c.url_status !== "pending_canonical") urls.add(c.url);
+  } catch {
+    return dead;
+  }
+  for (const u of urls) {
+    try {
+      const r = await fetch(u, { method: "HEAD", redirect: "follow" });
+      if (r.status >= 400) dead.push(`${u} (${r.status})`);
+    } catch {
+      dead.push(`${u} (unreachable)`);
+    }
+  }
+  return dead;
+}
 
 const DATA_DIR = path.resolve(process.cwd(), "data");
 const QUEUE_PATH = path.join(DATA_DIR, "worker-queue.json");
@@ -39,7 +68,7 @@ export async function runRefresh(opts: { dryRun?: boolean } = {}): Promise<Refre
   const stamp = new Date().toISOString();
 
   if (opts.dryRun || !hasKey) {
-    return { mode: "dry-run", proposals: [], note: `No ANTHROPIC_API_KEY — DRY-RUN at ${stamp}. Nothing published.` };
+    return { mode: "dry-run", proposals: [], deadLinks: [], note: `No ANTHROPIC_API_KEY — DRY-RUN at ${stamp}. Nothing published.` };
   }
 
   const opps: Opp[] = JSON.parse(fs.readFileSync(path.join(DATA_DIR, "opportunities.json"), "utf8"));
@@ -70,12 +99,17 @@ ${SCHEMA_HINT}`;
     .join("\n");
 
   const proposals = parseProposals(text, subset);
-  fs.writeFileSync(QUEUE_PATH, JSON.stringify({ generated: stamp, proposals }, null, 2));
+  // §4.4: also audit Reform Watch + Ecosystem outbound links for pruning.
+  // (New reform/ecosystem entries are likewise drafted for human approval — never
+  // auto-published — and would be appended to the queue here in a fuller build.)
+  const deadLinks = await auditDirectoryLinks();
+  fs.writeFileSync(QUEUE_PATH, JSON.stringify({ generated: stamp, proposals, deadLinks }, null, 2));
 
   return {
     mode: "live",
     proposals,
-    note: `Live refresh at ${stamp}: ${proposals.length} proposal(s) queued for human approval in /admin. Nothing published.`,
+    deadLinks,
+    note: `Live refresh at ${stamp}: ${proposals.length} proposal(s) + ${deadLinks.length} dead link(s) queued for human approval in /admin. Nothing published.`,
   };
 }
 

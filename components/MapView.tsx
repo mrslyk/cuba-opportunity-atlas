@@ -36,13 +36,22 @@ const ESRI_SATELLITE: maplibregl.StyleSpecification = {
   ],
 };
 
+// "logistics" (per the Reform Watch spec) = ports + the Mariel zone.
+const LOGISTICS_SECTORS = new Set(["ports", "industry-zone"]);
+
 export function MapView({
   points,
   initialMode = "all",
+  initialSector = "all",
+  initialRecovery = false,
+  initialLogistics = false,
   compact = false,
 }: {
   points: MapPoint[];
   initialMode?: LayerMode;
+  initialSector?: string;
+  initialRecovery?: boolean;
+  initialLogistics?: boolean;
   compact?: boolean;
 }) {
   const mapEl = useRef<HTMLDivElement>(null);
@@ -51,9 +60,11 @@ export function MapView({
   const [ready, setReady] = useState(false);
 
   const [mode, setMode] = useState<LayerMode>(initialMode);
-  const [sector, setSector] = useState<string>("all");
+  const [sector, setSector] = useState<string>(initialSector);
   const [ownership, setOwnership] = useState<string>("all");
   const [needsBuild, setNeedsBuild] = useState(false);
+  const [recovery, setRecovery] = useState(initialRecovery || initialLogistics);
+  const [logisticsOnly, setLogisticsOnly] = useState(initialLogistics);
   const [selected, setSelected] = useState<MapPoint | null>(null);
 
   const visible = useMemo(() => {
@@ -64,9 +75,11 @@ export function MapView({
       if (sector !== "all" && p.sector !== sector) return false;
       if (ownership !== "all" && p.ownership !== ownership) return false;
       if (needsBuild && !p.needsBuild) return false;
+      if (recovery && !p.priorityRecovery) return false;
+      if (logisticsOnly && !LOGISTICS_SECTORS.has(p.sector)) return false;
       return true;
     });
-  }, [points, mode, sector, ownership, needsBuild]);
+  }, [points, mode, sector, ownership, needsBuild, recovery, logisticsOnly]);
 
   // init map once
   useEffect(() => {
@@ -174,6 +187,14 @@ export function MapView({
           <label className="flex cursor-pointer items-center gap-2 px-1 text-fog">
             <input type="checkbox" checked={needsBuild} onChange={(e) => setNeedsBuild(e.target.checked)} />
             What needs to be built
+          </label>
+          <label className="flex cursor-pointer items-center gap-2 px-1 text-fog">
+            <input
+              type="checkbox"
+              checked={recovery}
+              onChange={(e) => { setRecovery(e.target.checked); if (!e.target.checked) setLogisticsOnly(false); }}
+            />
+            Recovery priorities
           </label>
           <div className="px-1 font-mono text-[11px] text-ghost">{visible.length} of {points.length} assets</div>
         </div>

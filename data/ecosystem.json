@@ -1,0 +1,188 @@
+[
+  {
+    "id": "cubaemprende",
+    "name": "Proyecto CubaEmprende",
+    "category": "on-island",
+    "type": "Business-training program",
+    "blurb": "Archdiocese of Havana training program for private entrepreneurs (ProEmpleo model); a Cuba Study Group partner.",
+    "location": "Havana",
+    "url": "https://proyectocubaemprende.org/",
+    "tags": ["accelerator", "training"]
+  },
+  {
+    "id": "cubaemprende-camaguey",
+    "name": "CubaEmprende Camagüey",
+    "category": "on-island",
+    "type": "Regional entrepreneurship chapter",
+    "blurb": "Regional chapter extending the CubaEmprende training model to central Cuba.",
+    "location": "Camagüey",
+    "url": "https://cubaemprendecamaguey.org/",
+    "tags": ["accelerator", "training"]
+  },
+  {
+    "id": "auge",
+    "name": "AUGE",
+    "category": "on-island",
+    "type": "Consulting / corporate services",
+    "blurb": "Private consulting and corporate-services firm advising 300+ Cuban private enterprises (founded 2014).",
+    "location": "Havana",
+    "tags": ["training", "founder/startup"]
+  },
+  {
+    "id": "merchise",
+    "name": "Merchise Startup Circle",
+    "category": "on-island",
+    "type": "Developer / startup community",
+    "blurb": "Cuba's veteran developer and startup community, running meetups from Santa Clara to Havana.",
+    "location": "Santa Clara / Havana",
+    "tags": ["dev-community", "founder/startup"]
+  },
+  {
+    "id": "incuba",
+    "name": "InCuba",
+    "category": "on-island",
+    "type": "University innovation incubator",
+    "blurb": "University of Havana innovation incubator (coordinated by Adriana Heredia).",
+    "location": "Havana",
+    "tags": ["accelerator", "dev-community"]
+  },
+
+  {
+    "id": "roots-of-hope",
+    "name": "Roots of Hope / Raíces de Esperanza",
+    "category": "diaspora",
+    "type": "Nonprofit network",
+    "blurb": "Miami nonprofit connecting young professionals to support Cuban peers; parent of StartUp Cuba.",
+    "location": "Miami, USA",
+    "tags": ["founder/startup", "dev-community"]
+  },
+  {
+    "id": "startup-cuba",
+    "name": "StartUp Cuba",
+    "category": "diaspora",
+    "type": "Media + fellowships",
+    "blurb": "Media platform plus fellowships and workshops on Cuban entrepreneurship (launched 2014).",
+    "location": "USA",
+    "tags": ["founder/startup"]
+  },
+  {
+    "id": "cuba-study-group",
+    "name": "Cuba Study Group",
+    "category": "diaspora",
+    "type": "Reform & engagement nonprofit",
+    "blurb": "Nonpartisan organization backing market reform and diaspora engagement; co-sponsor of Cuba Transformación and a CubaEmprende partner.",
+    "location": "USA",
+    "url": "https://cubastudygroup.org/",
+    "tags": ["research", "founder/startup"]
+  },
+  {
+    "id": "cuba-emprende-foundation",
+    "name": "Cuba Emprende Foundation",
+    "category": "diaspora",
+    "type": "Entrepreneur-support foundation",
+    "blurb": "Miami-based foundation supporting Cuban entrepreneurs and the CubaEmprende network.",
+    "location": "Miami, USA",
+    "url": "https://cubaemprendefoundation.org/",
+    "tags": ["accelerator", "training"]
+  },
+  {
+    "id": "cuba-startup",
+    "name": "Cuba Start-Up",
+    "category": "diaspora",
+    "type": "How-to platform",
+    "blurb": "How-to platform for starting and investing in Cuba (Yanoidis Mejias Mendoza).",
+    "location": "USA",
+    "url": "https://cubastartup.com/",
+    "tags": ["founder/startup"]
+  },
+
+  {
+    "id": "founder-erich-garcia-cruz",
+    "name": "Erich García Cruz",
+    "category": "diaspora",
+    "type": "Founder to watch",
+    "venture": "QvaPay · bitremesas",
+    "blurb": "Founder & CEO of QvaPay — the Cuban fintech powering this Atlas — and of bitremesas; a leading builder of Cuba's diaspora payment rails.",
+    "tags": ["founder/startup"],
+    "watchlist": true,
+    "featured": true
+  },
+  {
+    "id": "founder-pricepeak",
+    "name": "Pricepeak AI",
+    "category": "diaspora",
+    "type": "Founder to watch",
+    "venture": "Jorge Mandilego (ex-CubaEmprende)",
+    "blurb": "AI pricing venture founded by a CubaEmprende alumnus.",
+    "tags": ["founder/startup"],
+    "watchlist": true
+  },
+  {
+    "id": "founder-cubazon",
+    "name": "Cubazon",
+    "category": "diaspora",
+    "type": "Founder to watch",
+    "venture": "Bernardo Romero",
+    "blurb": "Diaspora-built commerce/logistics venture serving Cuban households.",
+    "tags": ["founder/startup"],
+    "watchlist": true
+  },
+  {
+    "id": "founder-kewelta",
+    "name": "Kewelta",
+    "category": "diaspora",
+    "type": "Founder to watch",
+    "venture": "—",
+    "blurb": "Cuba-directed startup on the diaspora founder watchlist.",
+    "tags": ["founder/startup"],
+    "watchlist": true
+  },
+  {
+    "id": "founder-knales",
+    "name": "Knales",
+    "category": "diaspora",
+    "type": "Founder to watch",
+    "venture": "—",
+    "blurb": "Cuba-directed startup on the diaspora founder watchlist.",
+    "tags": ["founder/startup"],
+    "watchlist": true
+  },
+
+  {
+    "id": "oce",
+    "name": "Observatory on Cuban Economics (OCE)",
+    "category": "research",
+    "type": "Economic research",
+    "blurb": "Independent Cuban-economy research group; co-sponsor of the Cuba Transformación series.",
+    "location": "USA",
+    "tags": ["research"]
+  },
+  {
+    "id": "horizonte-cubano",
+    "name": "Cuba Capacity Building Project / Horizonte Cubano",
+    "category": "research",
+    "type": "Law & policy program",
+    "blurb": "Columbia Law School program on Cuban legal and economic reform.",
+    "location": "Columbia Law, USA",
+    "url": "https://horizontecubano.law.columbia.edu/",
+    "tags": ["research"]
+  },
+  {
+    "id": "drclas",
+    "name": "DRCLAS (Harvard)",
+    "category": "research",
+    "type": "Latin American studies center",
+    "blurb": "Harvard's David Rockefeller Center for Latin American Studies — MSME/MIPYME research on Cuba.",
+    "location": "Harvard, USA",
+    "tags": ["research"]
+  },
+  {
+    "id": "fiu-cri",
+    "name": "FIU Cuban Research Institute",
+    "category": "research",
+    "type": "Research institute",
+    "blurb": "Florida International University institute studying Cuban and Cuban-American organizations.",
+    "location": "Miami, USA",
+    "tags": ["research"]
+  }
+]

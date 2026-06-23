@@ -47,7 +47,7 @@ function Footer() {
             compliance line drawn on every asset.
           </p>
         </div>
-        <FooterCol title="Explore" links={[["/map", "Interactive map"], ["/sectors", "Sectors"], ["/claims", "Helms-Burton claims"], ["/entities", "Controlling entities"]]} />
+        <FooterCol title="Explore" links={[["/map", "Interactive map"], ["/reform", "Reform Watch"], ["/ecosystem", "Ecosystem"], ["/sectors", "Sectors"], ["/claims", "Helms-Burton claims"], ["/entities", "Controlling entities"]]} />
         <FooterCol title="Act" links={[["/invest", "Support entrepreneurs"], ["/legal", "What's allowed"], ["/compliance", "Compliance posture"], ["/about", "About"]]} />
         <div className="text-xs text-ghost">
           <div className="kicker mb-2">Legal</div>
