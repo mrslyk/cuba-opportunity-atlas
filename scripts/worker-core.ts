@@ -60,8 +60,16 @@ const MAX_ASSETS = 8; // bound cost/time per run
 type Opp = { id: string; name: string; sector: string; status?: string; investable_us?: boolean };
 
 const SCHEMA_HINT = `Return ONLY a fenced \`\`\`json block containing an array of objects:
-[{ "assetId": string, "field": "status"|"sources", "to": string (<=240 chars), "rationale": string (<=240 chars) }]
+[{ "assetId": string, "field": "status"|"sources", "to": string (<=260 chars, complete sentences — no trailing fragment), "rationale": string (<=200 chars) }]
 Only include an asset if you found a concrete, sourced update worth reviewing. Never propose making an asset investable.`;
+
+/* Trim to a length without cutting mid-word (no ellipsis added). */
+function clamp(s: string, max: number): string {
+  if (s.length <= max) return s.trim();
+  const cut = s.slice(0, max);
+  const lastSpace = cut.lastIndexOf(" ");
+  return (lastSpace > max * 0.6 ? cut.slice(0, lastSpace) : cut).trimEnd();
+}
 
 export async function runRefresh(opts: { dryRun?: boolean } = {}): Promise<RefreshResult> {
   const hasKey = !!process.env.ANTHROPIC_API_KEY;
@@ -135,8 +143,8 @@ function parseProposals(text: string, subset: Opp[]): Proposal[] {
       assetId: asset.id,
       field,
       from: asset.status ?? "—",
-      to: String(o.to ?? "").slice(0, 240),
-      rationale: String(o.rationale ?? "").slice(0, 240),
+      to: clamp(String(o.to ?? ""), 260),
+      rationale: clamp(String(o.rationale ?? ""), 200),
       wouldFlipLayer1: false, // the worker can never propose a Layer-1 flip
     });
   }

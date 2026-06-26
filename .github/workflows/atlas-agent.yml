@@ -37,7 +37,10 @@ jobs:
         with:
           branch: atlas-agent/auto-refresh
           delete-branch: true
-          add-paths: data/
+          add-paths: |
+            data/opportunities.json
+            data/ecosystem.json
+            data/reform_cards.json
           commit-message: "chore(agent): proposed atlas data refresh"
           title: "Atlas agent: proposed data updates"
           body-path: ${{ runner.temp }}/agent-pr-body.md

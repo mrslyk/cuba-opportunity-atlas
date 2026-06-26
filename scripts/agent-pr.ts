@@ -17,8 +17,34 @@ import { runRefresh } from "./worker-core";
 const DATA = path.resolve(process.cwd(), "data");
 const BODY_PATH = process.env.PR_BODY_PATH || "/tmp/agent-pr-body.md";
 const read = (f: string) => JSON.parse(fs.readFileSync(path.join(DATA, f), "utf8"));
+
+/* Serialize to match the repo's existing JSON style: 2-space indent, objects
+   multi-line, but arrays of primitives kept inline (e.g. ["a","b"]). This keeps
+   the agent's PR diffs surgical — only the lines it actually changed move,
+   instead of every array exploding onto multiple lines. */
+function serialize(value: unknown, indent = 0): string {
+  const pad = "  ".repeat(indent);
+  const padIn = "  ".repeat(indent + 1);
+  if (Array.isArray(value)) {
+    if (value.length === 0) return "[]";
+    if (value.every((v) => v === null || typeof v !== "object")) {
+      return "[" + value.map((v) => JSON.stringify(v)).join(", ") + "]";
+    }
+    return "[\n" + value.map((v) => padIn + serialize(v, indent + 1)).join(",\n") + "\n" + pad + "]";
+  }
+  if (value && typeof value === "object") {
+    const keys = Object.keys(value as Record<string, unknown>);
+    if (keys.length === 0) return "{}";
+    const body = keys
+      .map((k) => padIn + JSON.stringify(k) + ": " + serialize((value as Record<string, unknown>)[k], indent + 1))
+      .join(",\n");
+    return "{\n" + body + "\n" + pad + "}";
+  }
+  return JSON.stringify(value);
+}
+
 const write = (f: string, d: unknown) =>
-  fs.writeFileSync(path.join(DATA, f), JSON.stringify(d, null, 2) + "\n");
+  fs.writeFileSync(path.join(DATA, f), serialize(d) + "\n");
 
 async function main() {
   const result = await runRefresh();

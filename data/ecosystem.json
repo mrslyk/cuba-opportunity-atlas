@@ -46,7 +46,6 @@
     "location": "Havana",
     "tags": ["accelerator", "dev-community"]
   },
-
   {
     "id": "roots-of-hope",
     "name": "Roots of Hope / Raíces de Esperanza",
@@ -95,7 +94,6 @@
     "url": "https://cubastartup.com/",
     "tags": ["founder/startup"]
   },
-
   {
     "id": "founder-erich-garcia-cruz",
     "name": "Erich García Cruz",
@@ -147,7 +145,6 @@
     "tags": ["founder/startup"],
     "watchlist": true
   },
-
   {
     "id": "oce",
     "name": "Observatory on Cuban Economics (OCE)",
