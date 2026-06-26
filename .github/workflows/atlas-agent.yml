@@ -1,0 +1,46 @@
+name: Atlas agent (daily refresh → PR)
+
+# Drafts data updates and opens a Pull Request for human review.
+# Merge the PR to publish (Netlify auto-deploys on merge to main).
+# Nothing auto-publishes — the PR is the human gate.
+
+on:
+  schedule:
+    - cron: "0 7 * * *" # 07:00 UTC daily
+  workflow_dispatch: {} # allow manual runs from the Actions tab
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Run the Atlas agent
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          PR_BODY_PATH: ${{ runner.temp }}/agent-pr-body.md
+        run: npx tsx scripts/agent-pr.ts
+
+      - name: Open / update pull request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: atlas-agent/auto-refresh
+          delete-branch: true
+          add-paths: data/
+          commit-message: "chore(agent): proposed atlas data refresh"
+          title: "Atlas agent: proposed data updates"
+          body-path: ${{ runner.temp }}/agent-pr-body.md
+          labels: |
+            agent
+            review-required

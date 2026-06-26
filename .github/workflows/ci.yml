@@ -1,0 +1,23 @@
+name: CI
+
+# Validates every PR (and pushes to main): the compliance tests + the build,
+# which runs the zod schema validation and the build-time invariant guard.
+# An agent PR that breaks the compliance model fails here and cannot be merged green.
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  test-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - run: npm run build

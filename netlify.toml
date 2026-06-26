@@ -5,10 +5,10 @@
 [[plugins]]
   package = "@netlify/plugin-nextjs"
 
-# Daily agentic refresh/re-screen worker (DRY-RUN by default; nothing
-# auto-publishes to Layer-1 — human approval required in the admin screen).
-[functions."worker"]
-  schedule = "@daily"
+# The agentic refresh now runs in GitHub Actions (.github/workflows/atlas-agent.yml),
+# which opens a PR for human review → merge to publish. The Netlify scheduled
+# function is therefore disabled (no `schedule`) to avoid double daily runs; the
+# function file remains for local/manual invocation.
 
 [[headers]]
   for = "/*"

@@ -67,5 +67,17 @@ ruling) · `/entities` + `/entities/[id]` · `/invest` · `/sectors` · `/compli
 3. Optional env: `NEXT_PUBLIC_ANGELLIST_FUND_URL`, `NEXT_PUBLIC_GOOGLE_MAPS_API_KEY`,
    `ANTHROPIC_API_KEY` (worker live mode), `ADMIN_PASSPHRASE`.
 
-The worker runs `@daily` (`netlify.toml`) in DRY-RUN until `ANTHROPIC_API_KEY` is set. Interest
-submissions appear in the Netlify **Forms** dashboard.
+Interest submissions appear in the Netlify **Forms** dashboard.
+
+## Agentic update loop (publish path)
+
+A **GitHub Action** (`.github/workflows/atlas-agent.yml`) runs daily, drafts data updates
+(asset `status` refreshes + dead-link pruning — never ids/ownership/layer/participation/
+investable_us), and **opens a Pull Request**. CI (`ci.yml`) runs the compliance tests + build
+on the PR; you **merge to publish** (Netlify auto-deploys on merge to `main`). Nothing
+auto-publishes — the PR diff is the human review gate.
+
+**One-time GitHub setup:** add `ANTHROPIC_API_KEY` under **Settings → Secrets and variables →
+Actions**, and enable **Settings → Actions → General → "Allow GitHub Actions to create and
+approve pull requests."** Trigger a run anytime from the **Actions** tab (`workflow_dispatch`).
+The Netlify scheduled worker is disabled in favor of this loop.
