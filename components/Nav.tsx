@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { RocketLogo } from "./RocketLogo";
 
 const LINKS = [
   { href: "/map", label: "Map" },
@@ -24,7 +25,7 @@ export function Nav() {
     <header className="sticky top-0 z-30 border-b border-[var(--line)] bg-[var(--bg)]/90 backdrop-blur">
       <div className="container-x flex h-14 items-center gap-6">
         <Link href="/" className="flex items-center gap-2 font-semibold tracking-tight">
-          <span className="grid h-6 w-6 place-items-center rounded bg-private/15 font-mono text-[13px] text-private">◆</span>
+          <RocketLogo className="h-7 w-7" />
           <span>Cuba</span>
           <span className="kicker hidden sm:inline">Opportunity Atlas</span>
         </Link>
