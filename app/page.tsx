@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { MapView } from "@/components/MapView";
 import { OpportunityCard } from "@/components/OpportunityCard";
+import { QvaPayLogo } from "@/components/QvaPayLogo";
 import {
   mapPoints,
   supportable,
@@ -21,10 +22,18 @@ export default function Home() {
     <div>
       {/* Hero */}
       <section className="container-x pt-12 pb-8">
-        <div className="kicker mb-3">
-          Powered by{" "}
-          <a href="https://qvapay.com" target="_blank" rel="noopener noreferrer" className="text-private hover:underline">QvaPay</a>{" "}
-          · independent research
+        <div className="kicker mb-3 flex items-center gap-1.5">
+          <span>Powered by</span>
+          <a
+            href="https://qvapay.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 text-private hover:underline"
+          >
+            <QvaPayLogo className="h-[1.05em] w-auto" />
+            <span>QvaPay</span>
+          </a>
+          <span>· independent research</span>
         </div>
         <h1 className="max-w-4xl text-4xl font-bold leading-[1.05] tracking-tight sm:text-[3.4rem]">
           Invest in a free Cuba&apos;s economy — and back its entrepreneurs{" "}
