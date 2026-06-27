@@ -22,7 +22,7 @@ export function InterestForm({ assetId, assetName }: { assetId: string; assetNam
       await fetch("/api/interest", { method: "POST", body: JSON.stringify(Object.fromEntries(data)), headers: { "Content-Type": "application/json" } });
       setDone(true);
     } catch {
-      setError("Something went wrong — please email hello@investincuba.example.");
+      setError("Something went wrong — please email parsa@qvapay.com directly.");
     }
   }
 
