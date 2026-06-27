@@ -32,6 +32,14 @@ jobs:
           PR_BODY_PATH: ${{ runner.temp }}/agent-pr-body.md
         run: npx tsx scripts/agent-pr.ts
 
+      # Validate the agent's edits in THIS run. A PR opened by the Actions bot
+      # can't trigger ci.yml (GitHub recursion guard), so the compliance tests +
+      # build run here. If they fail, the job fails and no PR is opened.
+      - name: Validate edits (compliance tests + build)
+        run: |
+          npm test
+          npm run build
+
       - name: Open / update pull request
         uses: peter-evans/create-pull-request@v6
         with:
