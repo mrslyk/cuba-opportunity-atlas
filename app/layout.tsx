@@ -48,7 +48,7 @@ function Footer() {
           </p>
         </div>
         <FooterCol title="Explore" links={[["/map", "Interactive map"], ["/reform", "Reform Watch"], ["/ecosystem", "Ecosystem"], ["/sectors", "Sectors"], ["/claims", "Helms-Burton claims"], ["/entities", "Controlling entities"]]} />
-        <FooterCol title="Act" links={[["/invest", "Support entrepreneurs"], ["/legal", "What's allowed"], ["/compliance", "Compliance posture"], ["/about", "About"]]} />
+        <FooterCol title="Act" links={[["/invest", "Support entrepreneurs"], ["/legal", "What's allowed"], ["/compliance", "Compliance posture"], ["/about", "About"], ["/contact", "Contact us"]]} />
         <div className="text-xs text-ghost">
           <div className="kicker mb-2">Legal</div>
           <p>
@@ -61,9 +61,9 @@ function Footer() {
       <div className="border-t border-[var(--line)]">
         <div className="container-x flex flex-wrap items-center justify-between gap-2 py-4 text-xs text-ghost">
           <span>
-            © 2026 Cuba Opportunity Atlas · powered by{" "}
-            <a href="https://qvapay.com" target="_blank" rel="noopener noreferrer" className="text-text hover:text-private hover:underline">QvaPay</a>{" "}
-            — fintech OS for a free and prosperous Cuba.
+            © 2026 QvaPay, Inc. · Cuba Opportunity Atlas — fintech OS for a free and prosperous Cuba.
+            Built with <span className="text-private" aria-label="love">♥</span> by{" "}
+            <a href="https://qvapay.com" target="_blank" rel="noopener noreferrer" className="text-text hover:text-private hover:underline">QvaPay</a>.
           </span>
           <span className="font-mono">Data as of 2026-06-20</span>
         </div>

@@ -15,6 +15,7 @@ const LINKS = [
   { href: "/compliance", label: "Compliance" },
   { href: "/data", label: "Data" },
   { href: "/about", label: "About" },
+  { href: "/contact", label: "Contact" },
 ];
 
 export function Nav() {
