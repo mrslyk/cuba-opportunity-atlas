@@ -31,6 +31,21 @@ export default function ClaimsPage() {
         confiscated asset inherits that liability. These are the landmines under the atlas.
       </p>
 
+      {/* Dynasties feature link */}
+      <a
+        href="/dynasties.html"
+        className="group mt-5 flex items-center justify-between gap-4 rounded-xl border border-[var(--line)] bg-[var(--panel)] p-4 transition-colors hover:border-private/50"
+      >
+        <div>
+          <div className="font-semibold text-text">The families behind the claims →</div>
+          <p className="mt-0.5 text-sm text-fog">
+            Meet the eight Cuban dynasties whose property was confiscated in 1960 — Bacardí,
+            Arechabala, Fanjul, Lobo, Cifuentes, Menéndez, Mas Canosa and Mestre.
+          </p>
+        </div>
+        <span className="hidden text-2xl text-private transition-transform group-hover:translate-x-0.5 sm:block">→</span>
+      </a>
+
       {/* Havana Docks hero */}
       {havanaDocks?.claim && (
         <section className="mt-6 overflow-hidden rounded-xl border border-risk/50 bg-risk/5">

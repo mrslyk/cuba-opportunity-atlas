@@ -26,6 +26,7 @@ import {
   type SanctionFlags,
   type TitleIIILevel,
 } from "./compliance";
+import { dynastyFor } from "./dynasties";
 
 /* ── Validate the whole corpus at module load (build-time gate) ─────────────── */
 export const opportunities = OpportunitiesSchema.parse(rawOpps);
@@ -160,6 +161,8 @@ export type MapPoint = {
   priorityRecovery: boolean;
   status: string;
   type: string;
+  dynastyAnchor?: string;
+  dynastyFamily?: string;
 };
 
 const BUILD_SIGNALS = /distress|idle|abandon|unfinished|never|deteriorat|degrad|stall|collaps|crisis|rebuild|recapitaliz|moderniz|overhaul|revival|brownfield|greenfield|expansion|reconstruction|bottleneck|needs/i;
@@ -183,6 +186,8 @@ export function toMapPoint(o: EnrichedOpportunity): MapPoint {
     priorityRecovery: !!o.priority_recovery,
     status: o.status ?? "",
     type: o.type ?? "",
+    dynastyAnchor: dynastyFor(o.claim)?.anchor,
+    dynastyFamily: dynastyFor(o.claim)?.family,
   };
 }
 

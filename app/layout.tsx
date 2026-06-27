@@ -48,7 +48,7 @@ function Footer() {
             compliance line drawn on every asset.
           </p>
         </div>
-        <FooterCol title="Explore" links={[["/map", "Interactive map"], ["/reform", "Reform Watch"], ["/ecosystem", "Ecosystem"], ["/sectors", "Sectors"], ["/claims", "Helms-Burton claims"], ["/entities", "Controlling entities"]]} />
+        <FooterCol title="Explore" links={[["/map", "Interactive map"], ["/reform", "Reform Watch"], ["/ecosystem", "Ecosystem"], ["/sectors", "Sectors"], ["/claims", "Helms-Burton claims"], ["/entities", "Controlling entities"], ["/dynasties.html", "Dynasties"]]} />
         <FooterCol title="Act" links={[["/invest", "Support entrepreneurs"], ["/legal", "What's allowed"], ["/compliance", "Compliance posture"], ["/about", "About"], ["/contact", "Contact us"]]} />
         <div className="text-xs text-ghost">
           <div className="kicker mb-2">Legal</div>
@@ -83,9 +83,16 @@ function FooterCol({ title, links }: { title: string; links: [string, string][] 
       <ul className="space-y-1.5">
         {links.map(([href, label]) => (
           <li key={href}>
-            <Link href={href} className="text-fog hover:text-text">
-              {label}
-            </Link>
+            {href.endsWith(".html") ? (
+              // Static file in /public — use a plain anchor, not client routing.
+              <a href={href} className="text-fog hover:text-text">
+                {label}
+              </a>
+            ) : (
+              <Link href={href} className="text-fog hover:text-text">
+                {label}
+              </Link>
+            )}
           </li>
         ))}
       </ul>

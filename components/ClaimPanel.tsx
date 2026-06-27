@@ -1,4 +1,5 @@
 import type { EnrichedOpportunity } from "@/lib/data";
+import { dynastyFor, DYNASTIES_URL } from "@/lib/dynasties";
 import { TitleIIIBadge } from "./Badges";
 
 /* Helms-Burton claim dossier for a confiscated asset. */
@@ -6,6 +7,7 @@ export function ClaimPanel({ o, className = "" }: { o: EnrichedOpportunity; clas
   if (!o.claim) return null;
   const c = o.claim;
   const active = o.titleIII === "active";
+  const dynasty = dynastyFor(c);
   return (
     <div className={`card p-4 ${active ? "border-risk/50 bg-risk/5" : ""} ${className}`}>
       <div className="flex items-center justify-between">
@@ -22,6 +24,14 @@ export function ClaimPanel({ o, className = "" }: { o: EnrichedOpportunity; clas
         <div className="kicker mb-1">Title III status</div>
         <p className={active ? "text-risk" : "text-fog"}>{c.title_iii}</p>
       </div>
+      {dynasty && (
+        <a
+          href={`${DYNASTIES_URL}#${dynasty.anchor}`}
+          className="mt-3 inline-flex items-center gap-1 text-sm font-medium text-private hover:underline"
+        >
+          Read {dynasty.family}&apos;s story →
+        </a>
+      )}
     </div>
   );
 }

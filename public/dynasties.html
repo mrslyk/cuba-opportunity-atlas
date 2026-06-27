@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cuban Dynasties · Cuba Opportunity Atlas</title>
+<meta name="description" content="Eight Cuban dynasties. Billions confiscated. The unfinished business of Helms-Burton. Stories of what they built, what they lost, and what they'll build again.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --bg: #f4f7fb;
+    --surface: #fff;
+    --line: #e2e8f1;
+    --text: #0e1828;
+    --fog: #46586f;
+    --ghost: #8493a8;
+    --panel: #fff;
+    --private: #16a34a;
+    --danger: #dc2626;
+    --accent: #b08860;
+    --accent-light: #f5efe7;
+    --accent-dark: #8a6840;
+    --claim-bg: #fef3e2;
+    --claim-border: #f59e0b;
+  }
+
+  body {
+    font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* === NAV === */
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(244, 247, 251, 0.85);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .nav-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    height: 56px;
+    gap: 24px;
+  }
+
+  .nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--text);
+    text-decoration: none;
+    letter-spacing: -0.01em;
+  }
+
+  .nav-brand .diamond {
+    display: grid;
+    place-items: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    background: rgba(22, 163, 74, 0.12);
+    color: var(--private);
+    font-family: monospace;
+    font-size: 13px;
+  }
+
+  .nav-brand .kicker {
+    color: var(--ghost);
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-left: 2px;
+  }
+
+  nav { margin-left: auto; display: flex; align-items: center; gap: 2px; }
+
+  nav a {
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    color: var(--fog);
+    text-decoration: none;
+    transition: all 0.15s;
+    font-weight: 500;
+  }
+
+  nav a:hover { background: rgba(0,0,0,0.04); color: var(--text); }
+  nav a.active { color: var(--text); font-weight: 600; }
+
+  .nav-cta {
+    background: var(--private) !important;
+    color: #fff !important;
+    padding: 8px 16px !important;
+    border-radius: 8px !important;
+    font-weight: 600 !important;
+    font-size: 13px !important;
+    margin-left: 8px;
+    white-space: nowrap;
+  }
+
+  .nav-cta:hover { opacity: 0.9; }
+
+  /* === HERO === */
+  .hero {
+    padding: 80px 24px 60px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .hero .kicker {
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+
+  .hero h1 {
+    font-size: clamp(28px, 4vw, 42px);
+    font-weight: 800;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    color: var(--text);
+    margin-bottom: 16px;
+  }
+
+  .hero .subtitle {
+    font-size: 17px;
+    color: var(--fog);
+    max-width: 600px;
+    margin: 0 auto 24px;
+    line-height: 1.6;
+  }
+
+  .hero .intro {
+    font-size: 15px;
+    color: var(--ghost);
+    max-width: 640px;
+    margin: 0 auto;
+    line-height: 1.7;
+  }
+
+  /* === STATS BAR === */
+  .stats-bar {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    padding: 24px;
+    margin: 0 auto 48px;
+    max-width: 700px;
+    flex-wrap: wrap;
+  }
+
+  .stats-bar .stat {
+    text-align: center;
+  }
+
+  .stats-bar .stat-value {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--text);
+    letter-spacing: -0.02em;
+  }
+
+  .stats-bar .stat-value.gold { color: var(--accent); }
+  .stats-bar .stat-value.red { color: var(--danger); }
+
+  .stats-bar .stat-label {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--ghost);
+    margin-top: 2px;
+  }
+
+  /* === FAMILY CARDS === */
+  .families {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 24px 80px;
+  }
+
+  .family-card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 24px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+
+  .family-card:hover {
+    border-color: #c4cdd9;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  }
+
+  .card-header {
+    display: flex;
+    align-items: stretch;
+    min-height: 200px;
+  }
+
+  .card-image {
+    width: 260px;
+    min-height: 200px;
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+    position: relative;
+  }
+
+  .card-image::after {
+    content: '';
+    position: absolute;
+    right: 0; top: 0; bottom: 0;
+    width: 40px;
+    background: linear-gradient(90deg, transparent, var(--surface));
+  }
+
+  .card-summary {
+    padding: 28px 32px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .card-tag {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--accent-dark);
+    background: var(--accent-light);
+    padding: 3px 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    align-self: flex-start;
+  }
+
+  .card-name {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 4px;
+    letter-spacing: -0.01em;
+  }
+
+  .card-tagline {
+    font-size: 14px;
+    color: var(--ghost);
+    font-style: italic;
+    margin-bottom: 14px;
+  }
+
+  .card-stats {
+    display: flex;
+    gap: 28px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+  }
+
+  .card-stats .stat-value {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text);
+  }
+
+  .card-stats .stat-label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--ghost);
+  }
+
+  .read-more-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: none;
+    border: 1px solid var(--line);
+    color: var(--fog);
+    padding: 8px 16px;
+    font-size: 13px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    transition: all 0.2s;
+    align-self: flex-start;
+  }
+
+  .read-more-btn:hover {
+    background: var(--text);
+    color: #fff;
+    border-color: var(--text);
+  }
+
+  .read-more-btn .arrow {
+    transition: transform 0.2s;
+    font-size: 11px;
+  }
+
+  .family-card.open .read-more-btn .arrow {
+    transform: rotate(90deg);
+  }
+
+  /* === EXPANDED STORY === */
+  .card-story {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+  }
+
+  .card-story-inner {
+    padding: 0 32px 32px;
+    border-top: 1px solid var(--line);
+  }
+
+  .card-story p {
+    font-size: 15px;
+    color: var(--fog);
+    margin-top: 16px;
+    line-height: 1.75;
+  }
+
+  .killer-detail {
+    background: var(--accent-light);
+    border-left: 3px solid var(--accent);
+    padding: 16px 20px;
+    margin-top: 20px;
+    border-radius: 0 8px 8px 0;
+  }
+
+  .killer-detail p {
+    font-size: 14px;
+    color: var(--accent-dark);
+    font-style: italic;
+    margin-top: 0;
+    line-height: 1.6;
+  }
+
+  .helms-burton-box {
+    margin-top: 20px;
+    padding: 16px 20px;
+    background: #f8f9fc;
+    border: 1px solid #e0e4ed;
+    border-radius: 8px;
+  }
+
+  .hb-label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--danger);
+    font-weight: 600;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .hb-label::before {
+    content: '⚖';
+    font-size: 14px;
+  }
+
+  .helms-burton-box p {
+    font-size: 14px;
+    color: var(--fog);
+    margin-top: 0;
+    line-height: 1.6;
+  }
+
+  /* === FOOTER === */
+  .page-footer {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+    text-align: center;
+    border-top: 1px solid var(--line);
+  }
+
+  .page-footer p {
+    font-size: 15px;
+    color: var(--ghost);
+    max-width: 560px;
+    margin: 0 auto;
+    line-height: 1.7;
+  }
+
+  .page-footer .qvapay-link {
+    color: var(--private);
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .page-footer .qvapay-link:hover { text-decoration: underline; }
+
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 20px;
+    font-size: 14px;
+    color: var(--fog);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 20px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    transition: all 0.2s;
+  }
+
+  .back-link:hover {
+    background: var(--text);
+    color: #fff;
+    border-color: var(--text);
+  }
+
+  /* === MOBILE === */
+  @media (max-width: 768px) {
+    nav { display: none; }
+    .card-header { flex-direction: column; }
+    .card-image { width: 100%; height: 180px; }
+    .card-image::after { display: none; }
+    .card-summary { padding: 20px; }
+    .card-story-inner { padding: 0 20px 24px; }
+    .card-stats { gap: 20px; }
+    .stats-bar { gap: 24px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<header>
+  <div class="nav-inner">
+    <a class="nav-brand" href="https://cuba-opportunity-atlas.netlify.app/">
+      <span class="diamond">◆</span>
+      <span>Cuba</span>
+      <span class="kicker">Opportunity Atlas</span>
+    </a>
+    <nav>
+      <a href="https://cuba-opportunity-atlas.netlify.app/map">Map</a>
+      <a href="https://cuba-opportunity-atlas.netlify.app/ecosystem">Ecosystem</a>
+      <a href="https://cuba-opportunity-atlas.netlify.app/sectors">Sectors</a>
+      <a class="active" href="https://cuba-opportunity-atlas.netlify.app/claims">Claims</a>
+      <a href="https://cuba-opportunity-atlas.netlify.app/legal">Legal</a>
+      <a href="https://cuba-opportunity-atlas.netlify.app/compliance">Compliance</a>
+      <a href="https://cuba-opportunity-atlas.netlify.app/invest" class="nav-cta">Support entrepreneurs</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="kicker">Helms-Burton · Confiscated Wealth · Generational Resilience</div>
+  <h1>What They Built, What They Lost, What They'll Build Again</h1>
+  <p class="subtitle">Eight Cuban dynasties. Billions confiscated. The unfinished business of Helms-Burton.</p>
+  <p class="intro">Before the revolution, Cuba's wealthiest families built empires in rum, sugar, cigars, and media. In 1960, soldiers walked into their factories and took everything. Some rebuilt in America and became billionaires again. Others died in small apartments in exile. All of them left something behind &mdash; and the law says it's still theirs.</p>
+</div>
+
+<!-- STATS -->
+<div class="stats-bar">
+  <div class="stat">
+    <div class="stat-value gold">8</div>
+    <div class="stat-label">Dynasties profiled</div>
+  </div>
+  <div class="stat">
+    <div class="stat-value">$15B+</div>
+    <div class="stat-label">Combined value today</div>
+  </div>
+  <div class="stat">
+    <div class="stat-value red">2+</div>
+    <div class="stat-label">FCSC-certified claims</div>
+  </div>
+  <div class="stat">
+    <div class="stat-value">1960</div>
+    <div class="stat-label">Year of confiscation</div>
+  </div>
+</div>
+
+<!-- FAMILY CARDS -->
+<div class="families">
+
+  <!-- 1. BACARDI -->
+  <div class="family-card" id="bacardi">
+    <div class="card-header">
+      <div class="card-image" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Bacardi_Building_Havana.jpg/800px-Bacardi_Building_Havana.jpg')"></div>
+      <div class="card-summary">
+        <div class="card-tag">Rum Empire</div>
+        <div class="card-name">The Bacardí Family</div>
+        <div class="card-tagline">The rum that escaped</div>
+        <div class="card-stats">
+          <div class="stat"><span class="stat-value">1862</span><span class="stat-label">Founded</span></div>
+          <div class="stat"><span class="stat-value">~$5B</span><span class="stat-label">Today</span></div>
+          <div class="stat"><span class="stat-value">Santiago</span><span class="stat-label">Origin</span></div>
+        </div>
+        <button class="read-more-btn" onclick="toggle(this)">Read the story <span class="arrow">→</span></button>
+      </div>
+    </div>
+    <div class="card-story">
+      <div class="card-story-inner">
+        <p>Facundo Bacardí Massó founded the distillery in Santiago de Cuba in 1862. By 1959, Bacardí was Cuba's most famous export &mdash; distilleries, a brewery, office buildings across the island.</p>
+        <p>CEO Pepín Bosch saw the nationalization coming. Between 1955 and 1957, he quietly transferred the trademarks, formulas, and corporate ownership to Nassau. When soldiers seized every Bacardí facility on October 14, 1960, they got the buildings but not the brand. The family rebuilt from distilleries already running in Puerto Rico and Mexico.</p>
+        <p>Today Bacardí is the world's largest privately held spirits company. They lobbied for Section 211 of the 1998 Omnibus Act, blocking Cuba from renewing expropriated trademarks in the US.</p>
+        <div class="killer-detail"><p>Bosch smuggled the trademark certificates out by ordinary mail &mdash; the most valuable envelope in rum history.</p></div>
+        <div class="helms-burton-box">
+          <div class="hb-label">Helms-Burton Status</div>
+          <p>FCSC-certified claims against Cuba. The Edificio Bacardí in Havana &mdash; an Art Deco masterpiece &mdash; remains state property. The Havana Club trademark war (Bacardí vs. Pernod Ricard/Cubaexport) has been in litigation for 30 years across multiple jurisdictions.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. ARECHABALA -->
+  <div class="family-card" id="arechabala">
+    <div class="card-header">
+      <div class="card-image" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Havana_Club_Museo_del_Ron_01.jpg/800px-Havana_Club_Museo_del_Ron_01.jpg')"></div>
+      <div class="card-summary">
+        <div class="card-tag">Rum & Trademark War</div>
+        <div class="card-name">The Arechabala Family</div>
+        <div class="card-tagline">Havana Club's ghost owners</div>
+        <div class="card-stats">
+          <div class="stat"><span class="stat-value">1878</span><span class="stat-label">Founded</span></div>
+          <div class="stat"><span class="stat-value">30 yrs</span><span class="stat-label">In Litigation</span></div>
+          <div class="stat"><span class="stat-value">Cárdenas</span><span class="stat-label">Origin</span></div>
+        </div>
+        <button class="read-more-btn" onclick="toggle(this)">Read the story <span class="arrow">→</span></button>
+      </div>
+    </div>
+    <div class="card-story">
+      <div class="card-story-inner">
+        <p>José Arechabala founded La Vizcaya distillery in Cárdenas in 1878. His family created the Havana Club brand in 1934 &mdash; a premium aged rum that became a staple of Havana's golden age.</p>
+        <p>In 1960, soldiers took the distillery at gunpoint and family members were imprisoned. The US trademark quietly lapsed in 1973; Cuba re-registered it in 1976. In 1993, the Cuban state licensed the brand to a joint venture with France's Pernod Ricard.</p>
+        <p>In 1994, the surviving family sold their recipe and remaining rights to Bacardí, who now produces "The Real Havana Club" in Puerto Rico. The trademark war has been in courts on three continents for three decades.</p>
+        <div class="killer-detail"><p>The family's trademark expired because the only person who could renew it was in a Cuban prison.</p></div>
+        <div class="helms-burton-box">
+          <div class="hb-label">Helms-Burton Status</div>
+          <p>Rights sold to Bacardí (1994-95). The trademark war &mdash; Bacardí (US rights) vs. Pernod Ricard/Cubaexport (global) &mdash; remains one of the longest-running IP disputes in history. Section 211 of the Omnibus Act blocks Cuba from enforcing confiscated trademarks in US courts.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. FANJUL -->
+  <div class="family-card" id="fanjul">
+    <div class="card-header">
+      <div class="card-image" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Florida_Crystals.jpg/1280px-Florida_Crystals.jpg')"></div>
+      <div class="card-summary">
+        <div class="card-tag">Sugar Dynasty</div>
+        <div class="card-name">The Fanjul Family</div>
+        <div class="card-tagline">Sugar kings of the Everglades</div>
+        <div class="card-stats">
+          <div class="stat"><span class="stat-value">$5.5B</span><span class="stat-label">Revenue</span></div>
+          <div class="stat"><span class="stat-value">~$4B</span><span class="stat-label">Net Worth</span></div>
+          <div class="stat"><span class="stat-value">Palm Beach</span><span class="stat-label">HQ</span></div>
+        </div>
+        <button class="read-more-btn" onclick="toggle(this)">Read the story <span class="arrow">→</span></button>
+      </div>
+    </div>
+    <div class="card-story">
+      <div class="card-story-inner">
+        <p>Alfonso Fanjul Sr. married Lillian Gómez-Mena in 1936, merging two of Cuba's wealthiest sugar dynasties. Combined holdings: ten sugar mills, three distilleries, real estate across the island. Castro nationalized everything in 1959.</p>
+        <p>In 1960, Alfonso Sr. relocated to Florida, bought swampland near Lake Okeechobee, and started over. Today the family controls Florida Crystals, Domino Sugar, C&H, and ASR Group &mdash; the largest cane sugar refiner in the world, with revenue of roughly $5.5B (2024) and a family fortune Forbes estimated at about $4B (2025).</p>
+        <div class="killer-detail"><p>The family that lost Cuba's sugar empire now refines more sugar than Cuba produces.</p></div>
+        <div class="helms-burton-box">
+          <div class="hb-label">Helms-Burton Status</div>
+          <p>The Fanjul family's confiscated Cuban sugar holdings sit among the universe of FCSC-certified claims against Cuba. They are among the dynasties whose unfinished claims would re-surface in any settlement of the broader Title III litigation wave (Havana Docks, Exxon v. CIMEX, and others now reaching the federal appellate courts).</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. JULIO LOBO -->
+  <div class="family-card" id="lobo">
+    <div class="card-header">
+      <div class="card-image" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Escudo_de_La_Habana.svg/800px-Escudo_de_La_Habana.svg.png'); background-size: 50%; background-repeat: no-repeat; background-color: #f0ebe4;"></div>
+      <div class="card-summary">
+        <div class="card-tag">Sugar & Art</div>
+        <div class="card-name">Julio Lobo</div>
+        <div class="card-tagline">The last tycoon</div>
+        <div class="card-stats">
+          <div class="stat"><span class="stat-value">16</span><span class="stat-label">Sugar Mills</span></div>
+          <div class="stat"><span class="stat-value">$200M</span><span class="stat-label">1959 Value</span></div>
+          <div class="stat"><span class="stat-value">Madrid</span><span class="stat-label">Died in Exile</span></div>
+        </div>
+        <button class="read-more-btn" onclick="toggle(this)">Read the story <span class="arrow">→</span></button>
+      </div>
+    </div>
+    <div class="card-story">
+      <div class="card-story-inner">
+        <p>At his peak, Julio Lobo controlled 16 sugar mills, tens of thousands of acres, a bank, an insurance company, and offices from Havana to Manila. Net worth: approximately $200 million in 1959 dollars.</p>
+        <p>Unlike other moguls, Lobo stayed after the revolution, believing he could navigate Castro. On October 11, 1960, Che Guevara summoned him to a meeting and made a blunt offer: hand over everything, and you can run Cuba's entire sugar industry for us. Lobo asked for a night to think. The next morning he boarded his private plane and never returned.</p>
+        <p>He died in 1983 in a small apartment near the Paseo de la Castellana in Madrid.</p>
+        <div class="killer-detail"><p>His greatest regret was not the mills &mdash; it was the confiscated Murillo, Rivera, and Dalí paintings.</p></div>
+        <div class="helms-burton-box">
+          <div class="hb-label">Helms-Burton Status</div>
+          <p>No prominent FCSC claim &mdash; Lobo was not a US citizen at the time of confiscation. His case illustrates the gap in Helms-Burton: Title III only covers US nationals and certified claimants.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5. CIFUENTES -->
+  <div class="family-card" id="cifuentes">
+    <div class="card-header">
+      <div class="card-image" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Cigar_shopkeeper.jpg/800px-Cigar_shopkeeper.jpg')"></div>
+      <div class="card-summary">
+        <div class="card-tag">Cigars</div>
+        <div class="card-name">The Cifuentes Family</div>
+        <div class="card-tagline">Partagás smoke signals</div>
+        <div class="card-stats">
+          <div class="stat"><span class="stat-value">1845</span><span class="stat-label">Brand Est.</span></div>
+          <div class="stat"><span class="stat-value">1900</span><span class="stat-label">Acquired</span></div>
+          <div class="stat"><span class="stat-value">Havana</span><span class="stat-label">Origin</span></div>
+        </div>
+        <button class="read-more-btn" onclick="toggle(this)">Read the story <span class="arrow">→</span></button>
+      </div>
+    </div>
+    <div class="card-story">
+      <div class="card-story-inner">
+        <p>The Cifuentes family acquired the Partagás brand in 1900, building it into one of Cuba's largest cigar houses by the 1950s, alongside Bolívar, Ramón Allones, and La Gloria Cubana.</p>
+        <p>On September 15, 1960, soldiers walked into the factory at 520 Industria Street and told Ramón Cifuentes: "We're here to intervene the company." They refused to let him take a single thing. He was offered the job of running Cuba's new tobacco monopoly. He refused.</p>
+        <p>In 1974, Cifuentes struck a deal with General Cigar to produce non-Cuban Partagás &mdash; production began in Jamaica and later moved to the Dominican Republic, using Cuban-seed tobacco and exiled rollers. The brand is still made there today.</p>
+        <div class="killer-detail"><p>The man who ran Cuba's greatest cigar factory watched his wife fold sweaters at Bloomingdale's.</p></div>
+        <div class="helms-burton-box">
+          <div class="hb-label">Helms-Burton Status</div>
+          <p>The Partagás factory at 520 Industria Street, Havana still operates under state control. The family collects royalties on the non-Cuban brand but has no claim to the original factory. The building itself is now a tourist attraction.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 6. MENENDEZ-GARCIA -->
+  <div class="family-card" id="menendez">
+    <div class="card-header">
+      <div class="card-image" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Montecristo_No._2.jpg/800px-Montecristo_No._2.jpg')"></div>
+      <div class="card-summary">
+        <div class="card-tag">Cigars</div>
+        <div class="card-name">The Menéndez-García Family</div>
+        <div class="card-tagline">Montecristo's sword</div>
+        <div class="card-stats">
+          <div class="stat"><span class="stat-value">1935</span><span class="stat-label">Created</span></div>
+          <div class="stat"><span class="stat-value">1,100</span><span class="stat-label">Workers</span></div>
+          <div class="stat"><span class="stat-value">Havana</span><span class="stat-label">Origin</span></div>
+        </div>
+        <button class="read-more-btn" onclick="toggle(this)">Read the story <span class="arrow">→</span></button>
+      </div>
+    </div>
+    <div class="card-story">
+      <div class="card-story-inner">
+        <p>In 1935, Alonso Menéndez created Montecristo &mdash; named because factory lectors read Dumas' <em>The Count of Monte Cristo</em> aloud to rollers. He then bought the H. Upmann factory, expanding it to 1,100 workers, the largest in Havana.</p>
+        <p>At 5:30 PM on September 15, 1960, soldiers entered and took it all. The family left Cuba penniless. Son Benjamín Menéndez opened a factory in the Canary Islands in 1961, producing "Montecruz" &mdash; a near-clone.</p>
+        <p>The landmark 1972 case <em>Menendez v. Faber, Coe and Gregg</em> established exiled cigarmakers' legal right to produce their brands outside Cuba, creating Cuban Cigar Brands NV to hold the trademarks.</p>
+        <div class="killer-detail"><p>The cigar was named for a novel about a man who loses everything, is imprisoned, escapes, and returns to claim what's his.</p></div>
+        <div class="helms-burton-box">
+          <div class="hb-label">Helms-Burton Status</div>
+          <p>Cuban Cigar Brands NV holds H. Upmann, Montecristo, and Por Larrañaga trademarks outside Cuba. The 1972 ruling established precedent for exiled brand owners &mdash; a precursor to Helms-Burton's IP provisions.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 7. MAS CANOSA -->
+  <div class="family-card" id="mascanosa">
+    <div class="card-header">
+      <div class="card-image" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Mastec_HQ.jpg/1280px-Mastec_HQ.jpg')"></div>
+      <div class="card-summary">
+        <div class="card-tag">Infrastructure & Politics</div>
+        <div class="card-name">The Mas Canosa Family</div>
+        <div class="card-tagline">The exile who almost went back</div>
+        <div class="card-stats">
+          <div class="stat"><span class="stat-value">~$14B</span><span class="stat-label">MasTec Revenue</span></div>
+          <div class="stat"><span class="stat-value">20,000+</span><span class="stat-label">Employees</span></div>
+          <div class="stat"><span class="stat-value">Miami</span><span class="stat-label">HQ</span></div>
+        </div>
+        <button class="read-more-btn" onclick="toggle(this)">Read the story <span class="arrow">→</span></button>
+      </div>
+    </div>
+    <div class="card-story">
+      <div class="card-story-inner">
+        <p>Jorge Mas Canosa was arrested at fourteen for an anti-Batista radio broadcast. He fled Cuba in 1960, volunteered for the CIA's Brigade 2506, but was placed on a decoy ship and missed the Bay of Pigs landing.</p>
+        <p>He enlisted in the US Army, graduated from Officer Training School at Fort Benning, then bought a small Miami construction firm with a $50,000 loan. He renamed it MasTec. Today it is the second-largest Hispanic-owned company in America &mdash; building energy and telecom infrastructure across North America.</p>
+        <p>In 1981, he co-founded the Cuban American National Foundation, becoming the most powerful anti-Castro voice in Washington. He died in 1997, still planning to return. His sons Jorge Jr. and José now run MasTec and co-own Inter Miami CF.</p>
+        <div class="killer-detail"><p>He built America's telecom backbone with a $50,000 loan and a borrowed truck.</p></div>
+        <div class="helms-burton-box">
+          <div class="hb-label">Helms-Burton Status</div>
+          <p>The Mas Canosa family's political legacy IS Helms-Burton. Jorge Mas Canosa personally lobbied for its passage. The Cuban Liberty and Democratic Solidarity Act of 1996 was, in many ways, his legislation.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 8. GOAR MESTRE -->
+  <div class="family-card" id="mestre">
+    <div class="card-header">
+      <div class="card-image" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Radiocentro_CMQ_Havana.jpg/800px-Radiocentro_CMQ_Havana.jpg')"></div>
+      <div class="card-summary">
+        <div class="card-tag">Media</div>
+        <div class="card-name">Goar Mestre</div>
+        <div class="card-tagline">Two empires lost</div>
+        <div class="card-stats">
+          <div class="stat"><span class="stat-value">7</span><span class="stat-label">TV Stations</span></div>
+          <div class="stat"><span class="stat-value">2</span><span class="stat-label">Empires Seized</span></div>
+          <div class="stat"><span class="stat-value">Buenos Aires</span><span class="stat-label">Died in Exile</span></div>
+        </div>
+        <button class="read-more-btn" onclick="toggle(this)">Read the story <span class="arrow">→</span></button>
+      </div>
+    </div>
+    <div class="card-story">
+      <div class="card-story-inner">
+        <p>Goar Mestre built CMQ into Latin America's most advanced broadcast network &mdash; seven TV stations plus a national radio network across Cuba. By 1954, Cuba was the second country in the world, after the US, to have a national television network.</p>
+        <p>Castro seized it all in 1960. Mestre fled to Buenos Aires and did it again &mdash; founding Canal 13 through Proartel, partnering with CBS and Time-Life. He ran Argentina's top network for 14 years &mdash; until Isabel Perón's government nationalized that one too, in 1974.</p>
+        <p>Two television empires built. Two seized by the state. He became an Argentine citizen and died in Buenos Aires in 1994.</p>
+        <div class="killer-detail"><p>He is the only media mogul in history to have two separate television empires confiscated by two different governments on two different continents.</p></div>
+        <div class="helms-burton-box">
+          <div class="hb-label">Helms-Burton Status</div>
+          <p>No FCSC claim documented &mdash; Mestre was a Cuban national, not a US citizen at the time of confiscation. The Radiocentro CMQ building in Havana still stands on La Rampa, now used by Cuban state television.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<div class="page-footer">
+  <p>These families built Cuba's economy. The revolution took it. Some rebuilt empires bigger than what they lost. All of them left unfinished business behind. Under Helms-Burton, that business remains open.</p>
+  <p style="margin-top: 12px;"><a class="qvapay-link" href="https://qvapay.com">QvaPay</a> &mdash; building the financial rails for Cuba's next chapter.</p>
+  <a class="back-link" href="https://cuba-opportunity-atlas.netlify.app/claims">← Back to Helms-Burton Claims</a>
+</div>
+
+<script>
+function toggle(btn) {
+  const card = btn.closest('.family-card');
+  const story = card.querySelector('.card-story');
+  const inner = story.querySelector('.card-story-inner');
+
+  if (card.classList.contains('open')) {
+    story.style.maxHeight = '0';
+    card.classList.remove('open');
+    btn.innerHTML = 'Read the story <span class="arrow">→</span>';
+  } else {
+    story.style.maxHeight = inner.scrollHeight + 40 + 'px';
+    card.classList.add('open');
+    btn.innerHTML = 'Close <span class="arrow">→</span>';
+  }
+}
+</script>
+
+</body>
+</html>

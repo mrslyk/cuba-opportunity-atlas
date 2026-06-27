@@ -236,6 +236,14 @@ export function MapView({
               <Link href="/invest" className="btn btn-primary px-3 py-1.5 text-xs">Support</Link>
             )}
           </div>
+          {selected.confiscated && selected.dynastyAnchor && (
+            <a
+              href={`/dynasties.html#${selected.dynastyAnchor}`}
+              className="mt-2 inline-flex items-center gap-1 text-xs font-medium text-private hover:underline"
+            >
+              Read {selected.dynastyFamily}&apos;s story →
+            </a>
+          )}
         </div>
       )}
     </div>
