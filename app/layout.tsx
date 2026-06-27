@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { Nav } from "@/components/Nav";
+import { QvaPayLogo } from "@/components/QvaPayLogo";
 
 const sans = Inter({ subsets: ["latin"], variable: "--font-sans", display: "swap" });
 const mono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono", display: "swap" });
@@ -63,7 +64,10 @@ function Footer() {
           <span>
             © 2026 QvaPay, Inc. · Cuba Opportunity Atlas — fintech OS for a free and prosperous Cuba.
             Built with <span className="text-private" aria-label="love">♥</span> by{" "}
-            <a href="https://qvapay.com" target="_blank" rel="noopener noreferrer" className="text-text hover:text-private hover:underline">QvaPay</a>.
+            <a href="https://qvapay.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 align-baseline text-text hover:text-private hover:underline">
+              <QvaPayLogo className="h-[1em] w-auto text-private" />
+              QvaPay
+            </a>.
           </span>
           <span className="font-mono">Data as of 2026-06-20</span>
         </div>
