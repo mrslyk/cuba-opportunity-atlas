@@ -1,12 +1,15 @@
-name: Atlas agent (daily refresh → PR)
+name: Atlas agent (monthly refresh → PR)
 
 # Drafts data updates and opens a Pull Request for human review.
-# Merge the PR to publish (Netlify auto-deploys on merge to main).
+# Merge the PR to publish (the host auto-deploys on merge to main).
 # Nothing auto-publishes — the PR is the human gate.
 
 on:
   schedule:
-    - cron: "0 7 * * *" # 07:00 UTC daily
+    # Monthly on the 1st at 07:00 UTC. Cuba asset statuses change on the order of
+    # weeks/months, so monthly catches real changes without the daily Anthropic spend.
+    # Run on demand any time from the Actions tab when something big happens.
+    - cron: "0 7 1 * *"
   workflow_dispatch: {} # allow manual runs from the Actions tab
 
 permissions:
